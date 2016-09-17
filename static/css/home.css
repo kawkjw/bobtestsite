@@ -1,0 +1,20 @@
+body {
+	padding-top: 70px;
+	background-color: @gray-light
+}
+
+.header {
+	margin-bottom: 20px;
+}
+
+.login {
+	bottom: 0px;
+	right: 20px;
+	position: absolute;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.header {
+	position: relative;
+}

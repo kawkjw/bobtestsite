@@ -1,0 +1,8 @@
+<script type="text/javascript">
+	{% if user.is_active %}
+	alert('Logout Fail');
+	{% else %}
+	alert('Logout Success');
+	location.href = "{% url 'home' %}";
+	{% endif %}
+</script>

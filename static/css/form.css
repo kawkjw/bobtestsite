@@ -1,0 +1,43 @@
+.error {
+	display: block;
+	border: 1px solid black;
+	background: #ff5050;
+	color: white;
+	font-weight: bold;
+	width: 500px;
+	height: 20px;
+	padding: 5px 0px;
+	text-align: center;
+	line-height: 20px;
+}
+
+fieldset {
+	border: 1px solid black;
+	width: 500px;
+}
+
+legend {
+	padding: 0px 5px;
+}
+
+.inputform {
+	width: 330px;
+	margin: 10px;
+}
+
+.inputform input {
+	float: right;
+	margin-left: 10px;
+	width: 200px;
+}
+
+.submitform {
+	border-top: 1px solid black;
+	text-align: right;
+	padding-top: 5px;
+}
+
+.submitform input {
+	height: 35px;
+	text-align: center;
+}

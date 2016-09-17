@@ -1,0 +1,19 @@
+<div class="container">
+	<div class="notice-section">
+		<div class="notice-title col-md-2 col-sm-2">
+			<span class="notice-header">Notice</span>
+		</div>
+		<div id="autonotice" class="notices col-md-9 col-sm-9">
+			<div class="open-event">
+				<ul class="notice-list">
+					{% for notice in notices %}
+						<li><a href="#">{{ notice.title }}</a><span class="date">{{ notice.created_date }}</span></li>
+					{% empty %}
+						<li>no notice</li>
+					{% endfor %}
+				</ul>
+			</div>
+			<script type="text/javascript">noticelist('autonotice', true);</script>
+		</div>
+	</div>
+</div>

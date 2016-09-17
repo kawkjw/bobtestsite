@@ -1,0 +1,78 @@
+{% load notice_tags %}
+{% load problem_tags %}
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Test Page</title>
+		{% load staticfiles %}
+		<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% block stylesheet %}{% static 'css/home.css' %}{% endblock %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/notice.css' %}" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="{% static 'js/bootstrap.min.js' %}"></script>
+		<script src="{% static 'js/notice.js' %}"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var navi = $('#navigation a');
+				for (var i = 0; i < navi.length; i++){
+					$('#navigation a:eq('+i+')').click(function(e) {
+						e.preventDefault();
+						$(this).tab('show');
+					});
+				};
+			});
+		</script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="header">
+				<img src="http://placehold.it/400x100" alt="No image" />
+				{% if user.is_active %}
+				<span class="login">Welcome, {% firstof user.get_username %} /
+				<a href="{% url 'password_change' %}">Change Password</a> /
+				<a href="{% url 'logout' %}">Logout</a>
+				</span>
+				{% else %}
+				<span class="login">Welcome, Anonymous /
+				<a href="{% url 'login' %}">Login</a> /
+				<a href="{% url 'register' %}">Register</a>
+				</span>
+				{% endif %}
+			</div>
+			<div class="navi">
+				<ul id="navigation" class="nav nav-tabs nav-justified">
+					<li class="active"><a href="#home">Home</a></li>
+					<li><a href="#intro">Introduction</a></li>
+					<li><a href="#study">Study</a></li>
+					<li><a href="#problems">Problems</a></li>
+					<li><a href="#community">Community</a></li>
+				</ul>
+			</div>
+
+			<div class="tab-content">
+				<div class="tab-pane fade in active" id="home">
+					{% notice_history %}
+					<hr>
+					{% recommend_problem %}
+				</div>
+				<div class="tab-pane fade" id="intro">
+					{% include "intro.html" %}
+				</div>
+				<div class="tab-pane fade" id="study">
+					{% include "study.html" %}
+				</div>
+				<div class="tab-pane fade" id="problems">
+					{% include "problems.html" %}
+				</div>
+				<div class="tab-pane fade" id="community">
+					{% include "community.html" %}
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
