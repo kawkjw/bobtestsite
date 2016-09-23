@@ -9,6 +9,7 @@ class Problem(models.Model):
 	title = models.CharField(max_length=50, blank=True)
 	author = models.ForeignKey('auth.User')
 	created_date = models.DateField(blank=True)
+	level = models.PositiveSmallIntegerField(null=True)
 	content = models.TextField(null=True, blank=True)
 
 	def __str__(self):

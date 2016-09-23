@@ -18,3 +18,7 @@ body {
 .header {
 	position: relative;
 }
+
+#navigation {
+	font-size: 1.2em;
+}

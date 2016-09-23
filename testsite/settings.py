@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 	'notice',
 	'problem',
+	'user_profile',
 ]
 
 MIDDLEWARE = [
