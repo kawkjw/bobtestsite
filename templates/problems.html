@@ -1,1 +1,10 @@
-<h1>Test Problems</h1>
+{% extends "base.html" %}
+{% load all_problem_tag %}
+
+{% block content %}
+<script type="text/javascript">
+	$('.active').toggleClass("active");
+	$('nav ul li:eq(3)').toggleClass("active");
+</script>
+{% all_problems %}
+{% endblock content %}

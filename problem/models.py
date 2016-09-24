@@ -6,6 +6,7 @@ from django.db import models
 
 class Problem(models.Model):
 	num = models.AutoField(primary_key=True)
+	artifact = models.PositiveSmallIntegerField(null=True)
 	title = models.CharField(max_length=50, blank=True)
 	author = models.ForeignKey('auth.User')
 	created_date = models.DateField(blank=True)

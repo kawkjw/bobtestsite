@@ -6,10 +6,43 @@ from django.views.generic.edit import CreateView
 from user_profile.forms import UserCreationForm
 from django.core.urlresolvers import reverse_lazy
 
-from user_profile.models import UserProfile
-from django.contrib.auth.models import User
+from django.http.response import HttpResponse
 
-from django.http import HttpResponse
+from django.template import Context
+from django.template.loader import get_template
+
+def intro(request):
+	template = get_template('intro.html')
+	context = Context({'test': request})
+
+	#return HttpResponse(template.render(context))
+	return render(request, 'intro.html', context)
+
+def documents(request):
+	template = get_template('documents.html')
+	context = Context({})
+
+	#return HttpResponse(template.render(context))
+	return render(request, 'documents.html', context)
+
+def problems(request):
+	template = get_template('problems.html')
+	context = Context({})
+
+	#return HttpResponse(template.render(context))
+	return render(request, 'problems.html', context)
+
+def community(request):
+	template = get_template('community.html')
+	context = Context({})
+
+	#return HttpResponse(template.render(context))
+	return render(request, 'community.html', context)
+
+def mypage(request):
+	context = Context({})
+
+	return render(request, 'mypage.html', context)
 
 class HomeView(TemplateView):
 	template_name = 'home.html'
@@ -21,9 +54,4 @@ class UserCreateView(CreateView):
 
 class UserCreateDoneTV(TemplateView):
 	template_name = 'registration/register_done.html'
-
-def home(request):
-	testuser = User.objects.all()
-	level = UserProfile.objects.filter(user_id=testuser)
-	return render(request, 'problem/_recommend_problem.html', {'testuser': testuser})
 

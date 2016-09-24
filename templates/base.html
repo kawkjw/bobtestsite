@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Test Page</title>
+		{% load staticfiles %}
+		<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/notice.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/problem.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/community.css' %}" />
+		<script type="text/javascript" src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
+		<script src="{% static 'js/bootstrap.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/notice.js' %}"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var navi = $('nav ul li');
+				for (var i = 0; i < navi.length; i++) {
+					$('nav ul li:eq('+i+')').click(function(e) {
+						e.preventDefault();
+						$('.active').toggleClass("active");
+						$(this).toggleClass("active");
+						$(location).attr("href", $(this).children().attr("href"));
+					});
+				};
+
+				{% if user.is_active %}
+					$('#password_change').click(function(e) {
+						$(location).attr("href", "{% url 'password_change' %}");
+					});
+					$('#logout').click(function(e) {
+						$(location).attr("href", "{% url 'logout' %}");
+					});
+				{% else %}
+					$('#login').click(function(e) {
+						$(location).attr("href", "{% url 'login' %}");
+					});
+					$('#register').click(function(e) {
+						$(location).attr("href", "{% url 'register' %}");
+					});
+				{% endif %}
+			});
+		</script>
+	</head>
+	<body class="container">
+		<div id="menu">
+			<img id="logo" src="{% static 'img/logo.png' %}" alt="No image" />
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="{% url 'home' %}">Crescendo</a>
+					</div>
+
+					<div class="collapse navbar-collapse" id="bs-navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a></li>
+							<li><a href="{% url 'intro' %}">Introduction</a></li>
+							<li><a href="{% url 'documents' %}">Documents</a></li>
+							<li><a href="{% url 'problems' %}">Problems</a></li>
+							<li><a href="{% url 'community' %}">Community</a></li>
+						</ul>
+						<div class="navbar-right">
+							{% if user.is_active %}
+								<p class="navbar-text">Signed in as <a href="{% url 'mypage' %}" class="navbar-link">{% firstof user.get_username %}</a></p>
+								<button id="password_change" type="button" class="btn btn-default navbar-btn">Password Change</button>
+								<button id="logout" type="button" class="btn btn-default navbar-btn">Logout</button>
+							{% else %}
+								<p class="navbar-text">Login please</p>
+								<button id="login" type="button" class="btn btn-default navbar-btn">Login</button>
+								<button id="register" type="button" class="btn btn-default navbar-btn">Register</button>
+							{% endif %}
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+		{% block content %}{% endblock %}
+
+		{% block footer %}
+		<hr>
+		<p style="text-align: right;">Created by Crescendo Team</p>
+		{% endblock %}
+	</body>
+</html>

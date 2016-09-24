@@ -1,0 +1,41 @@
+.menu {
+	border-right: 1px solid #eee;
+}
+
+#problem-menu > li > a {
+	text-align: right;
+}
+
+.problem {
+	width: 1070px;
+}
+
+.problem table {
+	margin-top: 30px;
+}
+
+.problem table thead {
+	text-align: center;
+}
+
+.problem-title {
+	font-size: 45px;
+}
+
+.problem-content table {
+	margin-top: 30px;
+}
+
+.problem_num {
+	text-align: right;
+}
+
+.nav-pills > li.active > a, 
+.nav-pills > li.active > a:hover, 
+.nav-pills > li.active > a:focus {
+	background-color: #99ceff;
+}
+
+.nav-pills li a{
+	color: black;
+}

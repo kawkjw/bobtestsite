@@ -3,8 +3,13 @@ body {
 	background-color: @gray-light
 }
 
+#logo {
+	margin-bottom: 10px;
+}
+
 .header {
 	margin-bottom: 20px;
+	position: relative;
 }
 
 .login {
@@ -15,8 +20,19 @@ body {
 	font-weight: bold;
 }
 
-.header {
-	position: relative;
+.navbar {
+	background-color: #cce6ff;
+	border: 1px solid #cce6ff;
+}
+
+.navbar-default .navbar-nav > li.active > a, 
+.navbar-default .navbar-nav > li.active > a:hover, 
+.navbar-default .navbar-nav > li.active > a:focus {
+	background-color: #b8daf9;
+}
+
+.content {
+	margin-top: 20px;
 }
 
 #navigation {

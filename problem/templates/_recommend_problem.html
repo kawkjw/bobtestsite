@@ -1,9 +1,79 @@
-<div class="container">
-	<!--<h1>Test Problems</h1>-->
-		{% for problem in problems %}
-			<p>{{ problem.title }}</p>
-		{% endfor %}
-		{% for tuser in testuser %}
-			{{ tuser }}
-		{% endfor %}
+<div class="container problem center">
+		<div class="problem-title">
+			<span>Recommended Problems</span>
+		</div>
+		{% if test.user.is_active %}
+			{% if test.user.is_superuser %}
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<td>#</td>
+							<td>Problem</td>
+							<td>Artifact</td>
+						</tr>
+					</thead>
+					<tbody>
+					{% for problem in problems %}
+						<tr>
+							<td class="problem_num">{{ counter.count }}</td>
+							<td>{{ problem.title }}</td>
+							<td>
+							{% if problem.artifact == 1 %}
+							artifact 1
+							{% elif problem.artifact == 2 %}
+							artifact 2
+							{% elif problem.artifact == 3 %}
+							artifact 3
+							{% elif problem.artifact == 4 %}
+							artifact 4
+							{% elif problem.artifact == 5 %}
+							artifact 5
+							{% endif %}
+							</td>
+						</tr>
+						<div class="hidden">{{ counter.increment }}</div>
+					{% endfor %}
+					</tbody>
+					</table>
+			{% endif %}
+			{% for profile in profiles %}
+				{% if test.user.id == profile.user_id and not test.user.is_superuser%}
+					<table class="table table-bordered">
+					<thead>
+						<tr>
+							<td>#</td>
+							<td>Problem</td>
+							<td>Artifact</td>
+						</tr>
+					</thead>
+					<tbody>
+					{% for problem in problems %}
+						{% ifequal profile.level problem.level %}
+							<tr>
+								<td class="problem_num col-md-1">{{ counter.count }}</td>
+								<td class="col-md-8">{{ problem.title }}</td>
+								<td>
+								{% if problem.artifact == 1 %}
+								artifact 1
+								{% elif problem.artifact == 2 %}
+								artifact 2
+								{% elif problem.artifact == 3 %}
+								artifact 3
+								{% elif problem.artifact == 4 %}
+								artifact 4
+								{% elif problem.artifact == 5 %}
+								artifact 5
+								{% endif %}
+								</td>
+							</tr>
+							<div class="hidden">{{ counter.increment }}</div>
+						{% endifequal %}
+					{% endfor %}
+					</tbody>
+					</table>
+				{% endif %}
+			{% endfor %}
+		{% else %}
+			<h2>Login Please</h2>
+		{% endif %}
 </div>

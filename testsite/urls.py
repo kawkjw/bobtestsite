@@ -19,6 +19,8 @@ from django.contrib import admin
 from testsite.views import HomeView
 from testsite.views import UserCreateView, UserCreateDoneTV
 
+from testsite.views import intro, documents, problems, community, mypage
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
 
@@ -27,4 +29,10 @@ urlpatterns = [
 	url(r'^accounts/register/done/$', UserCreateDoneTV.as_view(), name='register_done'),
 
 	url(r'^$', HomeView.as_view(), name='home'),
+
+	url(r'^intro/$', intro, name='intro'),
+	url(r'^documents/$', documents, name='documents'),
+	url(r'^problems/$', problems, name='problems'),
+	url(r'^community/$', community, name='community'),
+	url(r'^mypage/$', mypage, name='mypage'),
 ]
