@@ -1,0 +1,127 @@
+{% extends 'problem_menu.html' %}
+
+{% block problem_content %}
+{% load problem_stats %}
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.nav-pills li.active').toggleClass("active");
+		$('.nav-pills li:eq(0)').toggleClass("active");
+
+		$('.orderby').change(function() {
+			if($('.orderby option:selected').val() == "title"){
+				$('.problem-content table:eq(1)').removeClass("hidden");
+				$('.problem-content table:eq(2)').addClass("hidden");
+				$('.problem-content table:eq(3)').addClass("hidden");
+			} else if($('.orderby option:selected').val() == "level"){
+				$('.problem-content table:eq(1)').addClass("hidden");
+				$('.problem-content table:eq(2)').removeClass("hidden");
+				$('.problem-content table:eq(3)').addClass("hidden");
+			} else {
+				$('.problem-content table:eq(1)').addClass("hidden");
+				$('.problem-content table:eq(2)').addClass("hidden");
+				$('.problem-content table:eq(3)').removeClass("hidden");
+			}
+		});
+
+		$('.orderP').click(function() {
+			$('.problem-content table:eq(1)').removeClass("hidden");
+			$('.problem-content table:eq(2)').addClass("hidden");
+			$('.problem-content table:eq(3)').addClass("hidden");
+		});
+
+		$('.orderL').click(function() {
+			$('.problem-content table:eq(1)').addClass("hidden");
+			$('.problem-content table:eq(2)').removeClass("hidden");
+			$('.problem-content table:eq(3)').addClass("hidden");
+		});
+
+		$('.orderS').click(function() {
+			$('.problem-content table:eq(1)').addClass("hidden");
+			$('.problem-content table:eq(2)').addClass("hidden");
+			$('.problem-content table:eq(3)').removeClass("hidden");
+		});
+	});
+</script>
+<div class="problem-content col-md-10">
+	<h1>Artifact 1</h1>
+	<div class="form-group col-md-4 pull-right hidden">
+		<table class="pull-right">
+			<tr>
+				<td>Order by:</td>
+				<td class="col-md-8">
+					<select class="form-control orderby">
+						<option value="title">Title</option>
+						<option value="level">Level</option>
+						<option value="stats">Stats</option>
+					</select>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<td>#</td>
+				<td class="orderP"><span class="glyphicon glyphicon-sort-by-alphabet"></span>Problem</td>
+				<td class="orderL"><span class="glyphicon glyphicon-sort-by-attributes"></span>Level</td>
+				<td class="orderS"><span class="glyphicon glyphicon-sort-by-attributes"></span>Pass/Submits</td>
+			</tr>
+		</thead>
+		{{ counter.setzero|default_if_none:"" }}
+		<tbody>
+		{% for problem in problems_bytitle %}
+			<tr>
+				<td class="problem_num col-md-1">{{ counter.count|add:"1" }}</td>
+				<td class="col-md-8"><a href="{% url 'problem_view' %}?pnum={{ problem.num }}">{{ problem.title }}</a></td>
+				<td class="problem_center">level{{ problem.level }}</td>
+				<td class="problem_center">{{ problem.corrects|getstats:problem.submits }} ({{ problem.corrects }}/{{ problem.submits }})</td>
+				{{ counter.increment|default_if_none:"" }}
+			</tr>
+		{% endfor %}
+	</table>
+
+	<table class="table table-bordered hidden">
+		<thead>
+			<tr>
+				<td>#</td>
+				<td class="orderP">Problem</td>
+				<td class="orderL">Level</td>
+				<td class="orderS">Pass/Submits</td>
+			</tr>
+		</thead>
+		{{ counter.setzero|default_if_none:"" }}
+		<tbody>
+		{% for problem in problems_bylevel %}
+			<tr>
+				<td class="problem_num col-md-1">{{ counter.count|add:"1" }}</td>
+				<td class="col-md-8"><a href="{% url 'problem_view' %}?pnum={{ problem.num }}">{{ problem.title }}</a></td>
+				<td class="problem_center">level{{ problem.level }}</td>
+				<td class="problem_center">{{ problem.corrects|getstats:problem.submits }} ({{ problem.corrects }}/{{ problem.submits }})</td>
+				{{ counter.increment|default_if_none:"" }}
+			</tr>
+		{% endfor %}
+	</table>
+
+	<table class="table table-bordered hidden">
+		<thead>
+			<tr>
+				<td>#</td>
+				<td class="orderP">Problem</td>
+				<td class="orderL">Level</td>
+				<td class="orderS">Pass/Submits</td>
+			</tr>
+		</thead>
+		{{ counter.setzero|default_if_none:"" }}
+		<tbody>
+		{% for problem in problems_bystats %}
+			<tr>
+				<td class="problem_num col-md-1">{{ counter.count|add:"1" }}</td>
+				<td class="col-md-8"><a href="{% url 'problem_view' %}?pnum={{ problem.num }}">{{ problem.title }}</a></td>
+				<td class="problem_center">level{{ problem.level }}</td>
+				<td class="problem_center">{{ problem.corrects|getstats:problem.submits }} ({{ problem.corrects }}/{{ problem.submits }})</td>
+				{{ counter.increment|default_if_none:"" }}
+			</tr>
+		{% endfor %}
+	</table>
+</div>
+{% endblock problem_content %}

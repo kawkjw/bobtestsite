@@ -1,38 +1,30 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Login Page</title>
-		{% load staticfiles %}
-		<link rel="stylesheet" type="text/css" href="{% block stylesheet %}{% static 'css/form.css' %}{% endblock %}" />
-	</head>
+{% extends 'base.html' %}
 
-	<body>
-		<div class="container">
-			<h1>Please Login</h1>
-			<form action="." method="POST">{% csrf_token %}
-			{% if form.errors %}
-			<p class="error">Wrong! Please correct the error(s) below.</p>
-			{% endif %}
+{% block content %}
+<div class="container">
+	<h1>Please Login</h1>
+	<form action="." method="POST">{% csrf_token %}
+	{% if form.errors %}
+		<p class="error">Wrong! Please correct the error(s) below.</p>
+	{% endif %}
 
-			<p>Please enter your id and password.</p>
+	<p>Please enter your id and password.</p>
 
-			<fieldset>
-				<legend>Login</legend>
-				<div class="inputform">
-					{{ form.username.label_tag }} {{ form.username }}
-				</div>
-
-				<div class="inputform">
-					{{ form.password.label_tag }} {{ form.password }}
-				</div>
-
-				<div class="submitform">
-					<input type="submit" value="Log In"/>
-				</div>
-			</fieldset>
-
-			<script type="text/javascript">document.getElementById('id_username').focus();</script>
-			</form>
+	<fieldset>
+		<div class="inputform">
+			{{ form.username.label_tag }} {{ form.username }}
 		</div>
-	</body>
-</html>
+
+		<div class="inputform">
+			{{ form.password.label_tag }} {{ form.password }}
+		</div>
+
+		<div class="submitform">
+			<input type="submit" value="Log In"/>
+		</div>
+	</fieldset>
+
+	<script type="text/javascript">document.getElementById('id_username').focus();</script>
+	</form>
+</div>
+{% endblock content %}

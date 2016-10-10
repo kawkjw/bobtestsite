@@ -1,0 +1,9 @@
+<script type="text/javascript">
+	{% if state %}
+		alert('Correct!!');
+		location.href="{% url 'artifact1' %}";
+	{% else %}
+		alert('Wrong Answer!!');
+		location.href="{% url 'problem_view' %}?pnum={{ problem_num }}";
+	{% endif %}
+</script>

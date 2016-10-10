@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('nav .active').toggleClass("active");
+		$('nav ul li:eq(4)').toggleClass("active");
+	});
+</script>
+<div class="col-md-12">
+	<div class="menu col-md-2">
+		<ul id="community-menu" class="nav nav-pills nav-stacked">
+			<li class="active"><a href="{% url 'noticelist' %}?page=1">Notice</a></li>
+			<li><a href="#">Community 1</a></li>
+			<li><a href="#">Community 2</a></li>
+		</ul>
+	</div>
+
+{% block community_content %}
+{% endblock community_content %}
+</div>
+
+{% endblock content %}

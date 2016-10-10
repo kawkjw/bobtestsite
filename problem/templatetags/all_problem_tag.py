@@ -10,6 +10,9 @@ class Counter:
 	def increment(self):
 		self.count += 1
 
+	def setzero(self):
+		self.count = 0
+
 @register.inclusion_tag('_all_problems.html', takes_context=True)
 def all_problems(context):
 	problems = Problem.objects.all()

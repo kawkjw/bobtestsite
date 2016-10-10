@@ -1,3 +1,15 @@
 #community-menu > li > a {
 	text-align: right;
 }
+
+.community_num {
+	text-align: right;
+}
+
+.notice-content table thead {
+	text-align: center;
+}
+
+.community_center {
+	text-align: center;
+}

@@ -1,0 +1,83 @@
+{% extends 'problem_menu.html' %}
+
+{% block problem_content %}
+{% load problem_stats %}
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.nav-pills li.active').toggleClass("active");
+		{% if problem.artifact == 1 %}
+			$('.nav-pills li:eq(0)').toggleClass("active");
+		{% elif problem.artifact == 2 %}
+			$('.nav-pills li:eq(1)').toggleClass("active");
+		{% elif problem.artifact == 3 %}
+			$('.nav-pills li:eq(2)').toggleClass("active");
+		{% elif problem.artifact == 4 %}
+			$('.nav-pills li:eq(3)').toggleClass("active");
+		{% elif problem.artifact == 5 %}
+			$('.nav-pills li:eq(4)').toggleClass("active");
+		{% endif %}
+
+		$('#id_submit').click(function() {
+			var form = $('#input_answer');
+
+			if(!$('input[name=answer]').val()) {
+				alert('Input answer.');
+				$('input[name=answer]').focus();
+				return;
+			}
+
+			form.submit();
+		});
+	});
+
+	{% if not test.user.is_active %}
+		alert('Login Please');
+		$(location).attr('href', "{% url 'artifact1' %}");
+	{% elif user_level < problem.level %}
+		if(confirm('Your level is lower than problem level.\nDo you want to continue?') == 0){
+			{% if problem.artifact == 1 %}
+				$(location).attr('href', "{% url 'artifact1' %}");
+			{% elif problem.artifact == 2 %}
+				$(location).attr('href', "{% url 'artifact2' %}");
+			{% elif problem.artifact == 3 %}
+				$(location).attr('href', "{% url 'artifact3' %}");
+			{% elif problem.artifact == 4 %}
+				$(location).attr('href', "{% url 'artifact4' %}");
+			{% elif problem.artifact == 5 %}
+				$(location).attr('href', "{% url 'artifact5' %}");
+			{% endif %}
+		}
+	{% endif %}
+</script>
+<div class="problem-content col-md-10">
+	<table class="table table-bordered">
+		<tr>
+			<td class="col-md-2">Title</td>
+			<td>{{ problem.title }}</td>
+		</tr>
+		<tr>
+			<td>Level</td>
+			<td>level{{ problem.level }}</td>
+		</tr>
+		<tr>
+			<td>Pass/Submits</td>
+			<td>{{ problem.corrects|getstats:problem.submits }} ({{ problem.corrects }}/{{ problem.submits }})</td>
+		</tr>
+		<tr>
+			<td>Content</td>
+			<td>{{ problem.content|linebreaks }}</td>
+		</tr>
+	</table>
+	<form id="input_answer" class="form-horizontal" method="POST" action="{% url 'problem_answercheck' %}?pnum={{ problem.num }}">{% csrf_token %}
+		<div class="form-group">
+			<label for="id_answer" class="col-md-2 control-label">Answer</label>
+			<div class="col-md-8">
+				<input type="text" id="id_answer" class="form-control" name="answer" placeholder="Answer">
+			</div>
+			<div class="col-md-2">
+				<input type="button" id="id_submit" class="btn btn-default" value="Submit">
+			</div>
+		</div>
+	</form>
+</div>
+{% endblock problem_content %}

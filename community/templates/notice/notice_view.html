@@ -1,0 +1,22 @@
+{% extends 'community_menu.html' %}
+
+{% block community_content %}
+<div class="notice-content col-md-10">
+	<table class="table table-bordered">
+		<tr>
+			<td class="col-md-2">Title</td>
+			<td colspan="3">{{ notice.title }}</td>
+		</tr>
+		<tr>
+			<td>Created Date</td>
+			<td>{{ notice.created_date }}</td>
+			<td class="col-md-1">Hits</td>
+			<td class="col-md-1">{{ notice.hits }}</td>
+		</tr>
+		<tr>
+			<td>Content</td>
+			<td colspan="3">{{ notice.content|linebreaks }}</td>
+		</tr>
+	</table>
+</div>
+{% endblock community_content %}

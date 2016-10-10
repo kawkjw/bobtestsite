@@ -1,23 +1,25 @@
+{% load problem_stats %}
 <div class="container problem center">
 		<div class="problem-title">
 			<span>Recommended Problems</span>
 		</div>
 		{% if test.user.is_active %}
-			{% if test.user.is_superuser %}
+			{% if test.user.is_staff %}
 				<table class="table table-bordered">
 					<thead>
 						<tr>
 							<td>#</td>
 							<td>Problem</td>
 							<td>Artifact</td>
+							<td>Pass/Submits</td>
 						</tr>
 					</thead>
 					<tbody>
 					{% for problem in problems %}
 						<tr>
-							<td class="problem_num">{{ counter.count }}</td>
-							<td>{{ problem.title }}</td>
-							<td>
+							<td class="problem_num col-md-1">{{ counter.count }}</td>
+							<td class="col-md-8"><a href="{% url 'problem_view' %}?pnum={{ problem.num }}">{{ problem.title }}</a></td>
+							<td class="problem_center">
 							{% if problem.artifact == 1 %}
 							artifact 1
 							{% elif problem.artifact == 2 %}
@@ -30,20 +32,22 @@
 							artifact 5
 							{% endif %}
 							</td>
+							<td class="problem_center">{{ problem.corrects|getstats:problem.submits }} ({{ problem.corrects }}/{{ problem.submits }})</td>
 						</tr>
-						<div class="hidden">{{ counter.increment }}</div>
+						{{ counter.increment|default_if_none:"" }}
 					{% endfor %}
 					</tbody>
 					</table>
 			{% endif %}
 			{% for profile in profiles %}
-				{% if test.user.id == profile.user_id and not test.user.is_superuser%}
+				{% if test.user.id == profile.user_id and not test.user.is_staff%}
 					<table class="table table-bordered">
 					<thead>
 						<tr>
 							<td>#</td>
 							<td>Problem</td>
 							<td>Artifact</td>
+							<td>Pass/Submits</td>
 						</tr>
 					</thead>
 					<tbody>
@@ -51,8 +55,8 @@
 						{% ifequal profile.level problem.level %}
 							<tr>
 								<td class="problem_num col-md-1">{{ counter.count }}</td>
-								<td class="col-md-8">{{ problem.title }}</td>
-								<td>
+								<td class="col-md-8"><a href="{% url 'problem_view' %}?pnum={{ problem.num }}">{{ problem.title }}</a></td>
+								<td class="problem_center">
 								{% if problem.artifact == 1 %}
 								artifact 1
 								{% elif problem.artifact == 2 %}
@@ -65,8 +69,9 @@
 								artifact 5
 								{% endif %}
 								</td>
+								<td class="problem_center">{{ problem.corrects|getstats:problem.submits }} ({{ problem.corrects }}/{{ problem.submits }})</td>
 							</tr>
-							<div class="hidden">{{ counter.increment }}</div>
+							{{ counter.increment|default_if_none:"" }}
 						{% endifequal %}
 					{% endfor %}
 					</tbody>

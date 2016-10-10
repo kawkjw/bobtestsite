@@ -9,21 +9,12 @@
 		<link rel="stylesheet" type="text/css" href="{% static 'css/notice.css' %}" />
 		<link rel="stylesheet" type="text/css" href="{% static 'css/problem.css' %}" />
 		<link rel="stylesheet" type="text/css" href="{% static 'css/community.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/form.css' %}" />
 		<script type="text/javascript" src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
 		<script src="{% static 'js/bootstrap.min.js' %}"></script>
 		<script type="text/javascript" src="{% static 'js/notice.js' %}"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
-				var navi = $('nav ul li');
-				for (var i = 0; i < navi.length; i++) {
-					$('nav ul li:eq('+i+')').click(function(e) {
-						e.preventDefault();
-						$('.active').toggleClass("active");
-						$(this).toggleClass("active");
-						$(location).attr("href", $(this).children().attr("href"));
-					});
-				};
-
 				{% if user.is_active %}
 					$('#password_change').click(function(e) {
 						$(location).attr("href", "{% url 'password_change' %}");
@@ -33,7 +24,7 @@
 					});
 				{% else %}
 					$('#login').click(function(e) {
-						$(location).attr("href", "{% url 'login' %}");
+						$(location).attr("href", "{% url 'user_login' %}");
 					});
 					$('#register').click(function(e) {
 						$(location).attr("href", "{% url 'register' %}");
@@ -44,7 +35,10 @@
 	</head>
 	<body class="container">
 		<div id="menu">
-			<img id="logo" src="{% static 'img/logo.png' %}" alt="No image" />
+			<div id="logo">
+				<img id="logo_img" src="{% static 'img/img.png' %}" alt="No image" />
+				<img id="logo_text" src="{% static 'img/text.png' %}" alt="No image" />
+			</div>
 			<nav class="navbar navbar-default">
 				<div class="container-fluid">
 					<div class="navbar-header">
@@ -62,8 +56,8 @@
 							<li class="active"><a href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a></li>
 							<li><a href="{% url 'intro' %}">Introduction</a></li>
 							<li><a href="{% url 'documents' %}">Documents</a></li>
-							<li><a href="{% url 'problems' %}">Problems</a></li>
-							<li><a href="{% url 'community' %}">Community</a></li>
+							<li><a href="{% url 'artifact1' %}">Problems</a></li>
+							<li><a href="{% url 'noticelist' %}?page=1">Community</a></li>
 						</ul>
 						<div class="navbar-right">
 							{% if user.is_active %}
@@ -80,11 +74,11 @@
 				</div>
 			</nav>
 		</div>
-		{% block content %}{% endblock %}
-
-		{% block footer %}
-		<hr>
-		<p style="text-align: right;">Created by Crescendo Team</p>
-		{% endblock %}
+		{% block content %}
+		{% endblock content %}
+		<footer class="col-md-12">
+			<hr>
+			<p style="text-align: right;">Created by Crescendo Team</p>
+		</footer>
 	</body>
 </html>

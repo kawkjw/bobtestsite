@@ -11,10 +11,10 @@
 }
 
 .problem table {
-	margin-top: 30px;
+	margin-top: 10px;
 }
 
-.problem table thead {
+.problem table thead, .problem-content table thead {
 	text-align: center;
 }
 
@@ -22,12 +22,16 @@
 	font-size: 45px;
 }
 
-.problem-content table {
+.problem-content > table {
 	margin-top: 30px;
 }
 
 .problem_num {
 	text-align: right;
+}
+
+.problem_center {
+	text-align: center;
 }
 
 .nav-pills > li.active > a, 
@@ -38,4 +42,16 @@
 
 .nav-pills li a{
 	color: black;
+}
+
+#id_submit {
+	margin-left: 5px;
+}
+
+div.form-group.col-md-4 {
+	padding-right: 0px;
+}
+
+ td.col-md-8 {
+	padding-right: 0px;
 }

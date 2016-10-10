@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="center-block" style="width: 600px;">
+	<h1>Please Login</h1>
+	<form id="loginform" class="form-horizontal" action="{% url 'user_login' %}" method="POST">{% csrf_token %}
+	{% if next %}
+		<input type="hidden" name="next" value="{{ next }}" />
+	{% endif %}
+
+	<div class="form-group">
+		<label for="id_username" class="col-md-2 control-label">Username</label>
+		<div class="col-md-10">
+			<input type="text" id="id_username" class="form-control" name="username" placeholder="Username" required>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label for="id_password" class="col-md-2 control-label">Password</label>
+		<div class="col-md-10">
+			<input type="password" id="id_password" class="form-control" name="password" placeholder="Password" required>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div>
+			<input type="submit" id="id_loginsubmit" class="btn btn-default pull-right" value="Log In"/>
+		</div>
+	</div>
+
+
+	<script type="text/javascript">$('#id_username').focus();</script>
+	</form>
+</div>
+{% endblock content %}

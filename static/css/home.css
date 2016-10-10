@@ -1,6 +1,5 @@
 body {
-	padding-top: 70px;
-	background-color: @gray-light
+	padding-top: 40px;
 }
 
 #logo {
@@ -37,4 +36,28 @@ body {
 
 #navigation {
 	font-size: 1.2em;
+}
+
+#logo_img {
+	margin-left: 20px;
+	width: 200px;
+	height: 130px;
+}
+
+#logo_text {
+	margin-left: 40px;
+	padding-top: 50px;
+	height: 140px;
+}
+
+#logo {
+	margin-bottom: 20px;
+}
+
+#id_loginsubmit {
+	margin-right: 15px;
+}
+
+#loginform {
+	margin-top: 20px;
 }

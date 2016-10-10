@@ -37,9 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-	'notice',
+	#'notice',
 	'problem',
 	'user_profile',
+	'community',
 ]
 
 MIDDLEWARE = [
@@ -50,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+	'ratelimit.middleware.RatelimitMiddleware',
 ]
 
 ROOT_URLCONF = 'testsite.urls'
@@ -125,10 +127,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, "static/")
-#STATICFILES_DIRS = [os.path.join(BASE_DIR, 'ststic')]
+#STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'ststic')]
 
 # LOGIN
 
 LOGIN_REDIRECT_URL = '/'
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
+RATELIMIT_VIEW = 'testsite.views.beenLimited'

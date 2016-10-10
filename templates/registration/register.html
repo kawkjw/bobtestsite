@@ -1,47 +1,39 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Register Page</title>
-		{% load staticfiles %}
-		<link rel="stylesheet" type="text/css" href="{% block stylesheet %}{% static 'css/form.css' %}{% endblock %}" />
-	</head>
+{% extends 'base.html' %}
 
-	<body>
-		<div>
-			<h1>Registration</h1>
+{% block content %}
+<div>
+	<h1>Registration</h1>
 
-			<form action="." method="POST">{% csrf_token %}
-			{% if form.errors %}
-			<p class="error">Wrong! Please correct the error(s) below.</p>
-			{% endif %}
+	<form action="." method="POST">{% csrf_token %}
+	{% if form.errors %}
+		<p class="error">Wrong! Please correct the error(s) below.</p>
+	{% endif %}
 
-			<p>Please enter your username etc.</p>
+	<p>Please enter your username etc.</p>
 
-			<fieldset>
-				<legend>Regisetration</legend>
-				<div class="inputform">
-					{{ form.username.label_tag }} {{ form.username }}
-				</div>
-
-				<div class="inputform">
-					{{ form.email.label_tag }} {{ form.email }}
-				</div>
-
-				<div class="inputform">
-					{{ form.password1.label_tag }} {{ form.password1 }}
-				</div>
-
-				<div class="inputform">
-					{{ form.password2.label_tag }} {{ form.password2 }}
-				</div>
-
-				<div class="submitform">
-					<input type="submit" value="Register"/>
-				</div>
-			</fieldset>
-
-			<script type="text/javascript">document.getElementById('id_username').focus();</script>
-			</form>
+	<fieldset>
+		<div class="inputform">
+			{{ form.username.label_tag }} {{ form.username }}
 		</div>
-	</body>
-</html>
+
+		<div class="inputform">
+			{{ form.email.label_tag }} {{ form.email }}
+		</div>
+
+		<div class="inputform">
+			{{ form.password1.label_tag }} {{ form.password1 }}
+		</div>
+
+		<div class="inputform">
+			{{ form.password2.label_tag }} {{ form.password2 }}
+		</div>
+
+		<div class="submitform">
+			<input type="submit" value="Register"/>
+		</div>
+	</fieldset>
+
+	<script type="text/javascript">document.getElementById('id_username').focus();</script>
+	</form>
+</div>
+{% endblock content %}

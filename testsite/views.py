@@ -6,10 +6,35 @@ from django.views.generic.edit import CreateView
 from user_profile.forms import UserCreationForm
 from django.core.urlresolvers import reverse_lazy
 
-from django.http.response import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
+from django.utils.http import is_safe_url
 
 from django.template import Context
 from django.template.loader import get_template
+
+from django.contrib.auth import authenticate, login, logout
+
+def beenLimited(request, exception):
+	message = "A few too many tries now. Please try again later."
+	return HttpResponse(message)
+
+def login_check(request):
+	return render(request, 'login_check.html')
+
+def user_login(request):
+	logout(request)
+	username = password = ''
+	if request.POST:
+		username = request.POST['username']
+		password = request.POST['password']
+
+		user = authenticate(username=username, password=password)
+		if user is not None:
+			if user.is_active:
+				login(request, user)
+				return HttpResponseRedirect('/')
+	context = Context({})
+	return render(request, 'registration/user_login.html', context)
 
 def intro(request):
 	template = get_template('intro.html')

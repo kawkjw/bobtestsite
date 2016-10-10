@@ -1,0 +1,76 @@
+{% extends 'community_menu.html' %}
+
+{% block community_content %}
+<script type="text/javascript">
+	function get(name){
+		if(name = (new RegExp('[?&]' + encodeURIComponent(name) + '=([^&]*)')).exec(location.search))
+			return decodeURIComponent(name[1]);
+	}
+
+	$(document).ready(function() {
+		if(get('page') == 1)
+			$('.previous-page').addClass("disabled");
+		else if(get('page') >= {{ last_page }})
+			$('.next-page').addClass("disabled");
+		else {
+			$('.previous-page').removeClass("disabled");
+			$('.next-page').removeClass("disabled");
+		}
+
+		$('.previous-page').click(function() {
+			if($('.previous-page').hasClass("disabled") == false)
+				$(location).attr("href", "{% url 'noticelist' %}?page={{ current_page|add:'-1' }}");
+		});
+
+		$('.next-page').click(function() {
+			if($('.next-page').hasClass("disabled") == false)
+				$(location).attr("href", "{% url 'noticelist' %}?page={{ current_page|add:'1' }}");
+		});
+	{% if request.user.is_staff %}
+		$('#noticewrite').click(function() {
+			$(location).attr("href", "{% url 'noticewrite' %}");
+		});
+	{% endif %}
+	});
+</script>
+<div class="notice-content col-md-10">
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<td>#</td>
+				<td>Title</td>
+				<td>Hits</td>
+				<td>Date</td>
+			</tr>
+		</thead>
+		<tbody>
+		{% for notice in notice_list %}
+			<tr>
+				<td class="community_num col-md-1">{{ notice.num }}</td>
+				<td class="col-md-8"><a href="{% url 'noticeview' %}?nnum={{ notice.num }}">{{ notice.title }}</a></td>
+				<td class="community_center">{{ notice.hits }}</td>
+				<td class="community_center">{{ notice.created_date }}</td>
+			</tr>
+		{% endfor %}
+		</tbody>
+	</table>
+{% if request.user.is_staff %}
+	<div style="overflow: auto;">
+		<input class="btn btn-default pull-right" type="button" id="noticewrite" value="Write">
+	</div>
+{% endif %}
+	<div class="community_center">
+		<ul class="pagination">
+			<li class="previous-page">
+				<a href="#"><span>&laquo;</span></a>
+			</li>
+			{% for page in total_page %}
+				<li {% if current_page == page %}class="active" {% endif %}><a {% if current_page != page %}href="{% url 'noticelist' %}?page={{ page }}" {% endif %}>{{ page }}</a></li>
+			{% endfor %}
+			<li class="next-page">
+				<a href="#"><span>&raquo;</span></a>
+			</li>
+		</ul>
+	</div>
+</div>
+{% endblock community_content %}
