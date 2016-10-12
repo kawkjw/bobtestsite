@@ -1,3 +1,5 @@
+import re
+from datetime import datetime
 from django.shortcuts import render
 
 from django.views.generic.base import TemplateView
@@ -13,6 +15,8 @@ from django.template import Context
 from django.template.loader import get_template
 
 from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.models import User
+from user_profile.models import UserProfile
 
 def beenLimited(request, exception):
 	message = "A few too many tries now. Please try again later."
@@ -68,6 +72,69 @@ def mypage(request):
 	context = Context({})
 
 	return render(request, 'mypage.html', context)
+
+def register_page(request):
+	context = Context({})
+	return render(request, 'registration/register.html', context)
+
+def get_user(input_user):
+	try:
+		return User.objects.get(username=input_user)
+	except User.DoesNotExist:
+		return None
+
+def register_done(request):
+	if request.method == "GET":
+		return render(request, 'registration/register.html')
+	if request.method == "POST":
+		username = request.POST['username']
+
+		m = re.match(r"\d+", username)
+		if m != None:
+			context = Context({'name_state': True})
+			return render(request, 'registration/register.html', context)
+
+		email = request.POST['email']
+
+		m = re.match(r"(\w+[\w\.]*)@(\w+[\w\.]*)\.([A-Za-z]+)", email)
+		if m == None:
+			context = Context({'email_state': True})
+			return render(request, 'registration/register.html', context)
+
+		password1 = request.POST['password1']
+
+		if len(password1) < 8:
+			context = Context({'passwordlen_state': True})
+			return render(request, 'registration/register.html', context)
+
+		m = re.match(r"\d+", password1)
+		if m != None:
+			context = Context({'passwordnum_state': True})
+			return render(request, 'registration/register.html', context)
+
+		for i in range(0, len(username) - 4):
+			if password1.find(username[i:i+5]) != -1:
+				context = Context({'password_state': True})
+				return render(request, 'registration/register.html', context)
+
+		password2 = request.POST['password2']
+		user = get_user(username)
+		if password1 == password2:
+			if user is None:
+				user = User.objects.create_user(username, email, password1)
+				user.save()
+
+				user = get_user(username)
+				UserProfile.objects.filter(user_id=user.id).update(level = 0)
+				UserProfile.objects.filter(user_id=user.id).update(last_submit = datetime.now())
+				UserProfile.objects.filter(user_id=user.id).update(score = 0)
+				return render(request, 'registration/register_done.html')
+			else:
+				context = Context({'user_state': True})
+				return render(request, 'registration/register.html', context)
+		else:
+			context = Context({'password_state': True})
+			return render(request, 'registration/register.html', context)
 
 class HomeView(TemplateView):
 	template_name = 'home.html'

@@ -14,6 +14,11 @@ class Problem(models.Model):
 	right_answer = models.CharField(max_length=50, null=True)
 	submits = models.IntegerField(blank=True, null=True)
 	corrects = models.IntegerField(blank=True, null=True)
+	tags = models.CharField(max_length=100, null=True, blank=True)
+	importance = models.PositiveSmallIntegerField(null=True)
+	difficulty = models.PositiveSmallIntegerField(null=True)
+	score = models.IntegerField(null=True)
+	downfile = models.FileField(null=True, blank=True)
 	content = models.TextField(null=True, blank=True)
 
 	def __str__(self):

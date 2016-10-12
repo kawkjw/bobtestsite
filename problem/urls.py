@@ -8,6 +8,7 @@ from problem.views import problem_view
 from problem.views import problem_write
 from problem.views import problem_write_done
 from problem.views import problem_answercheck
+from problem.views import problem_download
 
 urlpatterns = [
 	url(r'^1/', artifact1, name='artifact1'),
@@ -19,4 +20,5 @@ urlpatterns = [
 	url(r'^write/$', problem_write, name='problem_write'),
 	url(r'^write_done/$', problem_write_done, name='problem_write_done'),
 	url(r'^answer_check/$', problem_answercheck, name='problem_answercheck'),
+	url(r'^download/$', problem_download, name='problem_download'),
 ]

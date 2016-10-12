@@ -23,6 +23,18 @@
 				return;
 			}
 
+			if(!$('input[name=score]').val()) {
+				alert('Input score.');
+				$('input[name=score]').focus();
+				return;
+			}
+
+			if(!$('input[name=tags]').val()) {
+				alert('Input tags.');
+				$('input[name=tags]').focus();
+				return;
+			}
+
 			if(!$('input[name=right_answer]').val()) {
 				alert('Input right answer.');
 				$('input[name=right_answer]').focus();
@@ -42,13 +54,17 @@
 			$('select[name=artifact] option:eq(0)').prop("selected", true);
 			$('input[name=title]').val("");
 			$('input[name=level]').val("");
+			$('input[name=score]').val("");
+			$('input[name=tags]').val("");
+			$('select[name=importance] option:eq(0)').prop("selected", true);
+			$('select[name=difficulty] option:eq(0)').prop("selected", true);
 			$('input[name=right_answer]').val("");
 			$('textarea[name=content]').val("");
 		});
 	});	
 </script>
 <div class="problem-content col-md-10">
-	<form id="write_problem" class="form-horizontal" method="POST" action="{% url 'problem_write_done' %}">{% csrf_token %}
+	<form id="write_problem" class="form-horizontal" method="POST" action="{% url 'problem_write_done' %}" enctype="multipart/form-data">{% csrf_token %}
 		<div class="form-group">
 			<label for="artifact" class="col-md-2 control-label">Artifact</label>
 			<div class="col-md-10">
@@ -75,14 +91,48 @@
 		</div>
 		<div class="form-group">
 			<label for="id_level" class="col-md-2 control-label">Level</label>
-			<div class="col-md-10">
+			<div class="col-md-4">
 				<input type="text" id="id_level" class="form-control" name="level" placeholder="Level">
+			</div>
+			<label for="id_score" class="col-md-2 control-label">Score</label>
+			<div class="col-md-4">
+				<input type="text" id="id_score" class="form-control" name="score" placeholder="Score">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="id_tags" class="col-md-2 control-label">Tags</label>
+			<div class="col-md-10">
+				<input type="text" id="id_tags" class="form-control" name="tags" placeholder="Tags">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="id_importance" class="col-md-2 control-label">Importance</label>
+			<div class="col-md-4">
+				<select name="importance" class="form-control">
+					<option value="2">High</option>
+					<option value="1">Middle</option>
+					<option value="0">Low</option>
+				</select>
+			</div>
+			<label for="id_difficulty" class="col-md-2 control-label">Difficulty</label>
+			<div class="col-md-4">
+				<select name="difficulty" class="form-control">
+					<option value="2">High</option>
+					<option value="1">Middle</option>
+					<option value="0">Low</option>
+				</select>
 			</div>
 		</div>
 		<div class="form-group">
 			<label for="id_right_answer" class="col-md-2 control-label">Right Answer</label>
 			<div class="col-md-10">
 				<input type="text" id="id_right_answer" class="form-control" name="right_answer" placeholder="Right Answer">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="id_file" class="col-md-2 control-label">Upload File</label>
+			<div class="col-md-10">
+				<input type="file" id="id_file" class="form-control" name="uploadfile">
 			</div>
 		</div>
 		<div class="form-group">

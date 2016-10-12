@@ -19,7 +19,7 @@ from django.contrib import admin
 from testsite.views import HomeView
 from testsite.views import UserCreateView, UserCreateDoneTV
 
-from testsite.views import user_login, login_check
+from testsite.views import user_login, login_check, register_page, register_done
 from testsite.views import intro, documents, problems, community, mypage
 
 urlpatterns = [
@@ -27,11 +27,11 @@ urlpatterns = [
 
 	url(r'^login/$', user_login, name='user_login'),
 	url(r'^login_check/$', login_check, name='login_check'),
+	url(r'^register/$', register_page, name='register_page'),
+	url(r'^register/done/$', register_done, name='register_done'),
 
 	url(r'^accounts/', include('django.contrib.auth.urls')),
-	url(r'^accounts/register/$', UserCreateView.as_view(), name='register'),
-	url(r'^accounts/register/done/$', UserCreateDoneTV.as_view(), name='register_done'),
-
+	
 	url(r'^$', HomeView.as_view(), name='home'),
 
 	url(r'^intro/$', intro, name='intro'),

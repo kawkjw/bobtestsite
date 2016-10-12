@@ -27,7 +27,7 @@
 						$(location).attr("href", "{% url 'user_login' %}");
 					});
 					$('#register').click(function(e) {
-						$(location).attr("href", "{% url 'register' %}");
+						$(location).attr("href", "{% url 'register_page' %}");
 					});
 				{% endif %}
 			});
@@ -56,7 +56,7 @@
 							<li class="active"><a href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a></li>
 							<li><a href="{% url 'intro' %}">Introduction</a></li>
 							<li><a href="{% url 'documents' %}">Documents</a></li>
-							<li><a href="{% url 'artifact1' %}">Problems</a></li>
+							<li><a href="{% url 'artifact1' %}?orderby=title">Problems</a></li>
 							<li><a href="{% url 'noticelist' %}?page=1">Community</a></li>
 						</ul>
 						<div class="navbar-right">

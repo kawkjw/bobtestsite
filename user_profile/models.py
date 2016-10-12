@@ -11,6 +11,9 @@ from django.contrib.auth.models import User
 class UserProfile(models.Model):
 	user = models.OneToOneField(settings.AUTH_USER_MODEL, primary_key=True)
 	level = models.PositiveSmallIntegerField(null=True)
+	last_submit = models.DateTimeField(null=True, blank=True)
+	score = models.IntegerField(null=True, blank=True)
+	right_problems = models.CharField(max_length=200, blank=True)
 
 def assure_user_profile_exists(pk):
 	user = User.objects.get(pk=pk)

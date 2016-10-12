@@ -52,27 +52,58 @@
 <div class="problem-content col-md-10">
 	<table class="table table-bordered">
 		<tr>
-			<td class="col-md-2">Title</td>
-			<td>{{ problem.title }}</td>
+			<td class="col-md-2 index">Title</td>
+			<td colspan="5">{{ problem.title }}</td>
 		</tr>
 		<tr>
-			<td>Level</td>
-			<td>level{{ problem.level }}</td>
+			<td class="index">Level</td>
+			<td colspan="5">level{{ problem.level }}</td>
 		</tr>
 		<tr>
-			<td>Pass/Submits</td>
-			<td>{{ problem.corrects|getstats:problem.submits }} ({{ problem.corrects }}/{{ problem.submits }})</td>
+			<td class="col-md-2 index">Pass/Submits</td>
+			<td class="col-md-2">{{ problem.corrects|getstats:problem.submits }} ({{ problem.corrects }}/{{ problem.submits }})</td>
+			<td class="col-md-2 index">Importance</td>
+			{% if problem.importance == 0 %}
+				<td class="col-md-2">Low</td>
+			{% elif problem.importance == 1 %}
+				<td class="col-md-2">Middle</td>
+			{% else %}
+				<td class="col-md-2">High</td>
+			{% endif %}
+			<td class="col-md-2 index">Difficulty</td>
+			{% if problem.difficulty == 0 %}
+				<td class="col-md-2">Low</td>
+			{% elif problem.difficulty == 1 %}
+				<td class="col-md-2">Middle</td>
+			{% else %}
+				<td class="col-md-2">High</td>
+			{% endif %}
 		</tr>
 		<tr>
-			<td>Content</td>
-			<td>{{ problem.content|linebreaks }}</td>
+			<td class="index">Tags</td>
+			{% for problem_tag in problem_tags %}
+				<td>{{ problem_tag }}</td>
+			{% endfor %}
+			{% if blank != 0 %}
+				<td colspan="{{ blank }}"></td>
+			{% endif %}
+		</tr>
+		<tr>
+			<td class="index">Download File</td>
+			<td colspan="2"><a href="{% url 'problem_download' %}?pnum={{ problem.num }}">{{ problem.downfile }}</a></td>
+			<td class="index">Score</td>
+			<td colspan="2">{{ problem.score }}</td>
+		</tr>
+		<tr>
+			<td class="index">Content</td>
+			<td colspan="5">{{ problem.content|linebreaks }}</td>
 		</tr>
 	</table>
 	<form id="input_answer" class="form-horizontal" method="POST" action="{% url 'problem_answercheck' %}?pnum={{ problem.num }}">{% csrf_token %}
 		<div class="form-group">
 			<label for="id_answer" class="col-md-2 control-label">Answer</label>
 			<div class="col-md-8">
-				<input type="text" id="id_answer" class="form-control" name="answer" placeholder="Answer">
+				<input type="text" id="id_answer" class="form-control" name="answer" {% if state %}placeholder="Already Solved | Answer : {{ problem.right_answer }}"{% else %}placeholder="Answer"{% endif %} {% if state %}disabled{% endif %}>
 			</div>
 			<div class="col-md-2">
 				<input type="button" id="id_submit" class="btn btn-default" value="Submit">

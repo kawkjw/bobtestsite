@@ -52,6 +52,18 @@ div.form-group.col-md-4 {
 	padding-right: 0px;
 }
 
- td.col-md-8 {
+td.col-md-8 {
 	padding-right: 0px;
+}
+
+.index {
+	font-weight: bold;
+}
+
+.blue-back {
+	background-color: #e6f0ff;
+}
+
+.glyphicon {
+	line-height: 1.3;
 }
