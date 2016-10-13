@@ -12,5 +12,5 @@ class Notice(models.Model):
 	hits = models.IntegerField(blank=True)
 	content = models.TextField(null=True, blank=True)
 
-	def __str__(self):
+	def __unicode__(self):
 		return self.title

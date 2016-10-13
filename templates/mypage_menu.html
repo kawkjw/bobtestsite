@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('nav .active').toggleClass("active");
+	});
+</script>
+<div class="col-md-12">
+	<div class="menu col-md-2">
+		<ul id="mypage-menu" class="nav nav-pills nav-stacked">
+			<li class="active"><a href="{% url 'rank_page' %}">Rank</a></li>
+			<li><a href="{% url 'password_change' %}">Password Change</a></li>
+		</ul>
+	</div>
+
+	{% block mypage_content %}
+	{% endblock mypage_content %}
+</div>
+{% endblock content %}

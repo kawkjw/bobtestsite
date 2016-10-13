@@ -3,7 +3,6 @@
 {% block content %}
 <script type="text/javascript">
 	$(document).ready(function() {
-		$('nav .active').toggleClass("active");
 		$('nav ul li:eq(3)').toggleClass("active");
 	{% if request.user.is_staff %}	
 		$('#addbutton').click(function() {
@@ -15,11 +14,12 @@
 <div class="col-md-12">
 <div class="menu col-md-2">
 	<ul id="problem-menu" class="nav nav-pills nav-stacked">
-		<li class="active"><a href="{% url 'artifact1' %}?orderby=title">Artifact 1</a></li>
+		<li><a href="{% url 'artifact1' %}?orderby=title">Artifact 1</a></li>
 		<li><a href="{% url 'artifact2' %}?orderby=title">Artifact 2</a></li>
 		<li><a href="{% url 'artifact3' %}?orderby=title">Artifact 3</a></li>
 		<li><a href="{% url 'artifact4' %}?orderby=title">Artifact 4</a></li>
 		<li><a href="{% url 'artifact5' %}?orderby=title">Artifact 5</a></li>
+		<li><a href="{% url 'artifact6' %}?orderby=title">Artifact 6</a></li>
 	</ul>
 </div>
 

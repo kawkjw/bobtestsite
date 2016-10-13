@@ -11,7 +11,7 @@ class Problem(models.Model):
 	author = models.ForeignKey('auth.User')
 	created_date = models.DateField(blank=True)
 	level = models.PositiveSmallIntegerField(null=True)
-	right_answer = models.CharField(max_length=50, null=True)
+	right_answer = models.CharField(max_length=100, null=True)
 	submits = models.IntegerField(blank=True, null=True)
 	corrects = models.IntegerField(blank=True, null=True)
 	tags = models.CharField(max_length=100, null=True, blank=True)
@@ -21,14 +21,16 @@ class Problem(models.Model):
 	downfile = models.FileField(null=True, blank=True)
 	content = models.TextField(null=True, blank=True)
 
-	def __str__(self):
+	def __unicode__(self):
 		return self.title
 
 class Answerlog(models.Model):
 	num = models.AutoField(primary_key=True)
 	submitter = models.ForeignKey('auth.User')
-	submit_answer = models.CharField(max_length=50, null=True)
+	problem_num = models.IntegerField(null=True)
+	problem_title = models.CharField(max_length=50, null=True)
+	submit_answer = models.CharField(max_length=100, null=True)
 	submit_date = models.DateTimeField(auto_now_add=True)
 
-	def __str__(self):
+	def __unicode__(self):
 		return self.submit_answer

@@ -30,6 +30,8 @@
 							artifact 4
 							{% elif problem.artifact == 5 %}
 							artifact 5
+							{% elif problem.artifact == 6 %}
+							artifact 6
 							{% endif %}
 							</td>
 							<td class="problem_center">{{ problem.corrects|getstats:problem.submits }} ({{ problem.corrects }}/{{ problem.submits }})</td>

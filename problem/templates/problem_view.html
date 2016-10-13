@@ -15,6 +15,8 @@
 			$('.nav-pills li:eq(3)').toggleClass("active");
 		{% elif problem.artifact == 5 %}
 			$('.nav-pills li:eq(4)').toggleClass("active");
+		{% elif problem.artifact == 6 %}
+			$('.nav-pills li:eq(5)').toggleClass("active");
 		{% endif %}
 
 		$('#id_submit').click(function() {
@@ -45,6 +47,8 @@
 				$(location).attr('href', "{% url 'artifact4' %}");
 			{% elif problem.artifact == 5 %}
 				$(location).attr('href', "{% url 'artifact5' %}");
+			{% elif problem.artifact == 6 %}
+				$(location).attr('href', "{% url 'artifact6' %}");
 			{% endif %}
 		}
 	{% endif %}
@@ -103,7 +107,7 @@
 		<div class="form-group">
 			<label for="id_answer" class="col-md-2 control-label">Answer</label>
 			<div class="col-md-8">
-				<input type="text" id="id_answer" class="form-control" name="answer" {% if state %}placeholder="Already Solved | Answer : {{ problem.right_answer }}"{% else %}placeholder="Answer"{% endif %} {% if state %}disabled{% endif %}>
+				<input type="text" id="id_answer" class="form-control" name="answer" {% if state %}placeholder="Already Solved"{% else %}placeholder="Answer"{% endif %} {% if state %}disabled{% endif %}>
 			</div>
 			<div class="col-md-2">
 				<input type="button" id="id_submit" class="btn btn-default" value="Submit">

@@ -8,6 +8,9 @@
 	}
 
 	$(document).ready(function() {
+		$('.nav-pills li.active').toggleClass("active");
+		$('.nav-pills li:eq(0)').toggleClass("active");
+
 		if(get('page') == 1)
 			$('.previous-page').addClass("disabled");
 		else if(get('page') >= {{ last_page }})

@@ -15,22 +15,27 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from django.contrib.auth.views import logout
 
 from testsite.views import HomeView
 from testsite.views import UserCreateView, UserCreateDoneTV
 
 from testsite.views import user_login, login_check, register_page, register_done
-from testsite.views import intro, documents, problems, community, mypage
+from testsite.views import my_password_change, my_password_change_done
+from testsite.views import intro, documents, problems, community, rank_page
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
 
 	url(r'^login/$', user_login, name='user_login'),
+	url(r'^logout/$', logout, name='logout'),
 	url(r'^login_check/$', login_check, name='login_check'),
 	url(r'^register/$', register_page, name='register_page'),
 	url(r'^register/done/$', register_done, name='register_done'),
+	url(r'^mypage/password_change/$', my_password_change, name='password_change'),
+	url(r'^mypage/password_change/done/$', my_password_change_done, name='password_change_done'),
 
-	url(r'^accounts/', include('django.contrib.auth.urls')),
+	#url(r'^accounts/', include('django.contrib.auth.urls')),
 	
 	url(r'^$', HomeView.as_view(), name='home'),
 
@@ -40,5 +45,5 @@ urlpatterns = [
 	url(r'^problems/', include('problem.urls')),
 	# url(r'^community/$', community, name='community'),
 	url(r'^community/', include('community.urls')),
-	url(r'^mypage/$', mypage, name='mypage'),
+	url(r'^mypage/rank/$', rank_page, name='rank_page'),
 ]

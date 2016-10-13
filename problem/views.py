@@ -80,12 +80,13 @@ def problem_write_done(request):
 def problem_download(request):
 	problem_num = request.GET['pnum']
 	problem = Problem.objects.get(num=problem_num)
-	fp = open('/home/jinwoo/testsite/media/'+str(problem.downfile), 'r')
+	BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+	fp = open(os.path.join(BASE_DIR, 'media')+'/'+str(problem.downfile), 'r')
 	response = HttpResponse(fp, content_type='application/force-download')
 	response['Content-Disposition'] = 'attachment; filename="%s"' % str(problem.downfile)
 	return response
 
-@ratelimit(key='ip', rate='2/m', block=True)
+@ratelimit(key='ip', rate='1/30s', block=True)
 def problem_answercheck(request):
 	try:
 		problem_num = request.GET['pnum']
@@ -97,8 +98,16 @@ def problem_answercheck(request):
 	if answer is None:
 		return HttpResponseRedirect('/')
 
-	answerlog = Answerlog(submitter_id = request.user.id, submit_answer = answer)
+	rights = UserProfile.objects.get(user_id=request.user.id).right_problems.split(',')
+
+	for i in range(0, len(rights) - 1):
+		if problem.num == int(rights[i]):
+			context = Context({'problem_num': problem.num})
+			return render(request, 'problem_solved.html', context)
+
+	answerlog = Answerlog(submitter_id = request.user.id, submit_answer = answer, problem_num = problem.num, problem_title = problem.title)
 	answerlog.save()
+	UserProfile.objects.filter(user_id=request.user.id).update(last_submit = datetime.now())
 
 	Problem.objects.filter(num=problem_num).update(submits = problem.submits + 1)
 	if problem.right_answer.lower() == answer.lower():
@@ -137,33 +146,116 @@ def artifact1(request):
 	return render(request, 'artifact1/list.html', context)
 
 def artifact2(request):
-	problems_bytitle = Problem.objects.filter(artifact="2").order_by("title")
-	problems_bylevel = Problem.objects.filter(artifact="2").order_by("level")
-	problems_bystats = Problem.objects.raw('select * from problem_problem where artifact=1 order by CAST(corrects AS float) / (case when submits=0 then CAST(1 AS float) else CAST(submits AS float) end)')
+	orderby = request.GET.get('orderby')
+	if orderby is None:
+		orderby = 'title'
+
+	if str(orderby) == "title":
+		problems = Problem.objects.filter(artifact="2").order_by("title")
+	elif str(orderby) == "rtitle":
+		problems = Problem.objects.filter(artifact="2").order_by("-title")
+	elif str(orderby) == "level":
+		problems = Problem.objects.filter(artifact="2").order_by("level")
+	elif str(orderby) == "rlevel":
+		problems = Problem.objects.filter(artifact="2").order_by("-level")
+	elif str(orderby) == "stats":
+		problems = Problem.objects.raw('select * from problem_problem where artifact=2 order by CAST(corrects AS float) / (case when submits=0 then CAST(1 AS float) else CAST(submits AS float) end)')
+	elif str(orderby) == "rstats":
+		problems = Problem.objects.raw('select * from problem_problem where artifact=2 order by (CAST(corrects AS float) / (case when submits=0 then CAST(1 AS float) else CAST(submits AS float) end)) DESC')
+	else:
+		problems = Problem.objects.filter(artifact="2").order_by("title")
 	tcounter = Counter()
-	context = Context({'problems_bytitle': problems_bytitle, 'problems_bylevel': problems_bylevel, 'problems_bystats': problems_bystats, 'counter': tcounter, 'request': request})
+	context = Context({'problems': problems, 'counter': tcounter, 'request': request})
 	return render(request, 'artifact2/list.html', context)
 
 def artifact3(request):
-	problems_bytitle = Problem.objects.filter(artifact="3").order_by("title")
-	problems_bylevel = Problem.objects.filter(artifact="3").order_by("level")
-	problems_bystats = Problem.objects.raw('select * from problem_problem where artifact=1 order by CAST(corrects AS float) / (case when submits=0 then CAST(1 AS float) else CAST(submits AS float) end)')
+	orderby = request.GET.get('orderby')
+	if orderby is None:
+		orderby = 'title'
+
+	if str(orderby) == "title":
+		problems = Problem.objects.filter(artifact="3").order_by("title")
+	elif str(orderby) == "rtitle":
+		problems = Problem.objects.filter(artifact="3").order_by("-title")
+	elif str(orderby) == "level":
+		problems = Problem.objects.filter(artifact="3").order_by("level")
+	elif str(orderby) == "rlevel":
+		problems = Problem.objects.filter(artifact="3").order_by("-level")
+	elif str(orderby) == "stats":
+		problems = Problem.objects.raw('select * from problem_problem where artifact=3 order by CAST(corrects AS float) / (case when submits=0 then CAST(1 AS float) else CAST(submits AS float) end)')
+	elif str(orderby) == "rstats":
+		problems = Problem.objects.raw('select * from problem_problem where artifact=3 order by (CAST(corrects AS float) / (case when submits=0 then CAST(1 AS float) else CAST(submits AS float) end)) DESC')
+	else:
+		problems = Problem.objects.filter(artifact="3").order_by("title")
 	tcounter = Counter()
-	context = Context({'problems_bytitle': problems_bytitle, 'problems_bylevel': problems_bylevel, 'problems_bystats': problems_bystats, 'counter': tcounter, 'request': request})
+	context = Context({'problems': problems, 'counter': tcounter, 'request': request})
 	return render(request, 'artifact3/list.html', context)
 
 def artifact4(request):
-	problems_bytitle = Problem.objects.filter(artifact="4").order_by("title")
-	problems_bylevel = Problem.objects.filter(artifact="4").order_by("level")
-	problems_bystats = Problem.objects.raw('select * from problem_problem where artifact=1 order by CAST(corrects AS float) / (case when submits=0 then CAST(1 AS float) else CAST(submits AS float) end)')
+	orderby = request.GET.get('orderby')
+	if orderby is None:
+		orderby = 'title'
+
+	if str(orderby) == "title":
+		problems = Problem.objects.filter(artifact="4").order_by("title")
+	elif str(orderby) == "rtitle":
+		problems = Problem.objects.filter(artifact="4").order_by("-title")
+	elif str(orderby) == "level":
+		problems = Problem.objects.filter(artifact="4").order_by("level")
+	elif str(orderby) == "rlevel":
+		problems = Problem.objects.filter(artifact="4").order_by("-level")
+	elif str(orderby) == "stats":
+		problems = Problem.objects.raw('select * from problem_problem where artifact=4 order by CAST(corrects AS float) / (case when submits=0 then CAST(1 AS float) else CAST(submits AS float) end)')
+	elif str(orderby) == "rstats":
+		problems = Problem.objects.raw('select * from problem_problem where artifact=4 order by (CAST(corrects AS float) / (case when submits=0 then CAST(1 AS float) else CAST(submits AS float) end)) DESC')
+	else:
+		problems = Problem.objects.filter(artifact="4").order_by("title")
 	tcounter = Counter()
-	context = Context({'problems_bytitle': problems_bytitle, 'problems_bylevel': problems_bylevel, 'problems_bystats': problems_bystats, 'counter': tcounter, 'request': request})
+	context = Context({'problems': problems, 'counter': tcounter, 'request': request})
 	return render(request, 'artifact4/list.html', context)
 
 def artifact5(request):
-	problems_bytitle = Problem.objects.filter(artifact="5").order_by("title")
-	problems_bylevel = Problem.objects.filter(artifact="5").order_by("level")
-	problems_bystats = Problem.objects.raw('select * from problem_problem where artifact=1 order by CAST(corrects AS float) / (case when submits=0 then CAST(1 AS float) else CAST(submits AS float) end)')
+	orderby = request.GET.get('orderby')
+	if orderby is None:
+		orderby = 'title'
+
+	if str(orderby) == "title":
+		problems = Problem.objects.filter(artifact="5").order_by("title")
+	elif str(orderby) == "rtitle":
+		problems = Problem.objects.filter(artifact="5").order_by("-title")
+	elif str(orderby) == "level":
+		problems = Problem.objects.filter(artifact="5").order_by("level")
+	elif str(orderby) == "rlevel":
+		problems = Problem.objects.filter(artifact="5").order_by("-level")
+	elif str(orderby) == "stats":
+		problems = Problem.objects.raw('select * from problem_problem where artifact=5 order by CAST(corrects AS float) / (case when submits=0 then CAST(1 AS float) else CAST(submits AS float) end)')
+	elif str(orderby) == "rstats":
+		problems = Problem.objects.raw('select * from problem_problem where artifact=5 order by (CAST(corrects AS float) / (case when submits=0 then CAST(1 AS float) else CAST(submits AS float) end)) DESC')
+	else:
+		problems = Problem.objects.filter(artifact="5").order_by("title")
 	tcounter = Counter()
-	context = Context({'problems_bytitle': problems_bytitle, 'problems_bylevel': problems_bylevel, 'problems_bystats': problems_bystats, 'counter': tcounter, 'request': request})
+	context = Context({'problems': problems, 'counter': tcounter, 'request': request})
 	return render(request, 'artifact5/list.html', context)
+
+def artifact6(request):
+	orderby = request.GET.get('orderby')
+	if orderby is None:
+		orderby = 'title'
+
+	if str(orderby) == "title":
+		problems = Problem.objects.filter(artifact="6").order_by("title")
+	elif str(orderby) == "rtitle":
+		problems = Problem.objects.filter(artifact="6").order_by("-title")
+	elif str(orderby) == "level":
+		problems = Problem.objects.filter(artifact="6").order_by("level")
+	elif str(orderby) == "rlevel":
+		problems = Problem.objects.filter(artifact="6").order_by("-level")
+	elif str(orderby) == "stats":
+		problems = Problem.objects.raw('select * from problem_problem where artifact=6 order by CAST(corrects AS float) / (case when submits=0 then CAST(1 AS float) else CAST(submits AS float) end)')
+	elif str(orderby) == "rstats":
+		problems = Problem.objects.raw('select * from problem_problem where artifact=6 order by (CAST(corrects AS float) / (case when submits=0 then CAST(1 AS float) else CAST(submits AS float) end)) DESC')
+	else:
+		problems = Problem.objects.filter(artifact="6").order_by("title")
+	tcounter = Counter()
+	context = Context({'problems': problems, 'counter': tcounter, 'request': request})
+	return render(request, 'artifact6/list.html', context)

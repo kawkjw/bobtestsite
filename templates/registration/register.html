@@ -4,14 +4,14 @@
 <script type="text/javascript">
 	{% if user_state %}
 		alert('Existed Username');
-	{% elif password_state %}
+	{% elif different_password %}
 		alert('Different Password');
 	{% elif name_state %}
 		alert('Username is not composed to only number');
 	{% elif email_state %}
 		alert('Invalid email');
 	{% elif password_state %}
-		alert('Password is similar to username');
+		alert('Password must not be similar to username');
 	{% elif passwordlen_state %}
 		alert('Password length is more than 8');
 	{% elif passwordnum_state %}

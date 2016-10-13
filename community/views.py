@@ -11,12 +11,16 @@ from django.http import HttpResponseRedirect
 
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 
+from types import *
+
 def Noticelist(request):
 	#notice_list = Notice.objects.order_by('-num')
 	page_data = Paginator(Notice.objects.order_by('-num'), 3)
 	page = request.GET['page']
 
 	if page is None:
+		page = 1
+	if type(page) == StringType:
 		page = 1
 
 	try:

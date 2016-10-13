@@ -9,7 +9,6 @@
 	}
 
 	$(document).ready(function() {
-		$('.nav-pills li.active').toggleClass("active");
 		$('.nav-pills li:eq(0)').toggleClass("active");
 
 		var order = get('orderby');
@@ -19,6 +18,18 @@
 
 		if(order.match("title")) {
 			$('.orderT').addClass("blue-back");
+			$('.orderL').mouseenter(function() {
+				$('.orderL').css("background-color", "#e6f0ff");
+			});
+			$('.orderL').mouseleave(function() {
+				$('.orderL').css("background-color", "white");
+			});
+			$('.orderS').mouseenter(function() {
+				$('.orderS').css("background-color", "#e6f0ff");
+			});
+			$('.orderS').mouseleave(function() {
+				$('.orderS').css("background-color", "white");
+			});
 			if(order == "rtitle") {
 				$('.orderT span').removeClass("glyphicon-chevron-up");
 				$('.orderT span').addClass("glyphicon-chevron-down");
@@ -27,6 +38,18 @@
 
 		else if(order.match("level")) {
 			$('.orderL').addClass("blue-back");
+			$('.orderT').mouseenter(function() {
+				$('.orderT').css("background-color", "#e6f0ff");
+			});
+			$('.orderT').mouseleave(function() {
+				$('.orderT').css("background-color", "white");
+			});
+			$('.orderS').mouseenter(function() {
+				$('.orderS').css("background-color", "#e6f0ff");
+			});
+			$('.orderS').mouseleave(function() {
+				$('.orderS').css("background-color", "white");
+			});
 			if(order == "rlevel") {
 				$('.orderL span').removeClass("glyphicon-chevron-up");
 				$('.orderL span').addClass("glyphicon-chevron-down");
@@ -35,6 +58,18 @@
 
 		else if(order.match("stats")) {
 			$('.orderS').addClass("blue-back");
+			$('.orderL').mouseenter(function() {
+				$('.orderL').css("background-color", "#e6f0ff");
+			});
+			$('.orderL').mouseleave(function() {
+				$('.orderL').css("background-color", "white");
+			});
+			$('.orderT').mouseenter(function() {
+				$('.orderT').css("background-color", "#e6f0ff");
+			});
+			$('.orderT').mouseleave(function() {
+				$('.orderT').css("background-color", "white");
+			});
 			if(order == "rstats") {
 				$('.orderS span').removeClass("glyphicon-chevron-up");
 				$('.orderS span').addClass("glyphicon-chevron-down");

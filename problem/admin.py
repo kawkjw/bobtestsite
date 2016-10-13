@@ -9,7 +9,7 @@ class ProblemAdmin(admin.ModelAdmin):
 	list_display = ('num', 'title', 'created_date', 'level', 'artifact')
 
 class AnswerlogAdmin(admin.ModelAdmin):
-	list_display = ('num', 'submit_answer', 'submitter', 'submit_date')
+	list_display = ('num', 'problem_num', 'problem_title', 'submit_answer', 'submitter', 'submit_date')
 
 admin.site.register(Problem, ProblemAdmin)
 admin.site.register(Answerlog, AnswerlogAdmin)

@@ -1,0 +1,38 @@
+{% extends "mypage_menu.html" %}
+
+{% block mypage_content %}
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.nav-pills li.active').toggleClass("active");
+		$('.nav-pills li:eq(0)').toggleClass("active");
+	});
+</script>
+<div class="mypage-content col-md-10">
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<td>Rank</td>
+				<td>Username</td>
+				<td>Score</td>
+			</tr>
+		</thead>
+		{{ rank.setzero|default_if_none:"" }}
+		<tbody>
+		{% for score in scores %}
+			{% if score.score >= 0 %}
+			<tr>
+				<td>{{ rank.count|add:"1" }}{% if rank.count == 0 %}st{% elif rank.count == 1 %}nd{% elif rank.count == 2 %}rd{% else %}th{% endif%}</td>
+				{% for rankuser in users %}
+					{% if score.user_id == rankuser.id %}
+						<td>{{ rankuser.username }}</td>
+					{% endif %}
+				{% endfor %}
+				<td>{{ score.score }}</td>
+				{{ rank.increment|default_if_none:"" }}
+			</tr>
+			{% endif %}
+		{% endfor %}
+		</tbody>
+	</table>
+</div>
+{% endblock mypage_content %}

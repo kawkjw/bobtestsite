@@ -61,3 +61,7 @@ body {
 #loginform {
 	margin-top: 20px;
 }
+
+#mypage-menu > li > a {
+	text-align: right;
+}
