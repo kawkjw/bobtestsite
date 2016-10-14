@@ -65,3 +65,7 @@ body {
 #mypage-menu > li > a {
 	text-align: right;
 }
+
+.center-text {
+	text-align: center;
+}

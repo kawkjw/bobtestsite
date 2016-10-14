@@ -9,7 +9,6 @@ from user_profile.forms import UserCreationForm
 from django.core.urlresolvers import reverse_lazy
 
 from django.http import HttpResponse, HttpResponseRedirect
-from django.utils.http import is_safe_url
 
 from django.template import Context
 from django.template.loader import get_template
@@ -19,21 +18,10 @@ from django.contrib.auth import authenticate, login, logout, update_session_auth
 from django.contrib.auth.models import User
 from user_profile.models import UserProfile
 
-from django.utils.http import is_safe_url
-
-class Counter:
-	def __init__(self):
-		self.count = 0
-	
-	def increment(self):
-		self.count += 1
-
-	def setzero(self):
-		self.count = 0
-
 def beenLimited(request, exception):
-	message = "A few too many tries now. Please try again after 30 seconds."
-	return HttpResponse(message)
+	problem_num = request.GET['pnum']
+	context = Context({'problem_num': problem_num})
+	return render(request, 'brute_forcing.html', context)
 
 def login_check(request):
 	return render(request, 'login_check.html')
@@ -135,12 +123,46 @@ def community(request):
 	#return HttpResponse(template.render(context))
 	return render(request, 'community.html', context)
 
+def set_rank():
+	users = UserProfile.objects.order_by('-score')
+	current_rank = 1
+	counter = 0
+	same = 1
+
+	for user in users:
+		if counter < 1:
+			UserProfile.objects.filter(user_id=user.user_id).update(rank = current_rank)
+		else:
+			if user.score == users[counter - 1].score:
+				UserProfile.objects.filter(user_id=user.user_id).update(rank = current_rank)
+				same += 1
+			else:
+				current_rank += same
+				if same != 1:
+					same = 1
+				UserProfile.objects.filter(user_id=user.user_id).update(rank = current_rank)
+		counter += 1
+
+@login_required(login_url='/login/')
+def mypage(request):
+	if not request.user.is_active:
+		return HttpResponseRedirect('/login/')
+	set_rank()
+	profile = UserProfile.objects.get(user_id=request.user.id)
+	lists = profile.right_problems.split(',')
+	right_problems = []
+	for i in range(0, len(lists) - 1):
+		right_problems.append(lists[i])
+	last_problem = len(right_problems)
+	context = Context({'profile': profile, 'right_problems': right_problems, 'last_problem': last_problem})
+	return render(request, 'mypage.html', context)
+
 @login_required(login_url='/login/')
 def rank_page(request):
-	scores = UserProfile.objects.order_by('-score')
-	users = User.objects.filter(is_staff=False)
-	rank = Counter()
-	context = Context({'scores': scores, 'users': users, 'rank': rank})
+	set_rank()
+	names = User.objects.filter(is_staff=False)
+	users = UserProfile.objects.order_by('rank')[0:10]
+	context = Context({'users': users, 'names': names})
 
 	return render(request, 'rank_page.html', context)
 

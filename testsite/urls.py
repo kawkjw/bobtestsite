@@ -22,7 +22,7 @@ from testsite.views import UserCreateView, UserCreateDoneTV
 
 from testsite.views import user_login, login_check, register_page, register_done
 from testsite.views import my_password_change, my_password_change_done
-from testsite.views import intro, documents, problems, community, rank_page
+from testsite.views import intro, documents, problems, community, mypage, rank_page
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -45,5 +45,6 @@ urlpatterns = [
 	url(r'^problems/', include('problem.urls')),
 	# url(r'^community/$', community, name='community'),
 	url(r'^community/', include('community.urls')),
+	url(r'^mypage/$', mypage, name='mypage'),
 	url(r'^mypage/rank/$', rank_page, name='rank_page'),
 ]

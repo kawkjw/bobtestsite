@@ -51,19 +51,11 @@ def problem_view(request):
 		current_user = request.user.id
 		user_level = UserProfile.objects.get(user_id=current_user).level
 		right_problems = UserProfile.objects.get(user_id=current_user).right_problems.split(',')
-		solve_user_list = []
-		if problem.solve_user is None or problem.solve_user == '':
-			solve_user_list.append("No one solved.")
-		else:
-			solve_users = problem.solve_user.split(',')
-			for i in range(0, len(solve_users) - 1):
-				solveuser = User.objects.get(id=solve_users[i])
-				solve_user_list.append(solveuser.username)
 		for i in range(0, len(right_problems) - 1):
 			if int(right_problems[i]) == problem.num:
 				state = True
 				break
-		context = Context({'problem': problem, 'test': request, 'user_level': user_level, 'state': state, 'problem_tags': problem_tags, 'blank': blank_number, 'solve_users': solve_user_list})
+		context = Context({'problem': problem, 'test': request, 'user_level': user_level, 'state': state, 'problem_tags': problem_tags, 'blank': blank_number})
 	else:
 		context = Context({'problem': problem, 'test': request, 'problem_tags': problem_tags, 'blank': blank_number})
 	return render(request, 'problem_view.html', context)
@@ -124,11 +116,7 @@ def problem_answercheck(request):
 	Problem.objects.filter(num=problem_num).update(submits = problem.submits + 1)
 	if problem.right_answer.lower() == answer.lower():
 		Problem.objects.filter(num=problem_num).update(corrects = problem.corrects + 1)
-		if not request.user.is_staff:
-			if problem.solve_user is None:
-				Problem.objects.filter(num=problem_num).update(solve_user = str(request.user.id) + ',')
-			else:
-				Problem.objects.filter(num=problem_num).update(solve_user = str(problem.solve_user) + str(request.user.id) + ',')
+		Problem.objects.filter(num=problem_num).update(solve_user = str(problem.solve_user) + str(request.user.id) + ',')
 		profile = UserProfile.objects.get(user_id=request.user.id)
 		UserProfile.objects.filter(user_id=request.user.id).update(right_problems = profile.right_problems + str(problem_num) +',')
 		if not request.user.is_staff:

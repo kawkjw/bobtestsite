@@ -17,7 +17,7 @@
 			$(document).ready(function() {
 				{% if user.is_active %}
 					$('#mypage').click(function(e) {
-						$(location).attr("href", "{% url 'rank_page' %}");
+						$(location).attr("href", "{% url 'mypage' %}");
 					});
 					$('#logout').click(function(e) {
 						$(location).attr("href", "{% url 'logout' %}");
@@ -36,8 +36,8 @@
 	<body class="container">
 		<div id="menu">
 			<div id="logo">
-				<img id="logo_img" src="{% static 'img/img.png' %}" alt="No image" />
-				<img id="logo_text" src="{% static 'img/text.png' %}" alt="No image" />
+				<a href="{% url 'home' %}"><img id="logo_img" src="{% static 'img/img.png' %}" alt="No image" /></a>
+				<a href="{% url 'home' %}"><img id="logo_text" src="{% static 'img/text.png' %}" alt="No image" /></a>
 			</div>
 			<nav class="navbar navbar-default">
 				<div class="container-fluid">

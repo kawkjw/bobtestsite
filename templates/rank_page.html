@@ -3,32 +3,29 @@
 {% block mypage_content %}
 <script type="text/javascript">
 	$(document).ready(function() {
-		$('.nav-pills li.active').toggleClass("active");
-		$('.nav-pills li:eq(0)').toggleClass("active");
+		$('.nav-pills li:eq(1)').toggleClass("active");
 	});
 </script>
 <div class="mypage-content col-md-10">
 	<table class="table table-bordered">
 		<thead>
 			<tr>
-				<td>Rank</td>
-				<td>Username</td>
-				<td>Score</td>
+				<td class="center-text">Rank</td>
+				<td class="center-text">Username</td>
+				<td class="center-text">Score</td>
 			</tr>
 		</thead>
-		{{ rank.setzero|default_if_none:"" }}
 		<tbody>
-		{% for score in scores %}
-			{% if score.score >= 0 %}
+		{% for user in users %}
+			{% if user.score >= 0 %}
 			<tr>
-				<td>{{ rank.count|add:"1" }}{% if rank.count == 0 %}st{% elif rank.count == 1 %}nd{% elif rank.count == 2 %}rd{% else %}th{% endif%}</td>
-				{% for rankuser in users %}
-					{% if score.user_id == rankuser.id %}
-						<td>{{ rankuser.username }}</td>
+				<td>{{ user.rank }}{% if user.rank == 1 %}st{% elif user.rank == 2 %}nd{% elif user.rank == 3 %}rd{% else %}th{% endif%}</td>
+				{% for name in names %}
+					{% if user.user_id == name.id %}
+						<td>{{ name.username }}</td>
 					{% endif %}
 				{% endfor %}
-				<td>{{ score.score }}</td>
-				{{ rank.increment|default_if_none:"" }}
+				<td>{{ user.score }}</td>
 			</tr>
 			{% endif %}
 		{% endfor %}

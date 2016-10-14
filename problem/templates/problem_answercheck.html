@@ -1,7 +1,7 @@
 <script type="text/javascript">
 	{% if state %}
 		alert('Correct!!');
-		location.href="{% url 'artifact1' %}";
+		location.href="{% url 'problem_view' %}?pnum={{ problem_num }}";
 	{% else %}
 		alert('Wrong Answer!!');
 		location.href="{% url 'problem_view' %}?pnum={{ problem_num }}";

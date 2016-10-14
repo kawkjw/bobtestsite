@@ -1,0 +1,34 @@
+{% extends 'mypage_menu.html' %}
+
+{% block mypage_content %}
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.nav-pills li:eq(0)').toggleClass("active");
+	});
+</script>
+<div class="mypage-content col-md-10">
+	<h1 style="margin-bottom: 20px;">My Information</h1>
+	<table class="table table-bordered">
+		<tr>
+			<td class="index col-md-2">Username</td>
+			<td class="col-md-4">{{ request.user.username }}</td>
+			<td class="index col-md-2">Email</td>
+			<td class="col-md-4">{{ request.user.email }}</td>
+		</tr>
+		<tr>
+			<td class="index">Score</td>
+			<td>{{ profile.score }}</td>
+			<td class="index">Rank</td>
+			<td>{{ profile.rank }}</td>
+		</tr>
+		<tr>
+			<td class="index">Solved Problems</td>
+			<td colspan="3">
+			{% for right_problem in right_problems %}
+			<a href="{% url 'problem_view' %}?pnum={{ right_problem }}">{{ right_problem }}{% if forloop.counter != last_problem %}</a> /{% endif %} 
+			{% endfor %}
+			</td>
+		</tr>
+	</table>
+</div>
+{% endblock mypage_content %}

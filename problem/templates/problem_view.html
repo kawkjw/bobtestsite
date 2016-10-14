@@ -114,5 +114,11 @@
 			</div>
 		</div>
 	</form>
+	<div class="center-block problem_center" style="width: 400px;">
+		<h3>[Solve Users]</h3>
+		{% for solve_user in solve_users %}
+			<p>{{ solve_user }}</p>
+		{% endfor %}
+	</div>
 </div>
 {% endblock problem_content %}
