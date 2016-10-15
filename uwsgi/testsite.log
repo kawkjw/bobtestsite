@@ -22321,3 +22321,620 @@ announcing my loyalty to the Emperor...
 [pid: 1618|app: 0|req: 32/32] 192.168.121.1 () {44 vars in 969 bytes} [Fri Oct 14 17:42:36 2016] GET /admin/community/notice/7/change/ => generated 7317 bytes in 49 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
 [pid: 1618|app: 0|req: 33/33] 192.168.121.1 () {42 vars in 834 bytes} [Fri Oct 14 17:42:36 2016] GET /admin/jsi18n/ => generated 8379 bytes in 30 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
 [pid: 1618|app: 0|req: 34/34] 192.168.121.1 () {44 vars in 926 bytes} [Fri Oct 14 17:42:44 2016] GET /admin/ => generated 7423 bytes in 34 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 35/35] 192.168.121.1 () {44 vars in 950 bytes} [Fri Oct 14 17:45:27 2016] GET /problems/view/?pnum=17 => generated 6380 bytes in 30 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 36/36] 192.168.121.1 () {44 vars in 955 bytes} [Fri Oct 14 17:46:24 2016] GET /problems/download/?pnum=17 => generated 15145711 bytes in 133 msecs (HTTP/1.1 200) 3 headers in 152 bytes (4 switches on core 0)
+[pid: 1618|app: 0|req: 37/37] 192.168.121.1 () {44 vars in 953 bytes} [Fri Oct 14 17:46:28 2016] GET /problems/6/?orderby=title => generated 9030 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 38/38] 192.168.121.1 () {44 vars in 956 bytes} [Fri Oct 14 17:46:53 2016] GET /problems/5/?orderby=title => generated 7560 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 39/39] 192.168.121.1 () {44 vars in 907 bytes} [Fri Oct 14 17:46:55 2016] GET / => generated 11647 bytes in 36 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 40/40] 192.168.121.1 () {44 vars in 882 bytes} [Fri Oct 14 17:50:23 2016] GET / => generated 11647 bytes in 50 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 41/41] 192.168.121.1 () {44 vars in 896 bytes} [Fri Oct 14 17:50:24 2016] GET /logout/ => generated 94 bytes in 18 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 42/42] 192.168.121.1 () {44 vars in 845 bytes} [Fri Oct 14 17:50:24 2016] GET / => generated 4092 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 43/43] 192.168.121.1 () {44 vars in 887 bytes} [Fri Oct 14 17:50:45 2016] GET /problems/1/?orderby=title => generated 7343 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 44/44] 192.168.121.1 () {44 vars in 912 bytes} [Fri Oct 14 17:50:47 2016] GET /problems/3/?orderby=title => generated 7087 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 45/45] 192.168.121.1 () {44 vars in 912 bytes} [Fri Oct 14 17:50:48 2016] GET /problems/4/?orderby=title => generated 7569 bytes in 17 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 46/46] 192.168.121.1 () {44 vars in 912 bytes} [Fri Oct 14 17:50:49 2016] GET /problems/5/?orderby=title => generated 7335 bytes in 17 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 47/47] 192.168.121.1 () {44 vars in 912 bytes} [Fri Oct 14 17:50:49 2016] GET /problems/6/?orderby=title => generated 8805 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 48/48] 192.168.121.1 () {44 vars in 920 bytes} [Fri Oct 14 17:51:15 2016] GET /community/notice/list/?page=1 => generated 5460 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 49/49] 192.168.121.1 () {44 vars in 879 bytes} [Fri Oct 14 17:51:30 2016] GET /login/ => generated 3670 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 50/50] 192.168.121.1 () {52 vars in 1039 bytes} [Fri Oct 14 17:51:33 2016] POST /login/ => generated 0 bytes in 45 msecs (HTTP/1.1 302) 6 headers in 347 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 51/51] 192.168.121.1 () {46 vars in 919 bytes} [Fri Oct 14 17:51:33 2016] GET / => generated 11647 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 52/52] 192.168.121.1 () {44 vars in 896 bytes} [Fri Oct 14 17:51:34 2016] GET /mypage/ => generated 4073 bytes in 38 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 53/53] 192.168.121.1 () {44 vars in 946 bytes} [Fri Oct 14 17:52:23 2016] GET /community/notice/list/?page=1 => generated 5698 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 54/54] 192.168.121.1 () {46 vars in 977 bytes} [Fri Oct 14 17:54:35 2016] GET /community/notice/list/?page=1 => generated 5701 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 55/55] 192.168.121.1 () {44 vars in 968 bytes} [Fri Oct 14 17:54:39 2016] GET /community/notice/view/?nnum=8 => generated 3593 bytes in 18 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 56/56] 192.168.121.1 () {44 vars in 960 bytes} [Fri Oct 14 17:54:45 2016] GET /problems/1/?orderby=title => generated 7568 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 57/57] 192.168.121.1 () {44 vars in 948 bytes} [Fri Oct 14 17:54:47 2016] GET /problems/view/?pnum=2 => generated 5579 bytes in 26 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 58/58] 192.168.121.1 () {44 vars in 960 bytes} [Fri Oct 14 17:54:50 2016] GET /problems/1/?orderby=title => generated 7568 bytes in 76 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 59/59] 192.168.121.1 () {44 vars in 907 bytes} [Fri Oct 14 17:55:07 2016] GET / => generated 11647 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 60/60] 192.168.121.1 () {44 vars in 896 bytes} [Fri Oct 14 17:55:44 2016] GET /mypage/ => generated 4073 bytes in 38 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 61/61] 192.168.121.1 () {44 vars in 913 bytes} [Fri Oct 14 17:55:46 2016] GET /mypage/rank/ => generated 4232 bytes in 38 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 62/62] 192.168.121.1 () {44 vars in 940 bytes} [Fri Oct 14 17:55:47 2016] GET /mypage/password_change/ => generated 5248 bytes in 16 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 63/63] 192.168.121.1 () {46 vars in 971 bytes} [Fri Oct 14 17:56:17 2016] GET /mypage/password_change/ => generated 5263 bytes in 20 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 64/64] 192.168.121.1 () {44 vars in 929 bytes} [Fri Oct 14 17:56:24 2016] GET /mypage/rank/ => generated 4232 bytes in 54 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 65/65] 192.168.121.1 () {44 vars in 908 bytes} [Fri Oct 14 17:56:25 2016] GET /mypage/ => generated 4073 bytes in 39 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 66/66] 192.168.121.1 () {44 vars in 938 bytes} [Fri Oct 14 17:56:28 2016] GET /problems/1/?orderby=title => generated 7568 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 67/67] 192.168.121.1 () {44 vars in 950 bytes} [Fri Oct 14 17:56:30 2016] GET /problems/view/?pnum=11 => generated 5579 bytes in 28 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 68/68] 192.168.121.1 () {44 vars in 937 bytes} [Fri Oct 14 17:56:34 2016] GET /problems/write/ => generated 8485 bytes in 21 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 69/69] 192.168.121.1 () {44 vars in 946 bytes} [Fri Oct 14 17:56:48 2016] GET /problems/6/?orderby=title => generated 9030 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 70/70] 192.168.121.1 () {44 vars in 958 bytes} [Fri Oct 14 17:56:53 2016] GET /problems/6/?orderby=rtitle => generated 9030 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 71/71] 192.168.121.1 () {44 vars in 957 bytes} [Fri Oct 14 17:56:54 2016] GET /problems/6/?orderby=title => generated 9030 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 72/72] 192.168.121.1 () {44 vars in 956 bytes} [Fri Oct 14 17:56:55 2016] GET /problems/6/?orderby=level => generated 9030 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 73/73] 192.168.121.1 () {44 vars in 956 bytes} [Fri Oct 14 17:57:01 2016] GET /problems/6/?orderby=title => generated 9030 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 74/74] 192.168.121.1 () {44 vars in 956 bytes} [Fri Oct 14 17:57:02 2016] GET /problems/6/?orderby=level => generated 9030 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 75/75] 192.168.121.1 () {44 vars in 956 bytes} [Fri Oct 14 17:57:04 2016] GET /problems/6/?orderby=title => generated 9030 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 76/76] 192.168.121.1 () {44 vars in 956 bytes} [Fri Oct 14 17:57:04 2016] GET /problems/6/?orderby=level => generated 9030 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 77/77] 192.168.121.1 () {44 vars in 958 bytes} [Fri Oct 14 17:57:11 2016] GET /problems/6/?orderby=rlevel => generated 9030 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 78/78] 192.168.121.1 () {44 vars in 957 bytes} [Fri Oct 14 17:57:12 2016] GET /problems/6/?orderby=level => generated 9030 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 79/79] 192.168.121.1 () {44 vars in 958 bytes} [Fri Oct 14 17:57:13 2016] GET /problems/6/?orderby=rlevel => generated 9030 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 80/80] 192.168.121.1 () {44 vars in 957 bytes} [Fri Oct 14 17:57:14 2016] GET /problems/6/?orderby=stats => generated 9030 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 81/81] 192.168.121.1 () {44 vars in 958 bytes} [Fri Oct 14 17:57:19 2016] GET /problems/6/?orderby=rstats => generated 9030 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 82/82] 192.168.121.1 () {44 vars in 957 bytes} [Fri Oct 14 17:57:23 2016] GET /problems/6/?orderby=stats => generated 9030 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 83/83] 192.168.121.1 () {44 vars in 958 bytes} [Fri Oct 14 17:57:23 2016] GET /problems/6/?orderby=rstats => generated 9030 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 84/84] 192.168.121.1 () {44 vars in 957 bytes} [Fri Oct 14 17:57:25 2016] GET /problems/6/?orderby=title => generated 9030 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 85/85] 192.168.121.1 () {44 vars in 950 bytes} [Fri Oct 14 17:58:04 2016] GET /problems/view/?pnum=19 => generated 6678 bytes in 29 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 86/86] 192.168.121.1 () {44 vars in 921 bytes} [Fri Oct 14 17:58:08 2016] GET /logout/ => generated 94 bytes in 14 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 87/87] 192.168.121.1 () {44 vars in 845 bytes} [Fri Oct 14 17:58:09 2016] GET / => generated 4092 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 88/88] 192.168.121.1 () {44 vars in 887 bytes} [Fri Oct 14 17:58:10 2016] GET /problems/1/?orderby=title => generated 7343 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 89/89] 192.168.121.1 () {44 vars in 912 bytes} [Fri Oct 14 17:58:12 2016] GET /problems/6/?orderby=title => generated 8805 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 90/90] 192.168.121.1 () {44 vars in 912 bytes} [Fri Oct 14 17:58:23 2016] GET /problems/6/?orderby=level => generated 8805 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 91/91] 192.168.121.1 () {44 vars in 912 bytes} [Fri Oct 14 17:58:25 2016] GET /problems/6/?orderby=title => generated 8805 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1618|app: 0|req: 92/92] 192.168.121.1 () {44 vars in 863 bytes} [Fri Oct 14 17:59:01 2016] GET / => generated 4092 bytes in 30 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+Fri Oct 14 18:00:52 2016 - received message 0 from emperor
+SIGINT/SIGQUIT received...killing workers...
+...brutally killing workers...
+worker 1 buried after 0 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.13.1 (64bit) on [Fri Oct 14 18:01:10 2016] ***
+compiled with version: 5.4.0 20160609 on 06 September 2016 16:19:24
+os: Linux-4.4.0-42-generic #62-Ubuntu SMP Fri Oct 7 23:11:45 UTC 2016
+nodename: jinwoo-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /etc/uwsgi/vassals
+writing pidfile to /home/jinwoo/testsite/uwsgi/project-master.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/jinwoo/testsite
+your processes number limit is 15585
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 2.7.12 (default, Jul  1 2016, 15:12:24)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/jinwoo/Env/testsite
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x26bbf50
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x26bbf50 pid: 1299 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1299)
+spawned uWSGI worker 1 (pid: 1637, cores: 1)
+[pid: 1637|app: 0|req: 1/1] 192.168.121.1 () {42 vars in 795 bytes} [Fri Oct 14 18:01:30 2016] GET / => generated 4092 bytes in 193 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+Not Found: /favicon.ico
+[pid: 1637|app: 0|req: 2/2] 192.168.121.1 () {42 vars in 754 bytes} [Fri Oct 14 18:01:31 2016] GET /favicon.ico => generated 3751 bytes in 11 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 3/3] 192.168.121.1 () {44 vars in 850 bytes} [Fri Oct 14 18:01:33 2016] GET /login/ => generated 3670 bytes in 13 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 4/4] 192.168.121.1 () {52 vars in 1039 bytes} [Fri Oct 14 18:01:38 2016] POST /login/ => generated 0 bytes in 18446744073709178 msecs (HTTP/1.1 302) 6 headers in 347 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 5/5] 192.168.121.1 () {46 vars in 919 bytes} [Fri Oct 14 18:01:37 2016] GET / => generated 8476 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 6/6] 192.168.121.1 () {44 vars in 896 bytes} [Fri Oct 14 18:01:39 2016] GET /logout/ => generated 94 bytes in 20 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 7/7] 192.168.121.1 () {44 vars in 845 bytes} [Fri Oct 14 18:01:39 2016] GET / => generated 4092 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 8/8] 192.168.121.1 () {44 vars in 856 bytes} [Fri Oct 14 18:01:40 2016] GET /register/ => generated 4929 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 9/9] 192.168.121.1 () {44 vars in 847 bytes} [Fri Oct 14 18:01:53 2016] GET / => generated 4092 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 10/10] 192.168.121.1 () {44 vars in 887 bytes} [Fri Oct 14 18:05:19 2016] GET /problems/1/?orderby=title => generated 7343 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 11/11] 192.168.121.1 () {44 vars in 875 bytes} [Fri Oct 14 18:05:22 2016] GET /login/ => generated 3670 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 12/12] 192.168.121.1 () {44 vars in 875 bytes} [Fri Oct 14 18:05:26 2016] GET /login/ => generated 3670 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 13/13] 192.168.121.1 () {52 vars in 1039 bytes} [Fri Oct 14 18:05:29 2016] POST /login/ => generated 0 bytes in 51 msecs (HTTP/1.1 302) 6 headers in 347 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 14/14] 192.168.121.1 () {46 vars in 919 bytes} [Fri Oct 14 18:05:29 2016] GET / => generated 11647 bytes in 37 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 15/15] 192.168.121.1 () {44 vars in 931 bytes} [Fri Oct 14 18:05:30 2016] GET /problems/1/?orderby=title => generated 7568 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 16/16] 192.168.121.1 () {44 vars in 948 bytes} [Fri Oct 14 18:05:33 2016] GET /problems/view/?pnum=1 => generated 5582 bytes in 30 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 17/17] 192.168.121.1 () {44 vars in 933 bytes} [Fri Oct 14 18:06:01 2016] GET /problems/write/ => generated 8485 bytes in 34 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 18/18] 192.168.121.1 () {42 vars in 851 bytes} [Fri Oct 14 18:06:29 2016] GET /admin/ => generated 7423 bytes in 53 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 19/19] 192.168.121.1 () {44 vars in 932 bytes} [Fri Oct 14 18:06:31 2016] GET /admin/problem/problem/ => generated 13947 bytes in 74 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 20/20] 192.168.121.1 () {42 vars in 824 bytes} [Fri Oct 14 18:06:31 2016] GET /admin/jsi18n/ => generated 8379 bytes in 54 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 21/21] 192.168.121.1 () {44 vars in 968 bytes} [Fri Oct 14 18:06:33 2016] GET /admin/problem/problem/25/change/ => generated 12417 bytes in 62 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 22/22] 192.168.121.1 () {42 vars in 834 bytes} [Fri Oct 14 18:06:33 2016] GET /admin/jsi18n/ => generated 8379 bytes in 46 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 23/23] 192.168.121.1 () {44 vars in 968 bytes} [Fri Oct 14 18:07:28 2016] GET /admin/problem/problem/25/change/ => generated 12417 bytes in 71 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 24/24] 192.168.121.1 () {44 vars in 946 bytes} [Fri Oct 14 18:12:49 2016] GET /problems/1/?orderby=title => generated 7568 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 25/25] 192.168.121.1 () {44 vars in 948 bytes} [Fri Oct 14 18:12:50 2016] GET /problems/view/?pnum=1 => generated 5811 bytes in 48 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 26/26] 192.168.121.1 () {44 vars in 965 bytes} [Fri Oct 14 18:12:57 2016] GET /admin/problem/problem/1/change/ => generated 11969 bytes in 52 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 27/27] 192.168.121.1 () {42 vars in 833 bytes} [Fri Oct 14 18:12:57 2016] GET /admin/jsi18n/ => generated 8379 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 28/28] 192.168.121.1 () {44 vars in 952 bytes} [Fri Oct 14 18:13:03 2016] GET /problems/6/?orderby=title => generated 9030 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 29/29] 192.168.121.1 () {46 vars in 983 bytes} [Fri Oct 14 18:13:40 2016] GET /problems/6/?orderby=title => generated 9030 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 30/30] 192.168.121.1 () {44 vars in 950 bytes} [Fri Oct 14 18:13:41 2016] GET /problems/view/?pnum=24 => generated 5987 bytes in 32 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 31/31] 192.168.121.1 () {46 vars in 981 bytes} [Fri Oct 14 18:14:06 2016] GET /problems/view/?pnum=24 => generated 6003 bytes in 31 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 32/32] 192.168.121.1 () {46 vars in 981 bytes} [Fri Oct 14 18:14:28 2016] GET /problems/view/?pnum=24 => generated 5960 bytes in 30 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 33/33] 192.168.121.1 () {44 vars in 968 bytes} [Fri Oct 14 18:14:36 2016] GET /admin/problem/problem/24/change/ => generated 12375 bytes in 54 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 34/34] 192.168.121.1 () {42 vars in 834 bytes} [Fri Oct 14 18:14:36 2016] GET /admin/jsi18n/ => generated 8379 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 35/35] 192.168.121.1 () {44 vars in 953 bytes} [Fri Oct 14 18:14:46 2016] GET /problems/6/?orderby=title => generated 9030 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 36/36] 192.168.121.1 () {44 vars in 950 bytes} [Fri Oct 14 18:14:48 2016] GET /problems/view/?pnum=18 => generated 6162 bytes in 28 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 37/37] 192.168.121.1 () {44 vars in 968 bytes} [Fri Oct 14 18:14:50 2016] GET /admin/problem/problem/18/change/ => generated 12556 bytes in 55 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 38/38] 192.168.121.1 () {42 vars in 834 bytes} [Fri Oct 14 18:14:50 2016] GET /admin/jsi18n/ => generated 8379 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 39/39] 192.168.121.1 () {44 vars in 918 bytes} [Fri Oct 14 18:14:59 2016] GET /logout/ => generated 94 bytes in 18 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 40/40] 192.168.121.1 () {44 vars in 845 bytes} [Fri Oct 14 18:15:00 2016] GET / => generated 4092 bytes in 30 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 41/41] 192.168.121.1 () {44 vars in 838 bytes} [Fri Oct 14 18:17:04 2016] GET / => generated 4092 bytes in 18 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 42/42] 192.168.121.1 () {44 vars in 838 bytes} [Fri Oct 14 18:17:08 2016] GET / => generated 4092 bytes in 17 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 43/43] 192.168.121.1 () {44 vars in 914 bytes} [Fri Oct 14 18:17:55 2016] GET /admin/problem/problem/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 7 headers in 308 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 44/44] 192.168.121.1 () {44 vars in 951 bytes} [Fri Oct 14 18:17:55 2016] GET /admin/login/?next=/admin/problem/problem/ => generated 1701 bytes in 13 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+...brutally killing workers...
+Fri Oct 14 18:22:31 2016 - received message 0 from emperor
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /etc/uwsgi/vassals
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (127.0.0.1:8000)
+running /usr/local/bin/uwsgi
+*** has_emperor mode detected (fd: 6) ***
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.13.1 (64bit) on [Fri Oct 14 18:22:32 2016] ***
+compiled with version: 5.4.0 20160609 on 06 September 2016 16:19:24
+os: Linux-4.4.0-42-generic #62-Ubuntu SMP Fri Oct 7 23:11:45 UTC 2016
+nodename: jinwoo-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /etc/uwsgi/vassals
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/jinwoo/testsite
+your processes number limit is 15585
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:8000 fd 3
+Python version: 2.7.12 (default, Jul  1 2016, 15:12:24)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/jinwoo/Env/testsite
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xa66b50
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xa66b50 pid: 1299 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1299)
+spawned uWSGI worker 1 (pid: 3645, cores: 1)
+epoll_ctl(): File exists [core/event.c line 521]
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Oct 14 18:22:32 2016 - lost communication with the Emperor, goodbye...
+Fri Oct 14 18:22:32 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 3645)...
+worker 1 killed successfully (pid: 3645)
+Respawned uWSGI worker 1 (new pid: 3651)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Oct 14 18:22:33 2016 - lost communication with the Emperor, goodbye...
+Fri Oct 14 18:22:33 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 3651)...
+worker 1 killed successfully (pid: 3651)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 3652)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Oct 14 18:22:36 2016 - lost communication with the Emperor, goodbye...
+Fri Oct 14 18:22:36 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 3652)...
+worker 1 killed successfully (pid: 3652)
+Respawned uWSGI worker 1 (new pid: 3653)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Oct 14 18:22:37 2016 - lost communication with the Emperor, goodbye...
+Fri Oct 14 18:22:37 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 3653)...
+worker 1 killed successfully (pid: 3653)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 3654)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Oct 14 18:22:40 2016 - lost communication with the Emperor, goodbye...
+Fri Oct 14 18:22:40 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 3654)...
+worker 1 killed successfully (pid: 3654)
+Respawned uWSGI worker 1 (new pid: 3655)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Oct 14 18:22:41 2016 - lost communication with the Emperor, goodbye...
+Fri Oct 14 18:22:41 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 3655)...
+worker 1 killed successfully (pid: 3655)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 3656)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Oct 14 18:22:44 2016 - lost communication with the Emperor, goodbye...
+Fri Oct 14 18:22:44 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 3656)...
+worker 1 killed successfully (pid: 3656)
+Respawned uWSGI worker 1 (new pid: 3657)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Oct 14 18:22:45 2016 - lost communication with the Emperor, goodbye...
+Fri Oct 14 18:22:45 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 3657)...
+worker 1 killed successfully (pid: 3657)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 3658)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Oct 14 18:22:48 2016 - lost communication with the Emperor, goodbye...
+Fri Oct 14 18:22:48 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 3658)...
+worker 1 killed successfully (pid: 3658)
+Respawned uWSGI worker 1 (new pid: 3659)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Oct 14 18:22:49 2016 - lost communication with the Emperor, goodbye...
+Fri Oct 14 18:22:49 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 3659)...
+worker 1 killed successfully (pid: 3659)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 3660)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Oct 14 18:22:52 2016 - lost communication with the Emperor, goodbye...
+Fri Oct 14 18:22:52 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 3660)...
+worker 1 killed successfully (pid: 3660)
+Respawned uWSGI worker 1 (new pid: 3661)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Oct 14 18:22:53 2016 - lost communication with the Emperor, goodbye...
+Fri Oct 14 18:22:53 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 3661)...
+worker 1 killed successfully (pid: 3661)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 3662)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Oct 14 18:22:56 2016 - lost communication with the Emperor, goodbye...
+Fri Oct 14 18:22:56 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 3662)...
+worker 1 killed successfully (pid: 3662)
+Respawned uWSGI worker 1 (new pid: 3663)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Oct 14 18:22:57 2016 - lost communication with the Emperor, goodbye...
+Fri Oct 14 18:22:57 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 3663)...
+worker 1 killed successfully (pid: 3663)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 3664)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Oct 14 18:23:00 2016 - lost communication with the Emperor, goodbye...
+Fri Oct 14 18:23:00 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 3664)...
+*** Starting uWSGI 2.0.13.1 (64bit) on [Fri Oct 14 18:23:21 2016] ***
+compiled with version: 5.4.0 20160609 on 06 September 2016 16:19:24
+os: Linux-4.4.0-42-generic #62-Ubuntu SMP Fri Oct 7 23:11:45 UTC 2016
+nodename: jinwoo-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /etc/uwsgi/vassals
+writing pidfile to /home/jinwoo/testsite/uwsgi/project-master.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/jinwoo/testsite
+your processes number limit is 15585
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 2.7.12 (default, Jul  1 2016, 15:12:24)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/jinwoo/Env/testsite
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xdc5f50
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xdc5f50 pid: 1266 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1266)
+spawned uWSGI worker 1 (pid: 1637, cores: 1)
+[pid: 1637|app: 0|req: 1/1] 192.168.121.1 () {42 vars in 795 bytes} [Fri Oct 14 18:23:44 2016] GET / => generated 4092 bytes in 183 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+Not Found: /favicon.ico
+[pid: 1637|app: 0|req: 2/2] 192.168.121.1 () {42 vars in 754 bytes} [Fri Oct 14 18:23:45 2016] GET /favicon.ico => generated 3751 bytes in 9 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 3/3] 192.168.121.1 () {44 vars in 850 bytes} [Fri Oct 14 18:23:49 2016] GET /login/ => generated 3670 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 4/4] 192.168.121.1 () {52 vars in 1039 bytes} [Fri Oct 14 18:23:53 2016] POST /login/ => generated 0 bytes in 68 msecs (HTTP/1.1 302) 6 headers in 347 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 5/5] 192.168.121.1 () {46 vars in 919 bytes} [Fri Oct 14 18:23:53 2016] GET / => generated 11647 bytes in 41 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 6/6] 192.168.121.1 () {44 vars in 925 bytes} [Fri Oct 14 18:23:57 2016] GET /problems/view/?pnum=17 => generated 6607 bytes in 35 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 7/7] 192.168.121.1 () {44 vars in 918 bytes} [Fri Oct 14 18:24:02 2016] GET /logout/ => generated 94 bytes in 18 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 8/8] 192.168.121.1 () {44 vars in 845 bytes} [Fri Oct 14 18:24:03 2016] GET / => generated 4092 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 9/9] 192.168.121.1 () {44 vars in 850 bytes} [Fri Oct 14 18:24:04 2016] GET /login/ => generated 3670 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 10/10] 192.168.121.1 () {52 vars in 1039 bytes} [Fri Oct 14 18:24:07 2016] POST /login/ => generated 0 bytes in 44 msecs (HTTP/1.1 302) 6 headers in 347 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 11/11] 192.168.121.1 () {46 vars in 919 bytes} [Fri Oct 14 18:24:07 2016] GET / => generated 8476 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 12/12] 192.168.121.1 () {44 vars in 925 bytes} [Fri Oct 14 18:24:10 2016] GET /problems/view/?pnum=17 => generated 6146 bytes in 28 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+/home/jinwoo/Env/testsite/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField UserProfile.last_submit received a naive datetime (2016-10-14 18:24:19.555853) while time zone support is active.
+  RuntimeWarning)
+[pid: 1637|app: 0|req: 13/13] 192.168.121.1 () {52 vars in 1146 bytes} [Fri Oct 14 18:24:19 2016] POST /problems/answer_check/?pnum=17 => generated 111 bytes in 73 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 14/14] 192.168.121.1 () {44 vars in 955 bytes} [Fri Oct 14 18:24:20 2016] GET /problems/view/?pnum=17 => generated 6181 bytes in 39 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 15/15] 192.168.121.1 () {44 vars in 918 bytes} [Fri Oct 14 18:24:23 2016] GET /mypage/ => generated 4009 bytes in 37 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 16/16] 192.168.121.1 () {42 vars in 839 bytes} [Fri Oct 14 18:24:29 2016] GET / => generated 8476 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 17/17] 192.168.121.1 () {42 vars in 851 bytes} [Fri Oct 14 18:24:32 2016] GET /admin/ => generated 0 bytes in 27 msecs (HTTP/1.1 302) 7 headers in 292 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 18/18] 192.168.121.1 () {42 vars in 888 bytes} [Fri Oct 14 18:24:32 2016] GET /admin/login/?next=/admin/ => generated 1844 bytes in 71 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 19/19] 192.168.121.1 () {52 vars in 1139 bytes} [Fri Oct 14 18:24:37 2016] POST /admin/login/?next=/admin/ => generated 0 bytes in 54 msecs (HTTP/1.1 302) 9 headers in 502 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 20/20] 192.168.121.1 () {46 vars in 950 bytes} [Fri Oct 14 18:24:37 2016] GET /admin/ => generated 7423 bytes in 34 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 21/21] 192.168.121.1 () {44 vars in 932 bytes} [Fri Oct 14 18:24:38 2016] GET /admin/problem/problem/ => generated 13947 bytes in 68 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 22/22] 192.168.121.1 () {42 vars in 824 bytes} [Fri Oct 14 18:24:38 2016] GET /admin/jsi18n/ => generated 8379 bytes in 56 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 23/23] 192.168.121.1 () {44 vars in 968 bytes} [Fri Oct 14 18:24:40 2016] GET /admin/problem/problem/17/change/ => generated 12992 bytes in 62 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 24/24] 192.168.121.1 () {42 vars in 834 bytes} [Fri Oct 14 18:24:40 2016] GET /admin/jsi18n/ => generated 8379 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 25/25] 192.168.121.1 () {52 vars in 1233 bytes} [Fri Oct 14 18:24:44 2016] POST /admin/problem/problem/17/change/ => generated 0 bytes in 37 msecs (HTTP/1.1 302) 8 headers in 597 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 26/26] 192.168.121.1 () {46 vars in 1266 bytes} [Fri Oct 14 18:24:44 2016] GET /admin/problem/problem/ => generated 14157 bytes in 69 msecs (HTTP/1.1 200) 8 headers in 487 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 27/27] 192.168.121.1 () {42 vars in 824 bytes} [Fri Oct 14 18:24:44 2016] GET /admin/jsi18n/ => generated 8379 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 28/28] 192.168.121.1 () {44 vars in 916 bytes} [Fri Oct 14 18:24:46 2016] GET /admin/ => generated 7423 bytes in 36 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 29/29] 192.168.121.1 () {44 vars in 920 bytes} [Fri Oct 14 18:24:47 2016] GET /admin/auth/user/ => generated 9095 bytes in 53 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 30/30] 192.168.121.1 () {42 vars in 818 bytes} [Fri Oct 14 18:24:47 2016] GET /admin/jsi18n/ => generated 8379 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 31/31] 192.168.121.1 () {44 vars in 950 bytes} [Fri Oct 14 18:24:49 2016] GET /admin/auth/user/11/change/ => generated 21968 bytes in 90 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 32/32] 192.168.121.1 () {42 vars in 828 bytes} [Fri Oct 14 18:24:49 2016] GET /admin/jsi18n/ => generated 8379 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 33/33] 192.168.121.1 () {52 vars in 1215 bytes} [Fri Oct 14 18:24:57 2016] POST /admin/auth/user/11/change/ => generated 0 bytes in 54 msecs (HTTP/1.1 302) 8 headers in 586 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 34/34] 192.168.121.1 () {46 vars in 1243 bytes} [Fri Oct 14 18:24:57 2016] GET /admin/auth/user/ => generated 9288 bytes in 44 msecs (HTTP/1.1 200) 8 headers in 487 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 35/35] 192.168.121.1 () {42 vars in 818 bytes} [Fri Oct 14 18:24:57 2016] GET /admin/jsi18n/ => generated 8379 bytes in 37 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 36/36] 192.168.121.1 () {44 vars in 938 bytes} [Fri Oct 14 18:25:01 2016] GET /problems/1/?orderby=title => generated 7568 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 37/37] 192.168.121.1 () {44 vars in 956 bytes} [Fri Oct 14 18:25:03 2016] GET /problems/6/?orderby=title => generated 9030 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 38/38] 192.168.121.1 () {44 vars in 950 bytes} [Fri Oct 14 18:25:09 2016] GET /problems/view/?pnum=17 => generated 6607 bytes in 32 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 39/39] 192.168.121.1 () {44 vars in 910 bytes} [Fri Oct 14 18:25:17 2016] GET /admin/ => generated 7405 bytes in 34 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 40/40] 192.168.121.1 () {44 vars in 932 bytes} [Fri Oct 14 18:25:18 2016] GET /admin/problem/problem/ => generated 13947 bytes in 58 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 41/41] 192.168.121.1 () {42 vars in 824 bytes} [Fri Oct 14 18:25:18 2016] GET /admin/jsi18n/ => generated 8379 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 42/42] 192.168.121.1 () {44 vars in 968 bytes} [Fri Oct 14 18:25:20 2016] GET /admin/problem/problem/17/change/ => generated 12989 bytes in 54 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 43/43] 192.168.121.1 () {42 vars in 834 bytes} [Fri Oct 14 18:25:20 2016] GET /admin/jsi18n/ => generated 8379 bytes in 43 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 44/44] 192.168.121.1 () {52 vars in 1233 bytes} [Fri Oct 14 18:25:26 2016] POST /admin/problem/problem/17/change/ => generated 0 bytes in 32 msecs (HTTP/1.1 302) 8 headers in 597 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 45/45] 192.168.121.1 () {46 vars in 1266 bytes} [Fri Oct 14 18:25:26 2016] GET /admin/problem/problem/ => generated 14157 bytes in 50 msecs (HTTP/1.1 200) 8 headers in 487 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 46/46] 192.168.121.1 () {42 vars in 824 bytes} [Fri Oct 14 18:25:26 2016] GET /admin/jsi18n/ => generated 8379 bytes in 35 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 47/47] 192.168.121.1 () {44 vars in 918 bytes} [Fri Oct 14 18:25:30 2016] GET /logout/ => generated 94 bytes in 17 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 48/48] 192.168.121.1 () {44 vars in 845 bytes} [Fri Oct 14 18:25:30 2016] GET / => generated 4092 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 49/49] 192.168.121.1 () {44 vars in 850 bytes} [Fri Oct 14 18:25:31 2016] GET /login/ => generated 3670 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 50/50] 192.168.121.1 () {52 vars in 1039 bytes} [Fri Oct 14 18:25:34 2016] POST /login/ => generated 0 bytes in 44 msecs (HTTP/1.1 302) 6 headers in 347 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 51/51] 192.168.121.1 () {46 vars in 919 bytes} [Fri Oct 14 18:25:34 2016] GET / => generated 8476 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 52/52] 192.168.121.1 () {44 vars in 925 bytes} [Fri Oct 14 18:25:36 2016] GET /problems/view/?pnum=17 => generated 6146 bytes in 48 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 53/53] 192.168.121.1 () {44 vars in 968 bytes} [Fri Oct 14 18:25:43 2016] GET /admin/problem/problem/17/change/ => generated 0 bytes in 15 msecs (HTTP/1.1 302) 7 headers in 318 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 54/54] 192.168.121.1 () {44 vars in 1005 bytes} [Fri Oct 14 18:25:43 2016] GET /admin/login/?next=/admin/problem/problem/17/change/ => generated 1896 bytes in 40 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 55/55] 192.168.121.1 () {52 vars in 1217 bytes} [Fri Oct 14 18:25:48 2016] POST /admin/login/?next=/admin/problem/problem/17/change/ => generated 0 bytes in 53 msecs (HTTP/1.1 302) 9 headers in 528 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 56/56] 192.168.121.1 () {46 vars in 1028 bytes} [Fri Oct 14 18:25:48 2016] GET /admin/problem/problem/17/change/ => generated 12989 bytes in 45 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 57/57] 192.168.121.1 () {42 vars in 834 bytes} [Fri Oct 14 18:25:48 2016] GET /admin/jsi18n/ => generated 8379 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 58/58] 192.168.121.1 () {44 vars in 942 bytes} [Fri Oct 14 18:25:53 2016] GET /admin/problem/ => generated 2655 bytes in 27 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 59/59] 192.168.121.1 () {44 vars in 944 bytes} [Fri Oct 14 18:25:54 2016] GET /admin/problem/answerlog/ => generated 17332 bytes in 62 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 60/60] 192.168.121.1 () {42 vars in 826 bytes} [Fri Oct 14 18:25:54 2016] GET /admin/jsi18n/ => generated 8379 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 61/61] 192.168.121.1 () {44 vars in 918 bytes} [Fri Oct 14 18:26:00 2016] GET /admin/ => generated 7404 bytes in 36 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 62/62] 192.168.121.1 () {44 vars in 920 bytes} [Fri Oct 14 18:26:02 2016] GET /admin/auth/user/ => generated 9095 bytes in 59 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 63/63] 192.168.121.1 () {42 vars in 818 bytes} [Fri Oct 14 18:26:02 2016] GET /admin/jsi18n/ => generated 8379 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 64/64] 192.168.121.1 () {44 vars in 918 bytes} [Fri Oct 14 18:26:30 2016] GET /logout/ => generated 94 bytes in 14 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 65/65] 192.168.121.1 () {44 vars in 845 bytes} [Fri Oct 14 18:26:33 2016] GET / => generated 4092 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 66/66] 192.168.121.1 () {42 vars in 795 bytes} [Fri Oct 14 19:45:45 2016] GET / => generated 4092 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 1637|app: 0|req: 67/67] 192.168.121.1 () {42 vars in 754 bytes} [Fri Oct 14 19:45:46 2016] GET /favicon.ico => generated 3751 bytes in 22 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 68/68] 192.168.121.1 () {44 vars in 887 bytes} [Fri Oct 14 19:45:46 2016] GET /problems/1/?orderby=title => generated 7343 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1637|app: 0|req: 69/69] 192.168.121.1 () {44 vars in 920 bytes} [Fri Oct 14 19:45:47 2016] GET /community/notice/list/?page=1 => generated 5463 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+Internal Server Error: /community/notice/list/
+Traceback (most recent call last):
+  File "/home/jinwoo/Env/testsite/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/jinwoo/Env/testsite/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jinwoo/Env/testsite/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./community/views.py", line 34, in Noticelist
+    context = Context({'request': request, 'notice_list': notice_list, 'current_page': int(page), 'total_page': range(1, page_data.num_pages + 1), 'last_page': last_page})
+ValueError: invalid literal for int() with base 10: 'a'
+[pid: 1637|app: 0|req: 70/70] 192.168.121.1 () {42 vars in 852 bytes} [Fri Oct 14 19:45:51 2016] GET /community/notice/list/?page=a => generated 61229 bytes in 58 msecs (HTTP/1.1 500) 3 headers in 106 bytes (1 switches on core 0)
+Fri Oct 14 19:46:46 2016 - received message 0 from emperor
+SIGINT/SIGQUIT received...killing workers...
+...brutally killing workers...
+worker 1 buried after 0 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.13.1 (64bit) on [Fri Oct 14 19:47:03 2016] ***
+compiled with version: 5.4.0 20160609 on 06 September 2016 16:19:24
+os: Linux-4.4.0-42-generic #62-Ubuntu SMP Fri Oct 7 23:11:45 UTC 2016
+nodename: jinwoo-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /etc/uwsgi/vassals
+writing pidfile to /home/jinwoo/testsite/uwsgi/project-master.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/jinwoo/testsite
+your processes number limit is 15585
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 2.7.12 (default, Jul  1 2016, 15:12:24)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/jinwoo/Env/testsite
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1115f50
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1115f50 pid: 1262 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1262)
+spawned uWSGI worker 1 (pid: 1631, cores: 1)
+[pid: 1631|app: 0|req: 1/1] 192.168.121.1 () {42 vars in 852 bytes} [Fri Oct 14 19:47:14 2016] GET /community/notice/list/?page=0 => generated 5154 bytes in 252 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 1631|app: 0|req: 2/2] 192.168.121.1 () {44 vars in 924 bytes} [Fri Oct 14 19:47:19 2016] GET /community/notice/list/?page=1 => generated 5463 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 3/3] 192.168.121.1 () {44 vars in 924 bytes} [Fri Oct 14 19:47:20 2016] GET /community/notice/list/?page=2 => generated 5382 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 4/4] 192.168.121.1 () {44 vars in 924 bytes} [Fri Oct 14 19:47:22 2016] GET /community/notice/list/?page=3 => generated 5130 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 5/5] 192.168.121.1 () {44 vars in 924 bytes} [Fri Oct 14 19:47:43 2016] GET /community/notice/list/?page=1 => generated 5463 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 6/6] 192.168.121.1 () {44 vars in 924 bytes} [Fri Oct 14 19:48:53 2016] GET /community/notice/list/?page=2 => generated 5382 bytes in 18 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 7/7] 192.168.121.1 () {44 vars in 924 bytes} [Fri Oct 14 19:48:54 2016] GET /community/notice/list/?page=3 => generated 5130 bytes in 17 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 8/8] 192.168.121.1 () {44 vars in 924 bytes} [Fri Oct 14 19:48:58 2016] GET /community/notice/list/?page=1 => generated 5463 bytes in 17 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 9/9] 192.168.32.191 () {40 vars in 700 bytes} [Fri Oct 14 19:51:46 2016] GET / => generated 4092 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 1631|app: 0|req: 10/10] 192.168.32.191 () {40 vars in 659 bytes} [Fri Oct 14 19:51:47 2016] GET /favicon.ico => generated 3751 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 11/11] 192.168.32.191 () {42 vars in 761 bytes} [Fri Oct 14 19:51:53 2016] GET /register/ => generated 4929 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 12/12] 192.168.32.191 () {52 vars in 1052 bytes} [Fri Oct 14 19:52:06 2016] POST /register/done/ => generated 4974 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 13/13] 192.168.32.191 () {52 vars in 1057 bytes} [Fri Oct 14 19:52:19 2016] POST /register/done/ => generated 4957 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 14/14] 192.168.32.191 () {52 vars in 1057 bytes} [Fri Oct 14 19:52:34 2016] POST /register/done/ => generated 4957 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+/home/jinwoo/Env/testsite/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField UserProfile.last_submit received a naive datetime (2016-10-14 19:52:47.957709) while time zone support is active.
+  RuntimeWarning)
+[pid: 1631|app: 0|req: 15/15] 192.168.32.191 () {52 vars in 1057 bytes} [Fri Oct 14 19:52:47 2016] POST /register/done/ => generated 96 bytes in 78 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 16/16] 192.168.32.191 () {44 vars in 858 bytes} [Fri Oct 14 19:52:50 2016] GET /login/ => generated 3670 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 17/17] 192.168.32.191 () {52 vars in 1033 bytes} [Fri Oct 14 19:52:55 2016] POST /login/ => generated 0 bytes in 44 msecs (HTTP/1.1 302) 6 headers in 347 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 18/18] 192.168.32.191 () {46 vars in 913 bytes} [Fri Oct 14 19:52:55 2016] GET / => generated 8489 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 19/19] 192.168.32.191 () {44 vars in 917 bytes} [Fri Oct 14 19:53:02 2016] GET /problems/view/?pnum=1 => generated 5352 bytes in 25 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+/home/jinwoo/Env/testsite/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField UserProfile.last_submit received a naive datetime (2016-10-14 19:53:12.402186) while time zone support is active.
+  RuntimeWarning)
+[pid: 1631|app: 0|req: 20/20] 192.168.32.191 () {52 vars in 1135 bytes} [Fri Oct 14 19:53:12 2016] POST /problems/answer_check/?pnum=1 => generated 115 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 21/21] 192.168.32.191 () {44 vars in 946 bytes} [Fri Oct 14 19:53:13 2016] GET /problems/view/?pnum=1 => generated 5352 bytes in 22 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 22/22] 192.168.32.191 () {52 vars in 1135 bytes} [Fri Oct 14 19:53:15 2016] POST /problems/answer_check/?pnum=1 => generated 130 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 23/23] 192.168.32.191 () {44 vars in 946 bytes} [Fri Oct 14 19:53:17 2016] GET /problems/view/?pnum=1 => generated 5352 bytes in 22 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 24/24] 192.168.32.191 () {44 vars in 882 bytes} [Fri Oct 14 19:53:20 2016] GET / => generated 8489 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 25/25] 192.168.32.191 () {44 vars in 888 bytes} [Fri Oct 14 19:53:28 2016] GET /intro/ => generated 2802 bytes in 16 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 26/26] 192.168.32.191 () {44 vars in 902 bytes} [Fri Oct 14 19:53:30 2016] GET /documents/ => generated 2799 bytes in 16 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 27/27] 192.168.32.191 () {44 vars in 935 bytes} [Fri Oct 14 19:53:31 2016] GET /problems/1/?orderby=title => generated 7350 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 28/28] 192.168.32.191 () {44 vars in 950 bytes} [Fri Oct 14 19:53:33 2016] GET /problems/2/?orderby=title => generated 7340 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 29/29] 192.168.32.191 () {44 vars in 950 bytes} [Fri Oct 14 19:53:34 2016] GET /problems/3/?orderby=title => generated 7094 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 30/30] 192.168.32.191 () {44 vars in 950 bytes} [Fri Oct 14 19:53:36 2016] GET /problems/4/?orderby=title => generated 7576 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 31/31] 192.168.32.191 () {44 vars in 950 bytes} [Fri Oct 14 19:53:37 2016] GET /problems/5/?orderby=title => generated 7342 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 32/32] 192.168.32.191 () {44 vars in 901 bytes} [Fri Oct 14 19:53:39 2016] GET / => generated 8489 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 33/33] 192.168.32.191 () {44 vars in 925 bytes} [Fri Oct 14 19:53:45 2016] GET /problems/1/?orderby=title => generated 7350 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 34/34] 192.168.32.191 () {44 vars in 950 bytes} [Fri Oct 14 19:53:56 2016] GET /problems/3/?orderby=title => generated 7094 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 35/35] 192.168.32.191 () {44 vars in 950 bytes} [Fri Oct 14 19:53:58 2016] GET /problems/6/?orderby=title => generated 8812 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 36/36] 192.168.32.191 () {44 vars in 944 bytes} [Fri Oct 14 19:54:05 2016] GET /problems/view/?pnum=20 => generated 6179 bytes in 23 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 37/37] 192.168.32.191 () {44 vars in 898 bytes} [Fri Oct 14 19:54:13 2016] GET / => generated 8489 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 38/38] 192.168.32.191 () {42 vars in 843 bytes} [Fri Oct 14 19:54:18 2016] GET /admin => generated 0 bytes in 0 msecs (HTTP/1.1 301) 2 headers in 93 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 39/39] 192.168.32.191 () {42 vars in 845 bytes} [Fri Oct 14 19:54:18 2016] GET /admin/ => generated 0 bytes in 37 msecs (HTTP/1.1 302) 7 headers in 292 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 40/40] 192.168.32.191 () {42 vars in 882 bytes} [Fri Oct 14 19:54:18 2016] GET /admin/login/?next=/admin/ => generated 1848 bytes in 41 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 41/41] 192.168.32.191 () {52 vars in 1133 bytes} [Fri Oct 14 19:54:24 2016] POST /admin/login/?next=/admin/ => generated 2018 bytes in 48 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 42/42] 192.168.32.191 () {52 vars in 1133 bytes} [Fri Oct 14 19:54:27 2016] POST /admin/login/?next=/admin/ => generated 2018 bytes in 48 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 43/43] 192.168.32.191 () {52 vars in 1133 bytes} [Fri Oct 14 19:54:33 2016] POST /admin/login/?next=/admin/ => generated 2018 bytes in 47 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 44/44] 192.168.32.191 () {52 vars in 1133 bytes} [Fri Oct 14 19:54:37 2016] POST /admin/login/?next=/admin/ => generated 2018 bytes in 81 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 45/45] 192.168.32.191 () {52 vars in 1133 bytes} [Fri Oct 14 19:54:40 2016] POST /admin/login/?next=/admin/ => generated 2018 bytes in 49 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 46/46] 192.168.32.191 () {42 vars in 882 bytes} [Fri Oct 14 19:54:44 2016] GET /admin/login/?next=/admin/ => generated 1848 bytes in 23 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 47/47] 192.168.32.191 () {44 vars in 958 bytes} [Fri Oct 14 19:54:46 2016] GET /community/notice/list/?page=1 => generated 5470 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 48/48] 192.168.32.191 () {44 vars in 962 bytes} [Fri Oct 14 19:54:50 2016] GET /community/notice/view/?nnum=8 => generated 3596 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 49/49] 192.168.32.191 () {44 vars in 962 bytes} [Fri Oct 14 19:54:56 2016] GET /community/notice/list/?page=1 => generated 5470 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 50/50] 192.168.32.191 () {44 vars in 905 bytes} [Fri Oct 14 19:54:57 2016] GET / => generated 8489 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 51/51] 192.168.32.191 () {44 vars in 933 bytes} [Fri Oct 14 19:55:48 2016] GET /community/notice/list/?page=1 => generated 5470 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 52/52] 192.168.32.191 () {44 vars in 954 bytes} [Fri Oct 14 19:55:52 2016] GET /problems/1/?orderby=title => generated 7350 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 53/53] 192.168.32.191 () {44 vars in 921 bytes} [Fri Oct 14 19:55:53 2016] GET /documents/ => generated 2799 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 54/54] 192.168.121.1 () {46 vars in 955 bytes} [Fri Oct 14 19:55:54 2016] GET /community/notice/list/?page=1 => generated 5463 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 55/55] 192.168.32.191 () {44 vars in 900 bytes} [Fri Oct 14 19:55:56 2016] GET /mypage/ => generated 3727 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 56/56] 192.168.32.191 () {44 vars in 907 bytes} [Fri Oct 14 19:55:58 2016] GET /mypage/rank/ => generated 4452 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 57/57] 192.168.32.191 () {44 vars in 934 bytes} [Fri Oct 14 19:56:06 2016] GET /mypage/password_change/ => generated 5266 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 58/58] 192.168.32.191 () {44 vars in 923 bytes} [Fri Oct 14 19:56:08 2016] GET /mypage/rank/ => generated 4452 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 59/59] 192.168.32.191 () {44 vars in 900 bytes} [Fri Oct 14 19:56:44 2016] GET /intro/ => generated 2802 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 60/60] 192.168.32.191 () {44 vars in 882 bytes} [Fri Oct 14 19:59:46 2016] GET / => generated 8489 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 61/61] 192.168.121.1 () {44 vars in 916 bytes} [Fri Oct 14 20:21:25 2016] GET /problems/1/?orderby=title => generated 7343 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 62/62] 192.168.121.1 () {44 vars in 912 bytes} [Fri Oct 14 20:21:26 2016] GET /problems/6/?orderby=title => generated 8805 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 63/63] 192.168.121.1 () {44 vars in 912 bytes} [Fri Oct 14 20:21:57 2016] GET /problems/1/?orderby=title => generated 7343 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 64/64] 192.168.121.1 () {44 vars in 912 bytes} [Fri Oct 14 20:52:55 2016] GET /problems/6/?orderby=title => generated 8805 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 65/65] 192.168.121.1 () {44 vars in 906 bytes} [Fri Oct 14 20:52:57 2016] GET /problems/view/?pnum=20 => generated 0 bytes in 1 msecs (HTTP/1.1 302) 4 headers in 157 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 66/66] 192.168.121.1 () {44 vars in 940 bytes} [Fri Oct 14 20:52:57 2016] GET /login/?next=/problems/view/%3Fpnum%3D20 => generated 3670 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 67/67] 192.168.121.1 () {52 vars in 1072 bytes} [Fri Oct 14 20:53:14 2016] POST /login/ => generated 0 bytes in 44 msecs (HTTP/1.1 302) 6 headers in 347 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 68/68] 192.168.121.1 () {46 vars in 952 bytes} [Fri Oct 14 20:53:14 2016] GET / => generated 8485 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 69/69] 192.168.121.1 () {44 vars in 925 bytes} [Fri Oct 14 20:53:26 2016] GET /problems/view/?pnum=20 => generated 6175 bytes in 28 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+/home/jinwoo/Env/testsite/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField UserProfile.last_submit received a naive datetime (2016-10-14 20:54:01.074361) while time zone support is active.
+  RuntimeWarning)
+[pid: 1631|app: 0|req: 70/70] 192.168.121.1 () {52 vars in 1146 bytes} [Fri Oct 14 20:54:01 2016] POST /problems/answer_check/?pnum=20 => generated 116 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 71/71] 192.168.121.1 () {44 vars in 955 bytes} [Fri Oct 14 20:54:06 2016] GET /problems/view/?pnum=20 => generated 6175 bytes in 40 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+/home/jinwoo/Env/testsite/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField UserProfile.last_submit received a naive datetime (2016-10-14 20:54:14.324682) while time zone support is active.
+  RuntimeWarning)
+[pid: 1631|app: 0|req: 72/72] 192.168.121.1 () {52 vars in 1144 bytes} [Fri Oct 14 20:54:14 2016] POST /problems/answer_check/?pnum=20 => generated 116 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 73/73] 192.168.121.1 () {44 vars in 955 bytes} [Fri Oct 14 20:54:17 2016] GET /problems/view/?pnum=20 => generated 6175 bytes in 39 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+/home/jinwoo/Env/testsite/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField UserProfile.last_submit received a naive datetime (2016-10-14 20:54:43.511382) while time zone support is active.
+  RuntimeWarning)
+[pid: 1631|app: 0|req: 74/74] 192.168.121.1 () {52 vars in 1144 bytes} [Fri Oct 14 20:54:43 2016] POST /problems/answer_check/?pnum=20 => generated 116 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 75/75] 192.168.121.1 () {44 vars in 955 bytes} [Fri Oct 14 20:54:48 2016] GET /problems/view/?pnum=20 => generated 6175 bytes in 33 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 76/76] 192.168.121.1 () {52 vars in 1144 bytes} [Fri Oct 14 20:55:00 2016] POST /problems/answer_check/?pnum=20 => generated 131 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 77/77] 192.168.121.1 () {44 vars in 955 bytes} [Fri Oct 14 20:55:03 2016] GET /problems/view/?pnum=20 => generated 6175 bytes in 32 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 78/78] 192.168.121.1 () {44 vars in 961 bytes} [Fri Oct 14 20:55:12 2016] GET /community/notice/list/?page=1 => generated 5466 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 79/79] 192.168.121.1 () {44 vars in 931 bytes} [Fri Oct 14 20:55:17 2016] GET /documents/ => generated 2795 bytes in 16 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 80/80] 192.168.121.1 () {44 vars in 904 bytes} [Fri Oct 14 20:55:18 2016] GET /intro/ => generated 2798 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 81/81] 192.168.121.1 () {44 vars in 888 bytes} [Fri Oct 14 20:55:19 2016] GET / => generated 8485 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 82/82] 192.168.121.1 () {44 vars in 882 bytes} [Fri Oct 14 20:55:21 2016] GET / => generated 8485 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 83/83] 192.168.121.1 () {44 vars in 931 bytes} [Fri Oct 14 20:55:29 2016] GET /problems/1/?orderby=title => generated 7346 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 84/84] 192.168.121.1 () {42 vars in 841 bytes} [Fri Oct 14 20:55:38 2016] GET /%2 => generated 8485 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /funckyou
+[pid: 1631|app: 0|req: 85/85] 192.168.121.1 () {42 vars in 855 bytes} [Fri Oct 14 20:55:45 2016] GET /funckyou => generated 3742 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 86/86] 192.168.121.1 () {42 vars in 851 bytes} [Fri Oct 14 20:55:58 2016] GET /admin/ => generated 0 bytes in 14 msecs (HTTP/1.1 302) 7 headers in 292 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 87/87] 192.168.121.1 () {42 vars in 888 bytes} [Fri Oct 14 20:55:58 2016] GET /admin/login/?next=/admin/ => generated 1844 bytes in 26 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 88/88] 192.168.32.202 () {40 vars in 707 bytes} [Sat Oct 15 13:24:48 2016] GET / => generated 4092 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 1631|app: 0|req: 89/89] 192.168.32.202 () {40 vars in 666 bytes} [Sat Oct 15 13:24:49 2016] GET /favicon.ico => generated 3751 bytes in 18 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 1631|app: 0|req: 90/90] 192.168.32.202 () {40 vars in 729 bytes} [Sat Oct 15 13:25:22 2016] GET /favicon.ico => generated 3751 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 91/91] 192.168.32.202 () {42 vars in 799 bytes} [Sat Oct 15 13:25:53 2016] GET /problems/1/?orderby=title => generated 7343 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 92/92] 192.168.32.202 () {42 vars in 824 bytes} [Sat Oct 15 13:25:55 2016] GET /problems/6/?orderby=title => generated 8805 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 93/93] 192.168.32.202 () {42 vars in 818 bytes} [Sat Oct 15 13:25:57 2016] GET /problems/view/?pnum=23 => generated 0 bytes in 1 msecs (HTTP/1.1 302) 4 headers in 157 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 94/94] 192.168.32.202 () {42 vars in 852 bytes} [Sat Oct 15 13:25:57 2016] GET /login/?next=/problems/view/%3Fpnum%3D23 => generated 3670 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 95/95] 192.168.32.202 () {52 vars in 1073 bytes} [Sat Oct 15 13:26:03 2016] POST /login/ => generated 0 bytes in 44 msecs (HTTP/1.1 302) 6 headers in 347 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 96/96] 192.168.32.202 () {46 vars in 953 bytes} [Sat Oct 15 13:26:03 2016] GET / => generated 11656 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 97/97] 192.168.32.202 () {44 vars in 932 bytes} [Sat Oct 15 13:26:04 2016] GET /problems/1/?orderby=title => generated 7568 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 98/98] 192.168.32.202 () {44 vars in 957 bytes} [Sat Oct 15 13:26:06 2016] GET /problems/6/?orderby=title => generated 9030 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 99/99] 192.168.32.202 () {44 vars in 951 bytes} [Sat Oct 15 13:26:30 2016] GET /problems/view/?pnum=17 => generated 6607 bytes in 28 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 100/100] 192.168.32.202 () {44 vars in 919 bytes} [Sat Oct 15 13:26:37 2016] GET /mypage/ => generated 4073 bytes in 43 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 101/101] 192.168.32.202 () {44 vars in 914 bytes} [Sat Oct 15 13:26:39 2016] GET /mypage/rank/ => generated 4449 bytes in 41 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 102/102] 192.168.32.202 () {44 vars in 909 bytes} [Sat Oct 15 13:26:54 2016] GET /mypage/ => generated 4073 bytes in 40 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 103/103] 192.168.32.202 () {44 vars in 904 bytes} [Sat Oct 15 13:26:57 2016] GET /logout/ => generated 94 bytes in 22 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 104/104] 192.168.32.202 () {44 vars in 846 bytes} [Sat Oct 15 13:26:53 2016] GET / => generated 4092 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 105/105] 192.168.32.202 () {44 vars in 851 bytes} [Sat Oct 15 13:26:54 2016] GET /login/ => generated 3670 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 106/106] 192.168.32.202 () {52 vars in 1040 bytes} [Sat Oct 15 13:26:59 2016] POST /login/ => generated 0 bytes in 46 msecs (HTTP/1.1 302) 6 headers in 347 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 107/107] 192.168.32.202 () {46 vars in 920 bytes} [Sat Oct 15 13:26:59 2016] GET / => generated 8485 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 108/108] 192.168.32.202 () {44 vars in 897 bytes} [Sat Oct 15 13:27:06 2016] GET /mypage/ => generated 3958 bytes in 39 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 109/109] 192.168.32.202 () {44 vars in 914 bytes} [Sat Oct 15 13:27:15 2016] GET /mypage/rank/ => generated 4448 bytes in 39 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 110/110] 192.168.32.202 () {44 vars in 909 bytes} [Sat Oct 15 13:27:20 2016] GET /mypage/ => generated 3958 bytes in 36 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 111/111] 192.168.32.202 () {44 vars in 931 bytes} [Sat Oct 15 13:27:23 2016] GET /problems/view/?pnum=7 => generated 5506 bytes in 29 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 112/112] 192.168.32.202 () {44 vars in 909 bytes} [Sat Oct 15 13:27:32 2016] GET /mypage/ => generated 3958 bytes in 153 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 113/113] 192.168.32.202 () {44 vars in 947 bytes} [Sat Oct 15 13:27:46 2016] GET /community/notice/list/?page=1 => generated 5466 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 114/114] 192.168.32.202 () {44 vars in 969 bytes} [Sat Oct 15 13:27:54 2016] GET /community/notice/view/?nnum=7 => generated 3591 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 115/115] 192.168.32.202 () {46 vars in 978 bytes} [Sat Oct 15 13:27:57 2016] GET /community/notice/list/?page=1 => generated 5466 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 116/116] 192.168.32.202 () {44 vars in 961 bytes} [Sat Oct 15 13:28:00 2016] GET /problems/1/?orderby=title => generated 7346 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 117/117] 192.168.32.202 () {44 vars in 957 bytes} [Sat Oct 15 13:28:01 2016] GET /problems/6/?orderby=title => generated 8808 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 118/118] 192.168.121.1 () {52 vars in 1139 bytes} [Sat Oct 15 13:28:40 2016] POST /admin/login/?next=/admin/ => generated 0 bytes in 58 msecs (HTTP/1.1 302) 9 headers in 502 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 119/119] 192.168.121.1 () {46 vars in 950 bytes} [Sat Oct 15 13:28:40 2016] GET /admin/ => generated 7404 bytes in 38 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 120/120] 192.168.121.1 () {44 vars in 920 bytes} [Sat Oct 15 13:28:42 2016] GET /admin/auth/user/ => generated 9528 bytes in 66 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 121/121] 192.168.121.1 () {42 vars in 818 bytes} [Sat Oct 15 13:28:42 2016] GET /admin/jsi18n/ => generated 8379 bytes in 45 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 122/122] 192.168.121.1 () {44 vars in 950 bytes} [Sat Oct 15 13:28:45 2016] GET /admin/auth/user/30/change/ => generated 21954 bytes in 103 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 123/123] 192.168.121.1 () {42 vars in 828 bytes} [Sat Oct 15 13:28:45 2016] GET /admin/jsi18n/ => generated 8379 bytes in 35 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 124/124] 192.168.121.1 () {44 vars in 920 bytes} [Sat Oct 15 13:28:50 2016] GET /admin/auth/user/ => generated 9528 bytes in 299 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 125/125] 192.168.121.1 () {44 vars in 950 bytes} [Sat Oct 15 13:28:52 2016] GET /admin/auth/user/29/change/ => generated 21971 bytes in 87 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 126/126] 192.168.121.1 () {42 vars in 828 bytes} [Sat Oct 15 13:28:52 2016] GET /admin/jsi18n/ => generated 8379 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 127/127] 192.168.121.1 () {44 vars in 920 bytes} [Sat Oct 15 13:28:57 2016] GET /admin/auth/user/ => generated 9528 bytes in 256 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 128/128] 192.168.121.1 () {44 vars in 910 bytes} [Sat Oct 15 13:29:04 2016] GET /admin/ => generated 7404 bytes in 36 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 129/129] 192.168.121.1 () {44 vars in 936 bytes} [Sat Oct 15 13:29:08 2016] GET /admin/problem/answerlog/ => generated 19260 bytes in 68 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 130/130] 192.168.121.1 () {42 vars in 826 bytes} [Sat Oct 15 13:29:08 2016] GET /admin/jsi18n/ => generated 8379 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 131/131] 192.168.32.202 () {44 vars in 957 bytes} [Sat Oct 15 13:29:27 2016] GET /problems/1/?orderby=title => generated 7346 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 132/132] 192.168.32.202 () {44 vars in 957 bytes} [Sat Oct 15 13:29:32 2016] GET /problems/1/?orderby=title => generated 7346 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 133/133] 192.168.32.202 () {44 vars in 957 bytes} [Sat Oct 15 13:29:29 2016] GET /problems/3/?orderby=title => generated 7090 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 134/134] 192.168.32.202 () {44 vars in 957 bytes} [Sat Oct 15 13:29:30 2016] GET /problems/6/?orderby=title => generated 8808 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 135/135] 192.168.32.202 () {44 vars in 951 bytes} [Sat Oct 15 13:29:32 2016] GET /problems/view/?pnum=17 => generated 6146 bytes in 29 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 136/136] 192.168.121.1 () {44 vars in 906 bytes} [Sat Oct 15 13:29:37 2016] GET / => generated 11656 bytes in 36 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 137/137] 192.168.121.1 () {44 vars in 931 bytes} [Sat Oct 15 13:29:39 2016] GET /problems/1/?orderby=title => generated 7568 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 138/138] 192.168.121.1 () {44 vars in 956 bytes} [Sat Oct 15 13:29:41 2016] GET /problems/6/?orderby=title => generated 9030 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 139/139] 192.168.121.1 () {44 vars in 950 bytes} [Sat Oct 15 13:29:42 2016] GET /problems/view/?pnum=17 => generated 6607 bytes in 79 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 140/140] 192.168.121.1 () {44 vars in 968 bytes} [Sat Oct 15 13:29:44 2016] GET /admin/problem/problem/17/change/ => generated 13027 bytes in 57 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 141/141] 192.168.121.1 () {42 vars in 834 bytes} [Sat Oct 15 13:29:44 2016] GET /admin/jsi18n/ => generated 8379 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 142/142] 192.168.121.1 () {44 vars in 955 bytes} [Sat Oct 15 13:29:59 2016] GET /problems/download/?pnum=17 => generated 15145711 bytes in 138 msecs (HTTP/1.1 200) 3 headers in 152 bytes (4 switches on core 0)
+[pid: 1631|app: 0|req: 143/143] 192.168.121.1 () {44 vars in 918 bytes} [Sat Oct 15 13:30:19 2016] GET /mypage/ => generated 4073 bytes in 35 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 144/144] 192.168.121.1 () {44 vars in 913 bytes} [Sat Oct 15 13:30:21 2016] GET /mypage/rank/ => generated 4449 bytes in 49 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 145/145] 192.168.121.1 () {42 vars in 851 bytes} [Sat Oct 15 13:30:34 2016] GET /admin/ => generated 7404 bytes in 42 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 146/146] 192.168.121.1 () {44 vars in 920 bytes} [Sat Oct 15 13:30:36 2016] GET /admin/auth/user/ => generated 9528 bytes in 50 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 147/147] 192.168.121.1 () {42 vars in 818 bytes} [Sat Oct 15 13:30:36 2016] GET /admin/jsi18n/ => generated 8379 bytes in 38 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 148/148] 192.168.121.1 () {44 vars in 950 bytes} [Sat Oct 15 13:30:37 2016] GET /admin/auth/user/12/change/ => generated 21961 bytes in 86 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 149/149] 192.168.121.1 () {42 vars in 828 bytes} [Sat Oct 15 13:30:37 2016] GET /admin/jsi18n/ => generated 8379 bytes in 35 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 150/150] 192.168.121.1 () {52 vars in 1215 bytes} [Sat Oct 15 13:30:44 2016] POST /admin/auth/user/12/change/ => generated 0 bytes in 57 msecs (HTTP/1.1 302) 8 headers in 586 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 151/151] 192.168.121.1 () {46 vars in 1243 bytes} [Sat Oct 15 13:30:44 2016] GET /admin/auth/user/ => generated 9721 bytes in 46 msecs (HTTP/1.1 200) 8 headers in 487 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 152/152] 192.168.121.1 () {42 vars in 818 bytes} [Sat Oct 15 13:30:44 2016] GET /admin/jsi18n/ => generated 8379 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 153/153] 192.168.121.1 () {44 vars in 950 bytes} [Sat Oct 15 13:30:47 2016] GET /admin/auth/user/11/change/ => generated 21965 bytes in 83 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 154/154] 192.168.121.1 () {42 vars in 828 bytes} [Sat Oct 15 13:30:47 2016] GET /admin/jsi18n/ => generated 8379 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 155/155] 192.168.121.1 () {52 vars in 1215 bytes} [Sat Oct 15 13:30:51 2016] POST /admin/auth/user/11/change/ => generated 0 bytes in 53 msecs (HTTP/1.1 302) 8 headers in 586 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 156/156] 192.168.121.1 () {46 vars in 1243 bytes} [Sat Oct 15 13:30:51 2016] GET /admin/auth/user/ => generated 9721 bytes in 44 msecs (HTTP/1.1 200) 8 headers in 487 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 157/157] 192.168.121.1 () {42 vars in 818 bytes} [Sat Oct 15 13:30:51 2016] GET /admin/jsi18n/ => generated 8379 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 158/158] 192.168.32.202 () {44 vars in 922 bytes} [Sat Oct 15 13:30:54 2016] GET /mypage/ => generated 3958 bytes in 40 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 159/159] 192.168.32.202 () {44 vars in 914 bytes} [Sat Oct 15 13:30:55 2016] GET /mypage/rank/ => generated 4448 bytes in 39 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 160/160] 192.168.121.1 () {44 vars in 950 bytes} [Sat Oct 15 13:31:01 2016] GET /admin/auth/user/12/change/ => generated 21961 bytes in 79 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 161/161] 192.168.121.1 () {42 vars in 828 bytes} [Sat Oct 15 13:31:01 2016] GET /admin/jsi18n/ => generated 8379 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 162/162] 192.168.121.1 () {52 vars in 1215 bytes} [Sat Oct 15 13:31:09 2016] POST /admin/auth/user/12/change/ => generated 0 bytes in 53 msecs (HTTP/1.1 302) 8 headers in 586 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 163/163] 192.168.121.1 () {46 vars in 1243 bytes} [Sat Oct 15 13:31:09 2016] GET /admin/auth/user/ => generated 9721 bytes in 44 msecs (HTTP/1.1 200) 8 headers in 487 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 164/164] 192.168.121.1 () {42 vars in 818 bytes} [Sat Oct 15 13:31:09 2016] GET /admin/jsi18n/ => generated 8379 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 165/165] 192.168.32.202 () {46 vars in 945 bytes} [Sat Oct 15 13:31:11 2016] GET /mypage/rank/ => generated 4448 bytes in 39 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 166/166] 192.168.32.202 () {44 vars in 909 bytes} [Sat Oct 15 13:31:29 2016] GET /mypage/ => generated 3958 bytes in 37 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 167/167] 192.168.32.202 () {44 vars in 890 bytes} [Sat Oct 15 13:31:36 2016] GET / => generated 8485 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)

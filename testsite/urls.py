@@ -18,7 +18,6 @@ from django.contrib import admin
 from django.contrib.auth.views import logout
 
 from testsite.views import HomeView
-from testsite.views import UserCreateView, UserCreateDoneTV
 
 from testsite.views import user_login, login_check, register_page, register_done
 from testsite.views import my_password_change, my_password_change_done

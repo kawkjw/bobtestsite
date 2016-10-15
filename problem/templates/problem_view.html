@@ -30,6 +30,11 @@
 
 			form.submit();
 		});
+		{% if request.user.is_staff %}
+			$('#modifybutton').click(function() {
+				$(location).attr("href", "/admin/problem/problem/{{ problem.num }}/change/");
+			});
+		{% endif %}
 	});
 
 	{% if not test.user.is_active %}
@@ -121,4 +126,9 @@
 		{% endfor %}
 	</div>
 </div>
+{% if request.user.is_staff %}
+	<div>
+		<input type="button" id="modifybutton" class="btn btn-info pull-right" value="Modify">
+	</div>
+{% endif %}
 {% endblock problem_content %}

@@ -69,3 +69,7 @@ body {
 .center-text {
 	text-align: center;
 }
+
+.problem-content, .community-content, .mypage-content {
+	border-left: 1px solid #eee;
+}
