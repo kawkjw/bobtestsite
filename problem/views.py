@@ -11,7 +11,7 @@ from .models import Answerlog
 from django.template import Context
 
 from datetime import datetime
-from django.http import HttpResponseRedirect, HttpResponse
+from django.http import HttpResponseRedirect, HttpResponse, StreamingHttpResponse
 
 from django.contrib.auth.decorators import login_required
 from ratelimit.decorators import ratelimit
@@ -94,7 +94,7 @@ def problem_download(request):
 	problem = Problem.objects.get(num=problem_num)
 	BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 	fp = open(os.path.join(BASE_DIR, 'media')+'/'+str(problem.downfile), 'r')
-	response = HttpResponse(fp, content_type='application/force-download')
+	response = StreamingHttpResponse(fp, content_type='application/force-download')
 	response['Content-Disposition'] = 'attachment; filename="%s"' % str(problem.downfile)
 	return response
 
