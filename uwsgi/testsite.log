@@ -22938,3 +22938,1987 @@ Not Found: /favicon.ico
 [pid: 1631|app: 0|req: 165/165] 192.168.32.202 () {46 vars in 945 bytes} [Sat Oct 15 13:31:11 2016] GET /mypage/rank/ => generated 4448 bytes in 39 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
 [pid: 1631|app: 0|req: 166/166] 192.168.32.202 () {44 vars in 909 bytes} [Sat Oct 15 13:31:29 2016] GET /mypage/ => generated 3958 bytes in 37 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
 [pid: 1631|app: 0|req: 167/167] 192.168.32.202 () {44 vars in 890 bytes} [Sat Oct 15 13:31:36 2016] GET / => generated 8485 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 168/168] 192.168.32.202 () {44 vars in 932 bytes} [Sat Oct 15 13:35:41 2016] GET /problems/1/?orderby=title => generated 7346 bytes in 36 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 169/169] 192.168.32.202 () {44 vars in 957 bytes} [Sat Oct 15 13:35:42 2016] GET /problems/6/?orderby=title => generated 8808 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 170/170] 192.168.32.202 () {44 vars in 922 bytes} [Sat Oct 15 13:40:10 2016] GET /logout/ => generated 94 bytes in 19 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 171/171] 192.168.32.202 () {44 vars in 846 bytes} [Sat Oct 15 13:40:11 2016] GET / => generated 4092 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 172/172] 192.168.32.202 () {44 vars in 851 bytes} [Sat Oct 15 13:40:12 2016] GET /login/ => generated 3670 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 173/173] 192.168.32.202 () {52 vars in 1040 bytes} [Sat Oct 15 13:40:15 2016] POST /login/ => generated 0 bytes in 48 msecs (HTTP/1.1 302) 6 headers in 347 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 174/174] 192.168.32.202 () {46 vars in 920 bytes} [Sat Oct 15 13:40:15 2016] GET / => generated 11656 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 175/175] 192.168.32.202 () {44 vars in 932 bytes} [Sat Oct 15 13:40:16 2016] GET /problems/1/?orderby=title => generated 7568 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 176/176] 192.168.32.202 () {44 vars in 938 bytes} [Sat Oct 15 13:40:17 2016] GET /problems/write/ => generated 8485 bytes in 26 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 177/177] 192.168.32.202 () {44 vars in 912 bytes} [Sat Oct 15 13:40:41 2016] GET /logout/ => generated 94 bytes in 32 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 178/178] 192.168.32.202 () {44 vars in 846 bytes} [Sat Oct 15 13:40:41 2016] GET / => generated 4092 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 179/179] 192.168.32.202 () {44 vars in 851 bytes} [Sat Oct 15 13:40:42 2016] GET /login/ => generated 3670 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 180/180] 192.168.32.202 () {52 vars in 1040 bytes} [Sat Oct 15 13:40:45 2016] POST /login/ => generated 0 bytes in 49 msecs (HTTP/1.1 302) 6 headers in 347 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 181/181] 192.168.32.202 () {46 vars in 920 bytes} [Sat Oct 15 13:40:45 2016] GET / => generated 11655 bytes in 30 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 182/182] 192.168.32.202 () {44 vars in 932 bytes} [Sat Oct 15 13:40:48 2016] GET /problems/1/?orderby=title => generated 7567 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 183/183] 192.168.32.202 () {44 vars in 938 bytes} [Sat Oct 15 13:40:49 2016] GET /problems/write/ => generated 8483 bytes in 21 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 184/184] 192.168.32.202 () {52 vars in 1197 bytes} [Sat Oct 15 13:42:26 2016] POST /problems/write_done/ => generated 106 bytes in 44 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 185/185] 192.168.32.202 () {44 vars in 925 bytes} [Sat Oct 15 13:42:27 2016] GET /problems/1/ => generated 7567 bytes in 30 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 186/186] 192.168.32.202 () {44 vars in 943 bytes} [Sat Oct 15 13:42:28 2016] GET /problems/6/?orderby=title => generated 9276 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 187/187] 192.168.32.202 () {44 vars in 938 bytes} [Sat Oct 15 13:44:04 2016] GET /problems/write/ => generated 8483 bytes in 22 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 188/188] 192.168.121.1 () {44 vars in 898 bytes} [Sat Oct 15 13:48:45 2016] GET / => generated 11962 bytes in 37 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 189/189] 192.168.121.1 () {44 vars in 931 bytes} [Sat Oct 15 13:48:46 2016] GET /problems/1/?orderby=title => generated 7568 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 190/190] 192.168.121.1 () {44 vars in 956 bytes} [Sat Oct 15 13:48:47 2016] GET /problems/6/?orderby=title => generated 9277 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 191/191] 192.168.32.25 () {40 vars in 700 bytes} [Sat Oct 15 13:49:31 2016] GET / => generated 4092 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 1631|app: 0|req: 192/192] 192.168.32.25 () {40 vars in 659 bytes} [Sat Oct 15 13:49:32 2016] GET /favicon.ico => generated 3751 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 193/193] 192.168.32.25 () {42 vars in 755 bytes} [Sat Oct 15 13:54:34 2016] GET /login/ => generated 3670 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 194/194] 192.168.32.25 () {52 vars in 1033 bytes} [Sat Oct 15 13:54:39 2016] POST /login/ => generated 0 bytes in 41 msecs (HTTP/1.1 302) 6 headers in 347 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 195/195] 192.168.32.25 () {46 vars in 913 bytes} [Sat Oct 15 13:54:39 2016] GET / => generated 8816 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 196/196] 192.168.32.25 () {44 vars in 925 bytes} [Sat Oct 15 13:54:55 2016] GET /problems/1/?orderby=title => generated 7346 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 197/197] 192.168.32.25 () {44 vars in 950 bytes} [Sat Oct 15 13:54:57 2016] GET /problems/6/?orderby=title => generated 9055 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 198/198] 192.168.32.25 () {44 vars in 944 bytes} [Sat Oct 15 13:55:02 2016] GET /problems/view/?pnum=17 => generated 6146 bytes in 37 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+/home/jinwoo/Env/testsite/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField UserProfile.last_submit received a naive datetime (2016-10-15 13:55:58.721999) while time zone support is active.
+  RuntimeWarning)
+[pid: 1631|app: 0|req: 199/199] 192.168.32.25 () {52 vars in 1140 bytes} [Sat Oct 15 13:55:58 2016] POST /problems/answer_check/?pnum=17 => generated 111 bytes in 43 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 200/200] 192.168.32.25 () {44 vars in 949 bytes} [Sat Oct 15 13:56:00 2016] GET /problems/view/?pnum=17 => generated 6181 bytes in 31 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 201/201] 192.168.32.25 () {44 vars in 912 bytes} [Sat Oct 15 13:56:04 2016] GET /mypage/ => generated 4009 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 202/202] 192.168.32.25 () {44 vars in 907 bytes} [Sat Oct 15 13:56:18 2016] GET /mypage/rank/ => generated 4448 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 203/203] 192.168.32.25 () {44 vars in 888 bytes} [Sat Oct 15 14:06:44 2016] GET / => generated 8816 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 204/204] 192.168.32.25 () {44 vars in 890 bytes} [Sat Oct 15 14:06:46 2016] GET /logout/ => generated 94 bytes in 14 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 205/205] 192.168.32.25 () {44 vars in 839 bytes} [Sat Oct 15 14:06:48 2016] GET / => generated 4092 bytes in 16 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 206/206] 192.168.121.1 () {44 vars in 956 bytes} [Sat Oct 15 14:06:52 2016] GET /problems/6/?orderby=title => generated 9277 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 207/207] 192.168.121.1 () {44 vars in 937 bytes} [Sat Oct 15 14:07:23 2016] GET /problems/write/ => generated 8485 bytes in 20 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1631|app: 0|req: 208/208] 192.168.121.1 () {44 vars in 937 bytes} [Sat Oct 15 14:07:29 2016] GET /problems/write/ => generated 8485 bytes in 21 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+...brutally killing workers...
+Sat Oct 15 14:13:56 2016 - received message 0 from emperor
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /etc/uwsgi/vassals
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (127.0.0.1:8000)
+running /usr/local/bin/uwsgi
+*** has_emperor mode detected (fd: 6) ***
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.13.1 (64bit) on [Sat Oct 15 14:13:57 2016] ***
+compiled with version: 5.4.0 20160609 on 06 September 2016 16:19:24
+os: Linux-4.4.0-42-generic #62-Ubuntu SMP Fri Oct 7 23:11:45 UTC 2016
+nodename: jinwoo-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /etc/uwsgi/vassals
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/jinwoo/testsite
+your processes number limit is 15585
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:8000 fd 3
+Python version: 2.7.12 (default, Jul  1 2016, 15:12:24)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/jinwoo/Env/testsite
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xe69b50
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xe69b50 pid: 1262 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1262)
+spawned uWSGI worker 1 (pid: 5244, cores: 1)
+epoll_ctl(): File exists [core/event.c line 521]
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:13:58 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:13:58 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 5244)...
+worker 1 killed successfully (pid: 5244)
+Respawned uWSGI worker 1 (new pid: 5246)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:13:59 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:13:59 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 5246)...
+worker 1 killed successfully (pid: 5246)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 5247)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:14:02 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:14:02 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 5247)...
+worker 1 killed successfully (pid: 5247)
+Respawned uWSGI worker 1 (new pid: 5248)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:14:03 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:14:03 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 5248)...
+worker 1 killed successfully (pid: 5248)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 5249)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:14:06 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:14:06 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 5249)...
+worker 1 killed successfully (pid: 5249)
+Respawned uWSGI worker 1 (new pid: 5250)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:14:07 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:14:07 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 5250)...
+worker 1 killed successfully (pid: 5250)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 5251)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:14:10 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:14:10 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 5251)...
+worker 1 killed successfully (pid: 5251)
+Respawned uWSGI worker 1 (new pid: 5252)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:14:11 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:14:11 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 5252)...
+worker 1 killed successfully (pid: 5252)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 5253)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:14:14 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:14:14 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 5253)...
+worker 1 killed successfully (pid: 5253)
+Respawned uWSGI worker 1 (new pid: 5254)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:14:15 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:14:15 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 5254)...
+worker 1 killed successfully (pid: 5254)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 5255)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:14:18 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:14:18 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 5255)...
+worker 1 killed successfully (pid: 5255)
+Respawned uWSGI worker 1 (new pid: 5256)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:14:19 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:14:19 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 5256)...
+worker 1 killed successfully (pid: 5256)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 5257)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:14:22 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:14:22 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 5257)...
+worker 1 killed successfully (pid: 5257)
+Respawned uWSGI worker 1 (new pid: 5258)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:14:23 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:14:23 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 5258)...
+worker 1 killed successfully (pid: 5258)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 5259)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:14:26 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:14:26 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 5259)...
+*** Starting uWSGI 2.0.13.1 (64bit) on [Sat Oct 15 14:14:48 2016] ***
+compiled with version: 5.4.0 20160609 on 06 September 2016 16:19:24
+os: Linux-4.4.0-42-generic #62-Ubuntu SMP Fri Oct 7 23:11:45 UTC 2016
+nodename: jinwoo-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /etc/uwsgi/vassals
+writing pidfile to /home/jinwoo/testsite/uwsgi/project-master.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/jinwoo/testsite
+your processes number limit is 15585
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 2.7.12 (default, Jul  1 2016, 15:12:24)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/jinwoo/Env/testsite
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x11e9f50
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 4 seconds on interpreter 0x11e9f50 pid: 1286 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1286)
+spawned uWSGI worker 1 (pid: 1608, cores: 1)
+...brutally killing workers...
+Sat Oct 15 14:16:20 2016 - received message 0 from emperor
+worker 1 buried after 2 seconds
+binary reloading uWSGI...
+chdir() to /etc/uwsgi/vassals
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (127.0.0.1:8000)
+running /usr/local/bin/uwsgi
+*** has_emperor mode detected (fd: 6) ***
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.13.1 (64bit) on [Sat Oct 15 14:16:22 2016] ***
+compiled with version: 5.4.0 20160609 on 06 September 2016 16:19:24
+os: Linux-4.4.0-42-generic #62-Ubuntu SMP Fri Oct 7 23:11:45 UTC 2016
+nodename: jinwoo-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /etc/uwsgi/vassals
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/jinwoo/testsite
+your processes number limit is 15585
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:8000 fd 3
+Python version: 2.7.12 (default, Jul  1 2016, 15:12:24)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/jinwoo/Env/testsite
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1f97b50
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1f97b50 pid: 1286 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1286)
+spawned uWSGI worker 1 (pid: 2649, cores: 1)
+epoll_ctl(): File exists [core/event.c line 521]
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:16:22 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:16:22 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2649)...
+worker 1 killed successfully (pid: 2649)
+Respawned uWSGI worker 1 (new pid: 2652)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:16:23 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:16:23 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2652)...
+worker 1 killed successfully (pid: 2652)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 2653)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:16:26 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:16:26 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2653)...
+worker 1 killed successfully (pid: 2653)
+Respawned uWSGI worker 1 (new pid: 2654)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:16:27 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:16:27 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2654)...
+worker 1 killed successfully (pid: 2654)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 2655)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:16:30 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:16:30 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2655)...
+worker 1 killed successfully (pid: 2655)
+Respawned uWSGI worker 1 (new pid: 2656)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:16:31 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:16:31 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2656)...
+worker 1 killed successfully (pid: 2656)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 2657)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:16:34 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:16:34 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2657)...
+worker 1 killed successfully (pid: 2657)
+Respawned uWSGI worker 1 (new pid: 2658)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:16:35 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:16:35 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2658)...
+worker 1 killed successfully (pid: 2658)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 2659)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:16:38 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:16:38 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2659)...
+worker 1 killed successfully (pid: 2659)
+Respawned uWSGI worker 1 (new pid: 2660)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:16:39 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:16:39 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2660)...
+worker 1 killed successfully (pid: 2660)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 2661)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:16:42 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:16:42 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2661)...
+worker 1 killed successfully (pid: 2661)
+Respawned uWSGI worker 1 (new pid: 2662)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:16:43 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:16:43 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2662)...
+worker 1 killed successfully (pid: 2662)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 2663)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:16:46 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:16:46 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2663)...
+worker 1 killed successfully (pid: 2663)
+Respawned uWSGI worker 1 (new pid: 2664)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:16:47 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:16:47 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2664)...
+worker 1 killed successfully (pid: 2664)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+*** Starting uWSGI 2.0.13.1 (64bit) on [Sat Oct 15 14:17:06 2016] ***
+compiled with version: 5.4.0 20160609 on 06 September 2016 16:19:24
+os: Linux-4.4.0-42-generic #62-Ubuntu SMP Fri Oct 7 23:11:45 UTC 2016
+nodename: jinwoo-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /etc/uwsgi/vassals
+writing pidfile to /home/jinwoo/testsite/uwsgi/project-master.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/jinwoo/testsite
+your processes number limit is 15585
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 2.7.12 (default, Jul  1 2016, 15:12:24)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/jinwoo/Env/testsite
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x2608f50
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x2608f50 pid: 1307 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1307)
+spawned uWSGI worker 1 (pid: 1628, cores: 1)
+[pid: 1628|app: 0|req: 1/1] 192.168.121.1 () {44 vars in 870 bytes} [Sat Oct 15 14:19:06 2016] GET / => generated 11962 bytes in 177 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 1628|app: 0|req: 2/2] 192.168.121.1 () {44 vars in 931 bytes} [Sat Oct 15 14:19:15 2016] GET /problems/1/?orderby=title => generated 7568 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1628|app: 0|req: 3/3] 192.168.121.1 () {44 vars in 937 bytes} [Sat Oct 15 14:19:17 2016] GET /problems/write/ => generated 8485 bytes in 24 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1628|app: 0|req: 4/4] 192.168.121.1 () {44 vars in 946 bytes} [Sat Oct 15 14:19:19 2016] GET /problems/6/?orderby=title => generated 9277 bytes in 46 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1628|app: 0|req: 5/5] 192.168.121.1 () {44 vars in 937 bytes} [Sat Oct 15 14:19:21 2016] GET /problems/write/ => generated 8485 bytes in 21 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+Sat Oct 15 14:21:26 2016 - received message 0 from emperor
+SIGINT/SIGQUIT received...killing workers...
+...brutally killing workers...
+worker 1 buried after 0 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.13.1 (64bit) on [Sat Oct 15 14:21:48 2016] ***
+compiled with version: 5.4.0 20160609 on 06 September 2016 16:19:24
+os: Linux-4.4.0-42-generic #62-Ubuntu SMP Fri Oct 7 23:11:45 UTC 2016
+nodename: jinwoo-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /etc/uwsgi/vassals
+writing pidfile to /home/jinwoo/testsite/uwsgi/project-master.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/jinwoo/testsite
+your processes number limit is 15585
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 2.7.12 (default, Jul  1 2016, 15:12:24)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/jinwoo/Env/testsite
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x746f50
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x746f50 pid: 1288 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1288)
+spawned uWSGI worker 1 (pid: 1622, cores: 1)
+[pid: 1622|app: 0|req: 1/1] 192.168.121.1 () {46 vars in 968 bytes} [Sat Oct 15 14:22:26 2016] GET /problems/write/ => generated 8485 bytes in 209 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 1622|app: 0|req: 2/2] 192.168.121.1 () {44 vars in 946 bytes} [Sat Oct 15 14:22:30 2016] GET /problems/1/?orderby=title => generated 7568 bytes in 56 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1622|app: 0|req: 3/3] 192.168.121.1 () {44 vars in 937 bytes} [Sat Oct 15 14:22:32 2016] GET /problems/write/ => generated 8485 bytes in 26 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+...brutally killing workers...
+Sat Oct 15 14:24:58 2016 - received message 0 from emperor
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /etc/uwsgi/vassals
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (127.0.0.1:8000)
+running /usr/local/bin/uwsgi
+*** has_emperor mode detected (fd: 6) ***
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.13.1 (64bit) on [Sat Oct 15 14:24:59 2016] ***
+compiled with version: 5.4.0 20160609 on 06 September 2016 16:19:24
+os: Linux-4.4.0-42-generic #62-Ubuntu SMP Fri Oct 7 23:11:45 UTC 2016
+nodename: jinwoo-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /etc/uwsgi/vassals
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/jinwoo/testsite
+your processes number limit is 15585
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:8000 fd 3
+Python version: 2.7.12 (default, Jul  1 2016, 15:12:24)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/jinwoo/Env/testsite
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xa58b50
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xa58b50 pid: 1288 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1288)
+spawned uWSGI worker 1 (pid: 2697, cores: 1)
+epoll_ctl(): File exists [core/event.c line 521]
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:25:00 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:25:00 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2697)...
+worker 1 killed successfully (pid: 2697)
+Respawned uWSGI worker 1 (new pid: 2700)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:25:01 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:25:01 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2700)...
+worker 1 killed successfully (pid: 2700)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 2701)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:25:04 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:25:04 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2701)...
+worker 1 killed successfully (pid: 2701)
+Respawned uWSGI worker 1 (new pid: 2702)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:25:05 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:25:05 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2702)...
+worker 1 killed successfully (pid: 2702)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 2703)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:25:08 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:25:08 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2703)...
+worker 1 killed successfully (pid: 2703)
+Respawned uWSGI worker 1 (new pid: 2704)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:25:09 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:25:09 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2704)...
+worker 1 killed successfully (pid: 2704)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 2705)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:25:12 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:25:12 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2705)...
+worker 1 killed successfully (pid: 2705)
+Respawned uWSGI worker 1 (new pid: 2706)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:25:13 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:25:13 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2706)...
+worker 1 killed successfully (pid: 2706)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 2707)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:25:16 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:25:16 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2707)...
+worker 1 killed successfully (pid: 2707)
+Respawned uWSGI worker 1 (new pid: 2708)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:25:17 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:25:17 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2708)...
+worker 1 killed successfully (pid: 2708)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 2709)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:25:20 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:25:20 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2709)...
+worker 1 killed successfully (pid: 2709)
+Respawned uWSGI worker 1 (new pid: 2710)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:25:21 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:25:21 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2710)...
+worker 1 killed successfully (pid: 2710)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 2711)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:25:24 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:25:24 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2711)...
+worker 1 killed successfully (pid: 2711)
+Respawned uWSGI worker 1 (new pid: 2712)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:25:25 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:25:25 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2712)...
+worker 1 killed successfully (pid: 2712)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 2713)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 14:25:28 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 14:25:28 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2713)...
+*** Starting uWSGI 2.0.13.1 (64bit) on [Sat Oct 15 14:25:45 2016] ***
+compiled with version: 5.4.0 20160609 on 06 September 2016 16:19:24
+os: Linux-4.4.0-42-generic #62-Ubuntu SMP Fri Oct 7 23:11:45 UTC 2016
+nodename: jinwoo-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /etc/uwsgi/vassals
+writing pidfile to /home/jinwoo/testsite/uwsgi/project-master.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/jinwoo/testsite
+your processes number limit is 15585
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 2.7.12 (default, Jul  1 2016, 15:12:24)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/jinwoo/Env/testsite
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x2681f50
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x2681f50 pid: 1289 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1289)
+spawned uWSGI worker 1 (pid: 1602, cores: 1)
+[pid: 1602|app: 0|req: 1/1] 192.168.121.1 () {46 vars in 968 bytes} [Sat Oct 15 14:26:02 2016] GET /problems/write/ => generated 8485 bytes in 242 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+Sat Oct 15 14:30:40 2016 - received message 0 from emperor
+SIGINT/SIGQUIT received...killing workers...
+...brutally killing workers...
+worker 1 buried after 0 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.13.1 (64bit) on [Sat Oct 15 14:30:59 2016] ***
+compiled with version: 5.4.0 20160609 on 06 September 2016 16:19:24
+os: Linux-4.4.0-42-generic #62-Ubuntu SMP Fri Oct 7 23:11:45 UTC 2016
+nodename: jinwoo-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /etc/uwsgi/vassals
+writing pidfile to /home/jinwoo/testsite/uwsgi/project-master.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/jinwoo/testsite
+your processes number limit is 15585
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 2.7.12 (default, Jul  1 2016, 15:12:24)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/jinwoo/Env/testsite
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x24c8f50
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x24c8f50 pid: 1296 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1296)
+spawned uWSGI worker 1 (pid: 1623, cores: 1)
+[pid: 1623|app: 0|req: 1/1] 192.168.121.1 () {44 vars in 946 bytes} [Sat Oct 15 14:32:06 2016] GET /problems/1/?orderby=title => generated 7568 bytes in 300 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 1623|app: 0|req: 2/2] 192.168.121.1 () {44 vars in 956 bytes} [Sat Oct 15 14:32:09 2016] GET /problems/5/?orderby=title => generated 7560 bytes in 74 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1623|app: 0|req: 3/3] 192.168.121.1 () {44 vars in 956 bytes} [Sat Oct 15 14:32:10 2016] GET /problems/6/?orderby=title => generated 9277 bytes in 74 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1623|app: 0|req: 4/4] 192.168.121.1 () {44 vars in 937 bytes} [Sat Oct 15 14:32:11 2016] GET /problems/write/ => generated 8485 bytes in 35 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1623|app: 0|req: 5/5] 192.168.121.1 () {52 vars in 1204 bytes} [Sat Oct 15 14:33:20 2016] POST /problems/write_done/ => generated 106 bytes in 77745 msecs (HTTP/1.1 200) 3 headers in 102 bytes (6689 switches on core 0)
+[pid: 1623|app: 0|req: 6/6] 192.168.121.1 () {44 vars in 924 bytes} [Sat Oct 15 14:34:40 2016] GET /problems/1/ => generated 7795 bytes in 47 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1623|app: 0|req: 7/7] 192.168.121.1 () {44 vars in 936 bytes} [Sat Oct 15 14:34:42 2016] GET /problems/view/?pnum=27 => generated 5785 bytes in 51 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+DAMN ! worker 1 (pid: 1623) died, killed by signal 9 :( trying respawn ...
+Respawned uWSGI worker 1 (new pid: 2531)
+DAMN ! worker 1 (pid: 2531) died, killed by signal 9 :( trying respawn ...
+Respawned uWSGI worker 1 (new pid: 2537)
+[pid: 2537|app: 0|req: 10/8] 192.168.121.1 () {42 vars in 851 bytes} [Sat Oct 15 14:36:57 2016] GET /admin/ => generated 7359 bytes in 1109 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 2537|app: 0|req: 11/9] 192.168.121.1 () {42 vars in 851 bytes} [Sat Oct 15 14:36:58 2016] GET /admin/ => generated 7359 bytes in 33 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 2537|app: 0|req: 12/10] 192.168.121.1 () {44 vars in 920 bytes} [Sat Oct 15 14:37:01 2016] GET /admin/auth/user/ => generated 9528 bytes in 130 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 2537|app: 0|req: 13/11] 192.168.121.1 () {42 vars in 818 bytes} [Sat Oct 15 14:37:01 2016] GET /admin/jsi18n/ => generated 8379 bytes in 77 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 2537|app: 0|req: 14/12] 192.168.121.1 () {44 vars in 950 bytes} [Sat Oct 15 14:37:03 2016] GET /admin/auth/user/11/change/ => generated 21968 bytes in 183 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 2537|app: 0|req: 15/13] 192.168.121.1 () {42 vars in 828 bytes} [Sat Oct 15 14:37:03 2016] GET /admin/jsi18n/ => generated 8379 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 2537|app: 0|req: 16/14] 192.168.121.1 () {52 vars in 1215 bytes} [Sat Oct 15 14:37:09 2016] POST /admin/auth/user/11/change/ => generated 0 bytes in 113 msecs (HTTP/1.1 302) 8 headers in 586 bytes (1 switches on core 0)
+[pid: 2537|app: 0|req: 17/15] 192.168.121.1 () {46 vars in 1243 bytes} [Sat Oct 15 14:37:09 2016] GET /admin/auth/user/ => generated 9721 bytes in 52 msecs (HTTP/1.1 200) 8 headers in 487 bytes (1 switches on core 0)
+[pid: 2537|app: 0|req: 18/16] 192.168.121.1 () {42 vars in 818 bytes} [Sat Oct 15 14:37:09 2016] GET /admin/jsi18n/ => generated 8379 bytes in 36 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 2537|app: 0|req: 19/17] 192.168.121.1 () {44 vars in 910 bytes} [Sat Oct 15 14:37:11 2016] GET /admin/ => generated 7346 bytes in 36 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 2537|app: 0|req: 20/18] 192.168.121.1 () {44 vars in 932 bytes} [Sat Oct 15 14:37:12 2016] GET /admin/problem/problem/ => generated 14710 bytes in 297 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 2537|app: 0|req: 21/19] 192.168.121.1 () {42 vars in 824 bytes} [Sat Oct 15 14:37:13 2016] GET /admin/jsi18n/ => generated 8379 bytes in 30 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 2537|app: 0|req: 22/20] 192.168.121.1 () {44 vars in 968 bytes} [Sat Oct 15 14:37:15 2016] GET /admin/problem/problem/17/change/ => generated 13030 bytes in 63 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 2537|app: 0|req: 23/21] 192.168.121.1 () {42 vars in 834 bytes} [Sat Oct 15 14:37:16 2016] GET /admin/jsi18n/ => generated 8379 bytes in 38 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 2537|app: 0|req: 24/22] 192.168.121.1 () {52 vars in 1233 bytes} [Sat Oct 15 14:37:20 2016] POST /admin/problem/problem/17/change/ => generated 0 bytes in 42 msecs (HTTP/1.1 302) 8 headers in 597 bytes (1 switches on core 0)
+[pid: 2537|app: 0|req: 25/23] 192.168.121.1 () {46 vars in 1266 bytes} [Sat Oct 15 14:37:20 2016] GET /admin/problem/problem/ => generated 14920 bytes in 55 msecs (HTTP/1.1 200) 8 headers in 487 bytes (1 switches on core 0)
+[pid: 2537|app: 0|req: 26/24] 192.168.121.1 () {42 vars in 824 bytes} [Sat Oct 15 14:37:20 2016] GET /admin/jsi18n/ => generated 8379 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 2537|app: 0|req: 27/25] 192.168.121.1 () {44 vars in 904 bytes} [Sat Oct 15 14:37:23 2016] GET / => generated 12249 bytes in 61 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2537|app: 0|req: 28/26] 192.168.121.1 () {44 vars in 931 bytes} [Sat Oct 15 14:37:24 2016] GET /problems/1/?orderby=title => generated 7795 bytes in 36 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2537|app: 0|req: 29/27] 192.168.121.1 () {44 vars in 956 bytes} [Sat Oct 15 14:37:26 2016] GET /problems/6/?orderby=title => generated 9277 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2537|app: 0|req: 30/28] 192.168.121.1 () {44 vars in 958 bytes} [Sat Oct 15 14:37:32 2016] GET /admin/problem/problem/ => generated 14710 bytes in 525 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 2537|app: 0|req: 31/29] 192.168.121.1 () {44 vars in 968 bytes} [Sat Oct 15 14:37:35 2016] GET /admin/problem/problem/17/change/ => generated 13027 bytes in 67 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 2537|app: 0|req: 32/30] 192.168.121.1 () {42 vars in 834 bytes} [Sat Oct 15 14:37:35 2016] GET /admin/jsi18n/ => generated 8379 bytes in 41 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 2537|app: 0|req: 33/31] 192.168.121.1 () {52 vars in 1233 bytes} [Sat Oct 15 14:37:40 2016] POST /admin/problem/problem/17/change/ => generated 0 bytes in 35 msecs (HTTP/1.1 302) 8 headers in 597 bytes (1 switches on core 0)
+[pid: 2537|app: 0|req: 34/32] 192.168.121.1 () {46 vars in 1266 bytes} [Sat Oct 15 14:37:40 2016] GET /admin/problem/problem/ => generated 14920 bytes in 72 msecs (HTTP/1.1 200) 8 headers in 487 bytes (1 switches on core 0)
+[pid: 2537|app: 0|req: 35/33] 192.168.121.1 () {42 vars in 824 bytes} [Sat Oct 15 14:37:40 2016] GET /admin/jsi18n/ => generated 8379 bytes in 39 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 2537|app: 0|req: 36/34] 192.168.121.1 () {44 vars in 904 bytes} [Sat Oct 15 14:37:42 2016] GET / => generated 12249 bytes in 35 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2537|app: 0|req: 37/35] 192.168.121.1 () {44 vars in 925 bytes} [Sat Oct 15 14:37:45 2016] GET /problems/view/?pnum=17 => generated 6607 bytes in 33 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 2537|app: 0|req: 38/36] 192.168.121.1 () {44 vars in 955 bytes} [Sat Oct 15 14:44:45 2016] GET /problems/download/?pnum=17 => generated 15145711 bytes in 1402 msecs (HTTP/1.1 200) 3 headers in 152 bytes (3 switches on core 0)
+[pid: 2537|app: 0|req: 39/37] 192.168.121.1 () {44 vars in 953 bytes} [Sat Oct 15 14:44:48 2016] GET /problems/1/?orderby=title => generated 7795 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2537|app: 0|req: 40/38] 192.168.121.1 () {44 vars in 950 bytes} [Sat Oct 15 14:44:51 2016] GET /problems/view/?pnum=27 => generated 5785 bytes in 34 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+DAMN ! worker 1 (pid: 2537) died, killed by signal 9 :( trying respawn ...
+Respawned uWSGI worker 1 (new pid: 3048)
+Sat Oct 15 14:49:19 2016 - received message 0 from emperor
+SIGINT/SIGQUIT received...killing workers...
+...brutally killing workers...
+worker 1 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.13.1 (64bit) on [Sat Oct 15 14:49:47 2016] ***
+compiled with version: 5.4.0 20160609 on 06 September 2016 16:19:24
+os: Linux-4.4.0-42-generic #62-Ubuntu SMP Fri Oct 7 23:11:45 UTC 2016
+nodename: jinwoo-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /etc/uwsgi/vassals
+writing pidfile to /home/jinwoo/testsite/uwsgi/project-master.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/jinwoo/testsite
+your processes number limit is 15585
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 2.7.12 (default, Jul  1 2016, 15:12:24)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/jinwoo/Env/testsite
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1b66f50
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x1b66f50 pid: 1284 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1284)
+spawned uWSGI worker 1 (pid: 1613, cores: 1)
+[pid: 1613|app: 0|req: 1/1] 192.168.121.1 () {46 vars in 981 bytes} [Sat Oct 15 14:49:57 2016] GET /problems/view/?pnum=27 => generated 5785 bytes in 664 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+DAMN ! worker 1 (pid: 1613) died, killed by signal 9 :( trying respawn ...
+Respawned uWSGI worker 1 (new pid: 2423)
+...brutally killing workers...
+Sat Oct 15 15:01:44 2016 - received message 0 from emperor
+worker 1 buried after 2 seconds
+binary reloading uWSGI...
+chdir() to /etc/uwsgi/vassals
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (127.0.0.1:8000)
+running /usr/local/bin/uwsgi
+*** has_emperor mode detected (fd: 6) ***
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.13.1 (64bit) on [Sat Oct 15 15:01:46 2016] ***
+compiled with version: 5.4.0 20160609 on 06 September 2016 16:19:24
+os: Linux-4.4.0-42-generic #62-Ubuntu SMP Fri Oct 7 23:11:45 UTC 2016
+nodename: jinwoo-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /etc/uwsgi/vassals
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/jinwoo/testsite
+your processes number limit is 15585
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:8000 fd 3
+Python version: 2.7.12 (default, Jul  1 2016, 15:12:24)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/jinwoo/Env/testsite
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xc2bb50
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xc2bb50 pid: 1284 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1284)
+spawned uWSGI worker 1 (pid: 2892, cores: 1)
+epoll_ctl(): File exists [core/event.c line 521]
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 15:01:47 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 15:01:47 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2892)...
+worker 1 killed successfully (pid: 2892)
+Respawned uWSGI worker 1 (new pid: 2893)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 15:01:48 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 15:01:48 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2893)...
+worker 1 killed successfully (pid: 2893)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 2894)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 15:01:51 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 15:01:51 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2894)...
+worker 1 killed successfully (pid: 2894)
+Respawned uWSGI worker 1 (new pid: 2895)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 15:01:52 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 15:01:52 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2895)...
+worker 1 killed successfully (pid: 2895)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 2896)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 15:01:55 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 15:01:55 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2896)...
+worker 1 killed successfully (pid: 2896)
+Respawned uWSGI worker 1 (new pid: 2897)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 15:01:56 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 15:01:56 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2897)...
+worker 1 killed successfully (pid: 2897)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 2898)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 15:01:59 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 15:01:59 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2898)...
+worker 1 killed successfully (pid: 2898)
+Respawned uWSGI worker 1 (new pid: 2899)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 15:02:00 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 15:02:00 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2899)...
+worker 1 killed successfully (pid: 2899)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 2900)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 15:02:03 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 15:02:03 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2900)...
+worker 1 killed successfully (pid: 2900)
+Respawned uWSGI worker 1 (new pid: 2901)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 15:02:04 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 15:02:04 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2901)...
+worker 1 killed successfully (pid: 2901)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 2902)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 15:02:07 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 15:02:07 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2902)...
+worker 1 killed successfully (pid: 2902)
+Respawned uWSGI worker 1 (new pid: 2903)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 15:02:08 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 15:02:08 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2903)...
+worker 1 killed successfully (pid: 2903)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 2904)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 15:02:11 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 15:02:11 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2904)...
+worker 1 killed successfully (pid: 2904)
+Respawned uWSGI worker 1 (new pid: 2905)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 15:02:12 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 15:02:12 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 2905)...
+worker 1 killed successfully (pid: 2905)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+*** Starting uWSGI 2.0.13.1 (64bit) on [Sat Oct 15 15:02:30 2016] ***
+compiled with version: 5.4.0 20160609 on 06 September 2016 16:19:24
+os: Linux-4.4.0-42-generic #62-Ubuntu SMP Fri Oct 7 23:11:45 UTC 2016
+nodename: jinwoo-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /etc/uwsgi/vassals
+writing pidfile to /home/jinwoo/testsite/uwsgi/project-master.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/jinwoo/testsite
+your processes number limit is 15585
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 2.7.12 (default, Jul  1 2016, 15:12:24)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/jinwoo/Env/testsite
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1ea4f50
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1ea4f50 pid: 1269 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1269)
+spawned uWSGI worker 1 (pid: 1601, cores: 1)
+[pid: 1601|app: 0|req: 1/1] 192.168.121.1 () {46 vars in 981 bytes} [Sat Oct 15 15:03:11 2016] GET /problems/view/?pnum=27 => generated 5785 bytes in 361 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+DAMN ! worker 1 (pid: 1601) died, killed by signal 9 :( trying respawn ...
+Respawned uWSGI worker 1 (new pid: 2375)
+[pid: 2375|app: 0|req: 3/2] 192.168.121.1 () {42 vars in 851 bytes} [Sat Oct 15 15:10:41 2016] GET /admin/ => generated 7456 bytes in 1402 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 2375|app: 0|req: 4/3] 192.168.121.1 () {42 vars in 851 bytes} [Sat Oct 15 15:10:43 2016] GET /admin/ => generated 7456 bytes in 30 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 2375|app: 0|req: 5/4] 192.168.121.1 () {44 vars in 932 bytes} [Sat Oct 15 15:10:45 2016] GET /admin/problem/problem/ => generated 14710 bytes in 129 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 2375|app: 0|req: 6/5] 192.168.121.1 () {42 vars in 824 bytes} [Sat Oct 15 15:10:45 2016] GET /admin/jsi18n/ => generated 8379 bytes in 101 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 2375|app: 0|req: 7/6] 192.168.121.1 () {52 vars in 1131 bytes} [Sat Oct 15 15:10:51 2016] POST /admin/problem/problem/ => generated 3212 bytes in 51 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 2375|app: 0|req: 8/7] 192.168.121.1 () {52 vars in 1131 bytes} [Sat Oct 15 15:10:53 2016] POST /admin/problem/problem/ => generated 0 bytes in 43 msecs (HTTP/1.1 302) 8 headers in 541 bytes (1 switches on core 0)
+[pid: 2375|app: 0|req: 9/8] 192.168.121.1 () {46 vars in 1200 bytes} [Sat Oct 15 15:10:53 2016] GET /admin/problem/problem/ => generated 14492 bytes in 52 msecs (HTTP/1.1 200) 8 headers in 487 bytes (1 switches on core 0)
+[pid: 2375|app: 0|req: 10/9] 192.168.121.1 () {42 vars in 824 bytes} [Sat Oct 15 15:10:53 2016] GET /admin/jsi18n/ => generated 8379 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 2375|app: 0|req: 11/10] 192.168.121.1 () {46 vars in 979 bytes} [Sat Oct 15 15:12:00 2016] GET /admin/problem/problem/ => generated 14338 bytes in 60 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 2375|app: 0|req: 12/11] 192.168.121.1 () {44 vars in 855 bytes} [Sat Oct 15 15:12:00 2016] GET /admin/jsi18n/ => generated 8379 bytes in 70 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 2375|app: 0|req: 13/12] 192.168.121.1 () {44 vars in 930 bytes} [Sat Oct 15 15:12:02 2016] GET /admin/logout/ => generated 94 bytes in 32 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 2375|app: 0|req: 14/13] 192.168.121.1 () {44 vars in 851 bytes} [Sat Oct 15 15:12:03 2016] GET / => generated 4092 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2375|app: 0|req: 15/14] 192.168.121.1 () {44 vars in 858 bytes} [Sat Oct 15 15:13:02 2016] GET /documents/ => generated 2792 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2375|app: 0|req: 16/15] 192.168.121.1 () {44 vars in 897 bytes} [Sat Oct 15 15:13:02 2016] GET /problems/1/?orderby=title => generated 7343 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2375|app: 0|req: 17/16] 192.168.121.1 () {44 vars in 912 bytes} [Sat Oct 15 15:13:04 2016] GET /problems/6/?orderby=title => generated 9052 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2375|app: 0|req: 18/17] 192.168.121.1 () {44 vars in 906 bytes} [Sat Oct 15 15:13:05 2016] GET /problems/view/?pnum=18 => generated 0 bytes in 2 msecs (HTTP/1.1 302) 4 headers in 157 bytes (1 switches on core 0)
+[pid: 2375|app: 0|req: 19/18] 192.168.121.1 () {44 vars in 940 bytes} [Sat Oct 15 15:13:05 2016] GET /login/?next=/problems/view/%3Fpnum%3D18 => generated 3670 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 2375|app: 0|req: 20/19] 192.168.121.1 () {52 vars in 1072 bytes} [Sat Oct 15 15:13:12 2016] POST /login/ => generated 0 bytes in 70 msecs (HTTP/1.1 302) 6 headers in 347 bytes (1 switches on core 0)
+[pid: 2375|app: 0|req: 21/20] 192.168.121.1 () {46 vars in 952 bytes} [Sat Oct 15 15:13:12 2016] GET / => generated 11962 bytes in 40 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2375|app: 0|req: 22/21] 192.168.121.1 () {44 vars in 931 bytes} [Sat Oct 15 15:13:13 2016] GET /problems/1/?orderby=title => generated 7568 bytes in 40 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2375|app: 0|req: 23/22] 192.168.121.1 () {44 vars in 956 bytes} [Sat Oct 15 15:13:14 2016] GET /problems/6/?orderby=title => generated 9277 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2375|app: 0|req: 24/23] 192.168.121.1 () {44 vars in 950 bytes} [Sat Oct 15 15:13:15 2016] GET /problems/view/?pnum=22 => generated 6137 bytes in 50 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 2375|app: 0|req: 25/24] 192.168.121.1 () {44 vars in 955 bytes} [Sat Oct 15 15:13:16 2016] GET /problems/download/?pnum=22 => generated 6870 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 145 bytes (1 switches on core 0)
+[pid: 2375|app: 0|req: 26/25] 192.168.121.1 () {44 vars in 956 bytes} [Sat Oct 15 15:13:19 2016] GET /problems/6/?orderby=title => generated 9277 bytes in 593 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2375|app: 0|req: 27/26] 192.168.121.1 () {44 vars in 950 bytes} [Sat Oct 15 15:13:21 2016] GET /problems/view/?pnum=26 => generated 6725 bytes in 26 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 2375|app: 0|req: 28/27] 192.168.121.1 () {44 vars in 955 bytes} [Sat Oct 15 15:13:23 2016] GET /problems/download/?pnum=26 => generated 240162 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 146 bytes (1 switches on core 0)
+[pid: 2375|app: 0|req: 29/28] 192.168.121.1 () {44 vars in 950 bytes} [Sat Oct 15 15:13:27 2016] GET /problems/view/?pnum=17 => generated 6607 bytes in 35 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+Sat Oct 15 16:37:21 2016 - uwsgi_response_write_body_do(): Connection reset by peer [core/writer.c line 331] during GET /problems/download/?pnum=17 (192.168.121.1)
+IOError: write error
+[pid: 2375|app: 0|req: 30/29] 192.168.121.1 () {44 vars in 955 bytes} [Sat Oct 15 15:13:29 2016] GET /problems/download/?pnum=17 => generated 2538856 bytes in 5032091 msecs (HTTP/1.1 200) 3 headers in 152 bytes (0 switches on core 0)
+[pid: 2375|app: 0|req: 31/30] 192.168.121.1 () {44 vars in 955 bytes} [Sat Oct 15 16:37:27 2016] GET /problems/download/?pnum=17 => generated 15145711 bytes in 523 msecs (HTTP/1.1 200) 3 headers in 152 bytes (1 switches on core 0)
+[pid: 2375|app: 0|req: 32/31] 192.168.121.1 () {44 vars in 955 bytes} [Sat Oct 15 16:37:31 2016] GET /problems/download/?pnum=17 => generated 15145711 bytes in 101 msecs (HTTP/1.1 200) 3 headers in 152 bytes (1 switches on core 0)
+[pid: 2375|app: 0|req: 33/32] 192.168.121.1 () {44 vars in 955 bytes} [Sat Oct 15 16:37:34 2016] GET /problems/download/?pnum=17 => generated 15145711 bytes in 467 msecs (HTTP/1.1 200) 3 headers in 152 bytes (2 switches on core 0)
+[pid: 2375|app: 0|req: 34/33] 192.168.121.1 () {44 vars in 955 bytes} [Sat Oct 15 16:38:37 2016] GET /problems/download/?pnum=17 => generated 15145711 bytes in 185 msecs (HTTP/1.1 200) 3 headers in 152 bytes (5 switches on core 0)
+[pid: 2375|app: 0|req: 35/34] 192.168.121.1 () {44 vars in 953 bytes} [Sat Oct 15 16:38:40 2016] GET /problems/6/?orderby=title => generated 9277 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2375|app: 0|req: 36/35] 192.168.121.1 () {44 vars in 958 bytes} [Sat Oct 15 16:38:41 2016] GET /problems/6/?orderby=rtitle => generated 9277 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2375|app: 0|req: 37/36] 192.168.121.1 () {44 vars in 957 bytes} [Sat Oct 15 16:38:42 2016] GET /problems/6/?orderby=title => generated 9277 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2375|app: 0|req: 38/37] 192.168.121.1 () {44 vars in 937 bytes} [Sat Oct 15 16:38:47 2016] GET /problems/write/ => generated 8485 bytes in 23 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 2375|app: 0|req: 39/38] 192.168.121.1 () {52 vars in 1204 bytes} [Sat Oct 15 16:39:58 2016] POST /problems/write_done/ => generated 106 bytes in 63204 msecs (HTTP/1.1 200) 3 headers in 102 bytes (18534 switches on core 0)
+[pid: 2375|app: 0|req: 40/39] 192.168.121.1 () {44 vars in 924 bytes} [Sat Oct 15 16:41:04 2016] GET /problems/1/ => generated 7846 bytes in 57 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2375|app: 0|req: 41/40] 192.168.121.1 () {44 vars in 942 bytes} [Sat Oct 15 16:41:07 2016] GET /problems/1/?orderby=title => generated 7846 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2375|app: 0|req: 42/41] 192.168.121.1 () {44 vars in 950 bytes} [Sat Oct 15 16:41:08 2016] GET /problems/view/?pnum=27 => generated 5836 bytes in 37 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+DAMN ! worker 1 (pid: 2375) died, killed by signal 9 :( trying respawn ...
+Respawned uWSGI worker 1 (new pid: 2717)
+DAMN ! worker 1 (pid: 2717) died, killed by signal 9 :( trying respawn ...
+Respawned uWSGI worker 1 (new pid: 2720)
+DAMN ! worker 1 (pid: 2720) died, killed by signal 9 :( trying respawn ...
+Respawned uWSGI worker 1 (new pid: 2727)
+[pid: 2727|app: 0|req: 46/42] 192.168.121.1 () {42 vars in 851 bytes} [Sat Oct 15 16:43:15 2016] GET /admin/ => generated 7446 bytes in 1064 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 2727|app: 0|req: 47/43] 192.168.121.1 () {42 vars in 851 bytes} [Sat Oct 15 16:43:16 2016] GET /admin/ => generated 7446 bytes in 31 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 2727|app: 0|req: 48/44] 192.168.121.1 () {44 vars in 932 bytes} [Sat Oct 15 16:43:18 2016] GET /admin/problem/problem/ => generated 14761 bytes in 112 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 2727|app: 0|req: 49/45] 192.168.121.1 () {42 vars in 824 bytes} [Sat Oct 15 16:43:18 2016] GET /admin/jsi18n/ => generated 8379 bytes in 82 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 2727|app: 0|req: 50/46] 192.168.121.1 () {44 vars in 968 bytes} [Sat Oct 15 16:43:20 2016] GET /admin/problem/problem/27/change/ => generated 12363 bytes in 97 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 2727|app: 0|req: 51/47] 192.168.121.1 () {42 vars in 834 bytes} [Sat Oct 15 16:43:20 2016] GET /admin/jsi18n/ => generated 8379 bytes in 52 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 2727|app: 0|req: 52/48] 192.168.121.1 () {44 vars in 978 bytes} [Sat Oct 15 16:43:23 2016] GET /admin/problem/problem/27/delete/ => generated 3209 bytes in 38 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 2727|app: 0|req: 53/49] 192.168.121.1 () {52 vars in 1159 bytes} [Sat Oct 15 16:43:24 2016] POST /admin/problem/problem/27/delete/ => generated 0 bytes in 42 msecs (HTTP/1.1 302) 8 headers in 605 bytes (1 switches on core 0)
+[pid: 2727|app: 0|req: 54/50] 192.168.121.1 () {46 vars in 1274 bytes} [Sat Oct 15 16:43:24 2016] GET /admin/problem/problem/ => generated 14532 bytes in 60 msecs (HTTP/1.1 200) 8 headers in 487 bytes (1 switches on core 0)
+[pid: 2727|app: 0|req: 55/51] 192.168.121.1 () {42 vars in 824 bytes} [Sat Oct 15 16:43:25 2016] GET /admin/jsi18n/ => generated 8379 bytes in 51 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 2727|app: 0|req: 56/52] 192.168.121.1 () {46 vars in 989 bytes} [Sat Oct 15 16:43:59 2016] GET /admin/problem/problem/ => generated 14338 bytes in 65 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 2727|app: 0|req: 57/53] 192.168.121.1 () {44 vars in 855 bytes} [Sat Oct 15 16:43:59 2016] GET /admin/jsi18n/ => generated 8379 bytes in 72 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 2727|app: 0|req: 58/54] 192.168.121.1 () {44 vars in 904 bytes} [Sat Oct 15 16:44:01 2016] GET / => generated 11962 bytes in 130 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2727|app: 0|req: 59/55] 192.168.121.1 () {44 vars in 896 bytes} [Sat Oct 15 16:44:03 2016] GET /logout/ => generated 94 bytes in 27 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 2727|app: 0|req: 60/56] 192.168.121.1 () {44 vars in 845 bytes} [Sat Oct 15 16:44:04 2016] GET / => generated 4092 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2727|app: 0|req: 61/57] 192.168.32.39 () {40 vars in 705 bytes} [Sat Oct 15 17:30:34 2016] GET / => generated 4092 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 2727|app: 0|req: 62/58] 192.168.32.39 () {40 vars in 663 bytes} [Sat Oct 15 17:30:35 2016] GET /favicon.ico => generated 3750 bytes in 34 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 2727|app: 0|req: 63/59] 192.168.32.39 () {40 vars in 705 bytes} [Sat Oct 15 17:32:28 2016] GET / => generated 4092 bytes in 133 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 2727|app: 0|req: 64/60] 192.168.32.39 () {40 vars in 663 bytes} [Sat Oct 15 17:32:29 2016] GET /favicon.ico => generated 3750 bytes in 10 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 2727|app: 0|req: 65/61] 192.168.32.39 () {42 vars in 796 bytes} [Sat Oct 15 17:33:15 2016] GET /problems/1/?orderby=title => generated 7343 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2727|app: 0|req: 66/62] 192.168.121.1 () {42 vars in 795 bytes} [Sat Oct 15 17:33:21 2016] GET / => generated 4092 bytes in 16 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 2727|app: 0|req: 67/63] 192.168.121.1 () {42 vars in 754 bytes} [Sat Oct 15 17:33:21 2016] GET /favicon.ico => generated 3751 bytes in 14 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 2727|app: 0|req: 68/64] 192.168.32.39 () {42 vars in 772 bytes} [Sat Oct 15 17:33:31 2016] GET / => generated 4092 bytes in 18 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2727|app: 0|req: 69/65] 192.168.32.39 () {42 vars in 747 bytes} [Sat Oct 15 17:33:32 2016] GET / => generated 4092 bytes in 38 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+...brutally killing workers...
+Sat Oct 15 17:33:41 2016 - received message 0 from emperor
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /etc/uwsgi/vassals
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (127.0.0.1:8000)
+running /usr/local/bin/uwsgi
+*** has_emperor mode detected (fd: 6) ***
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.13.1 (64bit) on [Sat Oct 15 17:33:42 2016] ***
+compiled with version: 5.4.0 20160609 on 06 September 2016 16:19:24
+os: Linux-4.4.0-42-generic #62-Ubuntu SMP Fri Oct 7 23:11:45 UTC 2016
+nodename: jinwoo-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /etc/uwsgi/vassals
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/jinwoo/testsite
+your processes number limit is 15585
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:8000 fd 3
+Python version: 2.7.12 (default, Jul  1 2016, 15:12:24)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/jinwoo/Env/testsite
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1b59b50
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1b59b50 pid: 1269 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1269)
+spawned uWSGI worker 1 (pid: 4217, cores: 1)
+epoll_ctl(): File exists [core/event.c line 521]
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 17:33:43 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 17:33:43 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 4217)...
+worker 1 killed successfully (pid: 4217)
+Respawned uWSGI worker 1 (new pid: 4230)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 17:33:44 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 17:33:44 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 4230)...
+worker 1 killed successfully (pid: 4230)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 4231)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 17:33:47 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 17:33:47 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 4231)...
+worker 1 killed successfully (pid: 4231)
+Respawned uWSGI worker 1 (new pid: 4232)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 17:33:48 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 17:33:48 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 4232)...
+worker 1 killed successfully (pid: 4232)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 4233)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 17:33:51 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 17:33:51 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 4233)...
+worker 1 killed successfully (pid: 4233)
+Respawned uWSGI worker 1 (new pid: 4234)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 17:33:52 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 17:33:52 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 4234)...
+worker 1 killed successfully (pid: 4234)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 4235)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 17:33:55 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 17:33:55 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 4235)...
+worker 1 killed successfully (pid: 4235)
+Respawned uWSGI worker 1 (new pid: 4236)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 17:33:56 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 17:33:56 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 4236)...
+worker 1 killed successfully (pid: 4236)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 4237)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 17:33:59 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 17:33:59 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 4237)...
+worker 1 killed successfully (pid: 4237)
+Respawned uWSGI worker 1 (new pid: 4238)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 17:34:00 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 17:34:00 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 4238)...
+worker 1 killed successfully (pid: 4238)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 4239)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 17:34:03 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 17:34:03 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 4239)...
+worker 1 killed successfully (pid: 4239)
+Respawned uWSGI worker 1 (new pid: 4240)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 17:34:04 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 17:34:04 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 4240)...
+worker 1 killed successfully (pid: 4240)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 4241)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 17:34:07 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 17:34:07 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 4241)...
+worker 1 killed successfully (pid: 4241)
+Respawned uWSGI worker 1 (new pid: 4242)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 17:34:08 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 17:34:08 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 4242)...
+worker 1 killed successfully (pid: 4242)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 4243)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 17:34:11 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 17:34:11 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 4243)...
+*** Starting uWSGI 2.0.13.1 (64bit) on [Sat Oct 15 17:36:28 2016] ***
+compiled with version: 5.4.0 20160609 on 06 September 2016 16:19:24
+os: Linux-4.4.0-42-generic #62-Ubuntu SMP Fri Oct 7 23:11:45 UTC 2016
+nodename: jinwoo-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /etc/uwsgi/vassals
+writing pidfile to /home/jinwoo/testsite/uwsgi/project-master.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/jinwoo/testsite
+your processes number limit is 15585
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 2.7.12 (default, Jul  1 2016, 15:12:24)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/jinwoo/Env/testsite
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x11a9f50
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x11a9f50 pid: 1274 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1274)
+spawned uWSGI worker 1 (pid: 1629, cores: 1)
+[pid: 1629|app: 0|req: 1/1] 192.168.32.39 () {40 vars in 705 bytes} [Sat Oct 15 17:36:56 2016] GET / => generated 4092 bytes in 204 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+Not Found: /favicon.ico
+[pid: 1629|app: 0|req: 2/2] 192.168.32.39 () {40 vars in 663 bytes} [Sat Oct 15 17:36:57 2016] GET /favicon.ico => generated 3750 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 3/3] 192.168.32.130 () {40 vars in 675 bytes} [Sat Oct 15 17:37:20 2016] GET / => generated 4092 bytes in 16 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 4/4] 192.168.32.39 () {42 vars in 736 bytes} [Sat Oct 15 17:37:30 2016] GET / => generated 4092 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 5/5] 192.168.32.196 () {42 vars in 731 bytes} [Sat Oct 15 17:37:51 2016] GET / => generated 4092 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 1629|app: 0|req: 6/6] 192.168.32.196 () {40 vars in 658 bytes} [Sat Oct 15 17:37:53 2016] GET /favicon.ico => generated 3750 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 7/7] 192.168.32.196 () {42 vars in 791 bytes} [Sat Oct 15 17:38:05 2016] GET /problems/1/?orderby=title => generated 7343 bytes in 50 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 8/8] 192.168.32.196 () {42 vars in 743 bytes} [Sat Oct 15 17:43:21 2016] GET /intro/ => generated 2795 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 9/9] 192.168.32.196 () {42 vars in 748 bytes} [Sat Oct 15 17:43:25 2016] GET / => generated 4092 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 10/10] 192.168.32.196 () {42 vars in 791 bytes} [Sat Oct 15 17:43:25 2016] GET /problems/1/?orderby=title => generated 7343 bytes in 16 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 11/11] 192.168.32.196 () {42 vars in 767 bytes} [Sat Oct 15 17:43:27 2016] GET / => generated 4092 bytes in 16 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 12/12] 192.168.32.39 () {42 vars in 759 bytes} [Sat Oct 15 17:44:48 2016] GET /login/ => generated 3670 bytes in 10 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 13/13] 192.168.32.39 () {52 vars in 1036 bytes} [Sat Oct 15 17:44:52 2016] POST /login/ => generated 0 bytes in 156 msecs (HTTP/1.1 302) 6 headers in 347 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 14/14] 192.168.32.39 () {46 vars in 917 bytes} [Sat Oct 15 17:44:52 2016] GET / => generated 11962 bytes in 64 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 15/15] 192.168.32.39 () {44 vars in 929 bytes} [Sat Oct 15 17:44:54 2016] GET /problems/1/?orderby=title => generated 7568 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 16/16] 192.168.32.39 () {44 vars in 954 bytes} [Sat Oct 15 17:44:55 2016] GET /problems/6/?orderby=title => generated 9277 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 17/17] 192.168.32.39 () {44 vars in 948 bytes} [Sat Oct 15 17:44:56 2016] GET /problems/view/?pnum=17 => generated 6607 bytes in 33 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 18/18] 192.168.32.39 () {44 vars in 916 bytes} [Sat Oct 15 17:44:58 2016] GET /logout/ => generated 94 bytes in 20 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 19/19] 192.168.32.39 () {44 vars in 843 bytes} [Sat Oct 15 17:44:59 2016] GET / => generated 4092 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 20/20] 192.168.32.39 () {44 vars in 848 bytes} [Sat Oct 15 17:44:59 2016] GET /login/ => generated 3670 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 21/21] 192.168.32.39 () {52 vars in 1036 bytes} [Sat Oct 15 17:45:02 2016] POST /login/ => generated 0 bytes in 46 msecs (HTTP/1.1 302) 6 headers in 347 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 22/22] 192.168.32.39 () {46 vars in 917 bytes} [Sat Oct 15 17:45:02 2016] GET / => generated 8816 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 23/23] 192.168.32.39 () {44 vars in 929 bytes} [Sat Oct 15 17:45:04 2016] GET /problems/1/?orderby=title => generated 7346 bytes in 30 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 24/24] 192.168.32.39 () {44 vars in 954 bytes} [Sat Oct 15 17:45:04 2016] GET /problems/6/?orderby=title => generated 9055 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 25/25] 192.168.32.39 () {44 vars in 948 bytes} [Sat Oct 15 17:45:06 2016] GET /problems/view/?pnum=17 => generated 6146 bytes in 33 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 26/26] 192.168.32.39 () {44 vars in 916 bytes} [Sat Oct 15 17:45:09 2016] GET /mypage/ => generated 3958 bytes in 40 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 27/27] 192.168.32.39 () {44 vars in 911 bytes} [Sat Oct 15 17:45:10 2016] GET /mypage/rank/ => generated 4448 bytes in 39 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 28/28] 192.168.32.39 () {44 vars in 906 bytes} [Sat Oct 15 17:45:13 2016] GET /mypage/ => generated 3958 bytes in 35 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 29/29] 192.168.32.39 () {44 vars in 887 bytes} [Sat Oct 15 17:45:21 2016] GET / => generated 8816 bytes in 37 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 30/30] 192.168.32.39 () {44 vars in 923 bytes} [Sat Oct 15 17:45:23 2016] GET /problems/view/?pnum=17 => generated 6146 bytes in 31 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 31/31] 192.168.32.39 () {44 vars in 953 bytes} [Sat Oct 15 17:45:28 2016] GET /problems/download/?pnum=17 => generated 15145711 bytes in 217 msecs (HTTP/1.1 200) 3 headers in 152 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 32/32] 192.168.32.39 () {44 vars in 916 bytes} [Sat Oct 15 17:45:32 2016] GET /logout/ => generated 94 bytes in 16 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 33/33] 192.168.32.39 () {44 vars in 843 bytes} [Sat Oct 15 17:45:33 2016] GET / => generated 4092 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 34/34] 192.168.32.39 () {44 vars in 854 bytes} [Sat Oct 15 17:45:35 2016] GET /register/ => generated 4929 bytes in 15 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 35/35] 192.168.32.196 () {42 vars in 754 bytes} [Sat Oct 15 17:50:32 2016] GET /login/ => generated 3670 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 36/36] 192.168.32.196 () {52 vars in 1031 bytes} [Sat Oct 15 17:50:40 2016] POST /login/ => generated 3670 bytes in 43 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 37/37] 192.168.32.196 () {52 vars in 1031 bytes} [Sat Oct 15 17:50:45 2016] POST /login/ => generated 3670 bytes in 38 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 38/38] 192.168.32.196 () {44 vars in 849 bytes} [Sat Oct 15 17:50:47 2016] GET /login/ => generated 3670 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 39/39] 192.168.32.196 () {52 vars in 1031 bytes} [Sat Oct 15 17:50:51 2016] POST /login/ => generated 0 bytes in 47 msecs (HTTP/1.1 302) 6 headers in 347 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 40/40] 192.168.32.196 () {46 vars in 912 bytes} [Sat Oct 15 17:50:51 2016] GET / => generated 8816 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 41/41] 192.168.32.196 () {44 vars in 924 bytes} [Sat Oct 15 17:51:12 2016] GET /problems/1/?orderby=title => generated 7346 bytes in 37 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 42/42] 192.168.32.196 () {44 vars in 949 bytes} [Sat Oct 15 17:51:14 2016] GET /problems/6/?orderby=title => generated 9055 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 43/43] 192.168.32.196 () {44 vars in 943 bytes} [Sat Oct 15 17:51:16 2016] GET /problems/view/?pnum=17 => generated 6146 bytes in 26 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+/home/jinwoo/Env/testsite/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField UserProfile.last_submit received a naive datetime (2016-10-15 17:51:54.057830) while time zone support is active.
+  RuntimeWarning)
+[pid: 1629|app: 0|req: 44/44] 192.168.32.196 () {52 vars in 1138 bytes} [Sat Oct 15 17:51:54 2016] POST /problems/answer_check/?pnum=17 => generated 111 bytes in 53 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 45/45] 192.168.32.196 () {44 vars in 948 bytes} [Sat Oct 15 17:51:55 2016] GET /problems/view/?pnum=17 => generated 6181 bytes in 38 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 46/46] 192.168.32.196 () {44 vars in 911 bytes} [Sat Oct 15 17:52:13 2016] GET /mypage/ => generated 4009 bytes in 42 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 47/47] 192.168.32.196 () {44 vars in 906 bytes} [Sat Oct 15 17:52:24 2016] GET /mypage/rank/ => generated 4448 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 48/48] 192.168.32.196 () {44 vars in 936 bytes} [Sat Oct 15 17:57:29 2016] GET /problems/1/?orderby=title => generated 7346 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 49/49] 192.168.32.196 () {44 vars in 949 bytes} [Sat Oct 15 17:57:30 2016] GET /problems/3/?orderby=title => generated 7090 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 50/50] 192.168.121.1 () {42 vars in 795 bytes} [Sat Oct 15 18:32:30 2016] GET / => generated 4092 bytes in 14 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 1629|app: 0|req: 51/51] 192.168.121.1 () {42 vars in 754 bytes} [Sat Oct 15 18:32:31 2016] GET /favicon.ico => generated 3751 bytes in 9 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 52/52] 192.168.121.1 () {44 vars in 887 bytes} [Sat Oct 15 18:32:40 2016] GET /problems/1/?orderby=title => generated 7343 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 53/53] 192.168.121.1 () {44 vars in 920 bytes} [Sat Oct 15 18:32:41 2016] GET /community/notice/list/?page=1 => generated 5463 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 54/54] 192.168.121.1 () {44 vars in 916 bytes} [Sat Oct 15 18:32:42 2016] GET /problems/1/?orderby=title => generated 7343 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 55/55] 192.168.121.1 () {44 vars in 912 bytes} [Sat Oct 15 18:32:43 2016] GET /problems/6/?orderby=title => generated 9052 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 56/56] 192.168.121.1 () {44 vars in 875 bytes} [Sat Oct 15 18:32:48 2016] GET /login/ => generated 3670 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 57/57] 192.168.121.1 () {52 vars in 1039 bytes} [Sat Oct 15 18:32:56 2016] POST /login/ => generated 0 bytes in 44 msecs (HTTP/1.1 302) 6 headers in 347 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 58/58] 192.168.121.1 () {46 vars in 919 bytes} [Sat Oct 15 18:32:56 2016] GET / => generated 11962 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 59/59] 192.168.121.1 () {44 vars in 931 bytes} [Sat Oct 15 18:32:57 2016] GET /problems/1/?orderby=title => generated 7568 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 60/60] 192.168.121.1 () {44 vars in 956 bytes} [Sat Oct 15 18:32:59 2016] GET /problems/6/?orderby=title => generated 9277 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 61/61] 192.168.121.1 () {44 vars in 950 bytes} [Sat Oct 15 18:33:00 2016] GET /problems/view/?pnum=23 => generated 6000 bytes in 29 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 62/62] 192.168.121.1 () {44 vars in 904 bytes} [Sat Oct 15 18:35:32 2016] GET / => generated 11962 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 63/63] 192.168.121.1 () {44 vars in 931 bytes} [Sat Oct 15 18:37:44 2016] GET /problems/1/?orderby=title => generated 7568 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 64/64] 192.168.121.1 () {44 vars in 956 bytes} [Sat Oct 15 18:37:45 2016] GET /problems/6/?orderby=title => generated 9277 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 65/65] 192.168.121.1 () {44 vars in 958 bytes} [Sat Oct 15 18:38:07 2016] GET /problems/6/?orderby=rtitle => generated 9277 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 66/66] 192.168.121.1 () {44 vars in 957 bytes} [Sat Oct 15 18:38:08 2016] GET /problems/6/?orderby=level => generated 9277 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 67/67] 192.168.121.1 () {44 vars in 958 bytes} [Sat Oct 15 18:38:09 2016] GET /problems/6/?orderby=rlevel => generated 9277 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 68/68] 192.168.121.1 () {44 vars in 957 bytes} [Sat Oct 15 18:38:09 2016] GET /problems/6/?orderby=level => generated 9277 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 69/69] 192.168.121.1 () {44 vars in 958 bytes} [Sat Oct 15 18:38:09 2016] GET /problems/6/?orderby=rlevel => generated 9277 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 70/70] 192.168.121.1 () {44 vars in 957 bytes} [Sat Oct 15 18:38:10 2016] GET /problems/6/?orderby=level => generated 9277 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 71/71] 192.168.121.1 () {44 vars in 907 bytes} [Sat Oct 15 18:38:12 2016] GET / => generated 11962 bytes in 35 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 72/72] 192.168.121.1 () {44 vars in 931 bytes} [Sat Oct 15 18:38:13 2016] GET /problems/1/?orderby=title => generated 7568 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 73/73] 192.168.121.1 () {44 vars in 927 bytes} [Sat Oct 15 18:38:14 2016] GET /documents/ => generated 2796 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 74/74] 192.168.121.1 () {44 vars in 904 bytes} [Sat Oct 15 18:38:14 2016] GET /intro/ => generated 2799 bytes in 18 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 75/75] 192.168.121.1 () {44 vars in 888 bytes} [Sat Oct 15 18:38:15 2016] GET / => generated 11962 bytes in 49 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 76/76] 192.168.121.1 () {44 vars in 931 bytes} [Sat Oct 15 18:41:30 2016] GET /problems/1/?orderby=title => generated 7568 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 77/77] 192.168.121.1 () {44 vars in 964 bytes} [Sat Oct 15 18:41:30 2016] GET /community/notice/list/?page=1 => generated 5701 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 78/78] 192.168.121.1 () {44 vars in 968 bytes} [Sat Oct 15 18:41:33 2016] GET /community/notice/list/?page=2 => generated 5620 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 79/79] 192.168.121.1 () {44 vars in 911 bytes} [Sat Oct 15 18:41:42 2016] GET / => generated 11962 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 80/80] 192.168.121.1 () {44 vars in 931 bytes} [Sat Oct 15 18:42:09 2016] GET /problems/1/?orderby=title => generated 7568 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 81/81] 192.168.121.1 () {44 vars in 956 bytes} [Sat Oct 15 18:42:38 2016] GET /problems/6/?orderby=title => generated 9277 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1629|app: 0|req: 82/82] 192.168.121.1 () {44 vars in 950 bytes} [Sat Oct 15 18:42:39 2016] GET /problems/view/?pnum=17 => generated 6626 bytes in 32 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+...brutally killing workers...
+Sat Oct 15 19:05:50 2016 - received message 0 from emperor
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /etc/uwsgi/vassals
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (127.0.0.1:8000)
+running /usr/local/bin/uwsgi
+*** has_emperor mode detected (fd: 6) ***
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.13.1 (64bit) on [Sat Oct 15 19:05:51 2016] ***
+compiled with version: 5.4.0 20160609 on 06 September 2016 16:19:24
+os: Linux-4.4.0-42-generic #62-Ubuntu SMP Fri Oct 7 23:11:45 UTC 2016
+nodename: jinwoo-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /etc/uwsgi/vassals
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/jinwoo/testsite
+your processes number limit is 15585
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:8000 fd 3
+Python version: 2.7.12 (default, Jul  1 2016, 15:12:24)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/jinwoo/Env/testsite
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1d6eb50
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1d6eb50 pid: 1274 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1274)
+spawned uWSGI worker 1 (pid: 3732, cores: 1)
+epoll_ctl(): File exists [core/event.c line 521]
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 19:05:51 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 19:05:51 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 3732)...
+worker 1 killed successfully (pid: 3732)
+Respawned uWSGI worker 1 (new pid: 3734)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 19:05:52 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 19:05:52 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 3734)...
+worker 1 killed successfully (pid: 3734)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 3735)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 19:05:55 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 19:05:55 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 3735)...
+worker 1 killed successfully (pid: 3735)
+Respawned uWSGI worker 1 (new pid: 3736)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 19:05:56 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 19:05:56 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 3736)...
+worker 1 killed successfully (pid: 3736)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 3737)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 19:05:59 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 19:05:59 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 3737)...
+worker 1 killed successfully (pid: 3737)
+Respawned uWSGI worker 1 (new pid: 3738)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 19:06:00 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 19:06:00 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 3738)...
+worker 1 killed successfully (pid: 3738)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 3739)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 19:06:03 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 19:06:03 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 3739)...
+worker 1 killed successfully (pid: 3739)
+Respawned uWSGI worker 1 (new pid: 3740)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 19:06:04 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 19:06:04 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 3740)...
+worker 1 killed successfully (pid: 3740)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 3741)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 19:06:07 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 19:06:07 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 3741)...
+worker 1 killed successfully (pid: 3741)
+Respawned uWSGI worker 1 (new pid: 3742)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 19:06:08 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 19:06:08 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 3742)...
+worker 1 killed successfully (pid: 3742)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 3743)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 19:06:11 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 19:06:11 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 3743)...
+worker 1 killed successfully (pid: 3743)
+Respawned uWSGI worker 1 (new pid: 3744)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 19:06:12 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 19:06:12 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 3744)...
+worker 1 killed successfully (pid: 3744)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 3745)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 19:06:15 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 19:06:15 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 3745)...
+worker 1 killed successfully (pid: 3745)
+Respawned uWSGI worker 1 (new pid: 3746)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 19:06:16 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 19:06:16 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 3746)...
+worker 1 killed successfully (pid: 3746)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 3747)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 15 19:06:19 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 15 19:06:19 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 3747)...
+*** Starting uWSGI 2.0.13.1 (64bit) on [Sat Oct 15 19:18:10 2016] ***
+compiled with version: 5.4.0 20160609 on 06 September 2016 16:19:24
+os: Linux-4.4.0-42-generic #62-Ubuntu SMP Fri Oct 7 23:11:45 UTC 2016
+nodename: jinwoo-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /etc/uwsgi/vassals
+writing pidfile to /home/jinwoo/testsite/uwsgi/project-master.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/jinwoo/testsite
+your processes number limit is 15585
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 2.7.12 (default, Jul  1 2016, 15:12:24)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/jinwoo/Env/testsite
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xd21f50
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0xd21f50 pid: 1277 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1277)
+spawned uWSGI worker 1 (pid: 1582, cores: 1)
+[pid: 1582|app: 0|req: 1/1] 192.168.121.1 () {42 vars in 795 bytes} [Sat Oct 15 19:56:17 2016] GET / => generated 4092 bytes in 128 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+Not Found: /favicon.ico
+[pid: 1582|app: 0|req: 2/2] 192.168.121.1 () {42 vars in 754 bytes} [Sat Oct 15 19:56:17 2016] GET /favicon.ico => generated 3751 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 1582|app: 0|req: 3/3] 192.168.121.1 () {44 vars in 887 bytes} [Sat Oct 15 19:56:18 2016] GET /problems/1/?orderby=title => generated 7343 bytes in 39 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1582|app: 0|req: 4/4] 192.168.121.1 () {44 vars in 912 bytes} [Sat Oct 15 19:56:19 2016] GET /problems/6/?orderby=title => generated 9052 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1582|app: 0|req: 5/5] 192.168.121.1 () {44 vars in 906 bytes} [Sat Oct 15 19:56:29 2016] GET /problems/view/?pnum=22 => generated 0 bytes in 1 msecs (HTTP/1.1 302) 4 headers in 157 bytes (1 switches on core 0)
+[pid: 1582|app: 0|req: 6/6] 192.168.121.1 () {44 vars in 940 bytes} [Sat Oct 15 19:56:29 2016] GET /login/?next=/problems/view/%3Fpnum%3D22 => generated 3670 bytes in 10 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1582|app: 0|req: 7/7] 192.168.121.1 () {52 vars in 1072 bytes} [Sat Oct 15 19:56:33 2016] POST /login/ => generated 0 bytes in 64 msecs (HTTP/1.1 302) 6 headers in 347 bytes (1 switches on core 0)
+[pid: 1582|app: 0|req: 8/8] 192.168.121.1 () {46 vars in 952 bytes} [Sat Oct 15 19:56:33 2016] GET / => generated 11962 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1582|app: 0|req: 9/9] 192.168.121.1 () {44 vars in 925 bytes} [Sat Oct 15 19:56:36 2016] GET /problems/view/?pnum=22 => generated 6137 bytes in 34 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1582|app: 0|req: 10/10] 192.168.121.1 () {44 vars in 955 bytes} [Sat Oct 15 19:56:37 2016] GET /problems/download/?pnum=22 => generated 6870 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 145 bytes (1 switches on core 0)
+[pid: 1582|app: 0|req: 11/11] 192.168.121.1 () {44 vars in 921 bytes} [Sat Oct 15 19:57:13 2016] GET / => generated 11962 bytes in 132 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1582|app: 0|req: 12/12] 192.168.121.1 () {44 vars in 931 bytes} [Sat Oct 15 19:57:24 2016] GET /problems/1/?orderby=title => generated 7568 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1582|app: 0|req: 13/13] 192.168.121.1 () {44 vars in 956 bytes} [Sat Oct 15 19:57:26 2016] GET /problems/6/?orderby=title => generated 9277 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1582|app: 0|req: 14/14] 192.168.121.1 () {44 vars in 950 bytes} [Sat Oct 15 19:57:28 2016] GET /problems/view/?pnum=18 => generated 6162 bytes in 31 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1582|app: 0|req: 15/15] 192.168.121.1 () {44 vars in 950 bytes} [Sat Oct 15 19:57:35 2016] GET /problems/view/?pnum=21 => generated 6564 bytes in 30 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+...brutally killing workers...
+Sat Oct 22 14:34:46 2016 - received message 0 from emperor
+worker 1 buried after 5 seconds
+binary reloading uWSGI...
+chdir() to /etc/uwsgi/vassals
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (127.0.0.1:8000)
+running /usr/local/bin/uwsgi
+*** has_emperor mode detected (fd: 6) ***
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.13.1 (64bit) on [Sat Oct 22 14:34:51 2016] ***
+compiled with version: 5.4.0 20160609 on 06 September 2016 16:19:24
+os: Linux-4.4.0-42-generic #62-Ubuntu SMP Fri Oct 7 23:11:45 UTC 2016
+nodename: jinwoo-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /etc/uwsgi/vassals
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/jinwoo/testsite
+your processes number limit is 15585
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:8000 fd 3
+Python version: 2.7.12 (default, Jul  1 2016, 15:12:24)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/jinwoo/Env/testsite
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x26aeb50
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x26aeb50 pid: 1277 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1277)
+spawned uWSGI worker 1 (pid: 35235, cores: 1)
+epoll_ctl(): File exists [core/event.c line 521]
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 22 14:34:52 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 22 14:34:52 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 35235)...
+worker 1 killed successfully (pid: 35235)
+Respawned uWSGI worker 1 (new pid: 35236)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 22 14:34:53 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 22 14:34:53 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 35236)...
+worker 1 killed successfully (pid: 35236)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 35237)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 22 14:34:56 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 22 14:34:56 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 35237)...
+worker 1 killed successfully (pid: 35237)
+Respawned uWSGI worker 1 (new pid: 35238)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 22 14:34:57 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 22 14:34:57 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 35238)...
+worker 1 killed successfully (pid: 35238)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 35239)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 22 14:35:00 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 22 14:35:00 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 35239)...
+worker 1 killed successfully (pid: 35239)
+Respawned uWSGI worker 1 (new pid: 35240)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 22 14:35:01 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 22 14:35:01 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 35240)...
+worker 1 killed successfully (pid: 35240)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 35241)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 22 14:35:04 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 22 14:35:04 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 35241)...
+worker 1 killed successfully (pid: 35241)
+Respawned uWSGI worker 1 (new pid: 35242)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 22 14:35:05 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 22 14:35:05 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 35242)...
+worker 1 killed successfully (pid: 35242)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 35243)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 22 14:35:08 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 22 14:35:08 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 35243)...
+worker 1 killed successfully (pid: 35243)
+Respawned uWSGI worker 1 (new pid: 35244)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 22 14:35:09 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 22 14:35:09 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 35244)...
+worker 1 killed successfully (pid: 35244)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 35245)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 22 14:35:12 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 22 14:35:12 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 35245)...
+worker 1 killed successfully (pid: 35245)
+Respawned uWSGI worker 1 (new pid: 35246)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Sat Oct 22 14:35:13 2016 - lost communication with the Emperor, goodbye...
+Sat Oct 22 14:35:13 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 35246)...
+worker 1 killed successfully (pid: 35246)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+*** Starting uWSGI 2.0.13.1 (64bit) on [Sat Oct 22 14:35:40 2016] ***
+compiled with version: 5.4.0 20160609 on 06 September 2016 16:19:24
+os: Linux-4.4.0-45-generic #66-Ubuntu SMP Wed Oct 19 14:12:37 UTC 2016
+nodename: jinwoo-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /etc/uwsgi/vassals
+writing pidfile to /home/jinwoo/testsite/uwsgi/project-master.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/jinwoo/testsite
+your processes number limit is 15580
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 2.7.12 (default, Jul  1 2016, 15:12:24)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/jinwoo/Env/testsite
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x23ccf50
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x23ccf50 pid: 1250 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1250)
+spawned uWSGI worker 1 (pid: 1579, cores: 1)
+[pid: 1579|app: 0|req: 1/1] 192.168.121.1 () {42 vars in 795 bytes} [Sun Oct 23 00:28:09 2016] GET / => generated 4189 bytes in 929 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+Not Found: /favicon.ico
+[pid: 1579|app: 0|req: 2/2] 192.168.121.1 () {42 vars in 754 bytes} [Sun Oct 23 00:28:11 2016] GET /favicon.ico => generated 3751 bytes in 16 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 3/3] 192.168.121.1 () {44 vars in 826 bytes} [Sun Oct 23 00:28:45 2016] GET / => generated 4186 bytes in 18 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 4/4] 192.168.121.1 () {44 vars in 826 bytes} [Sun Oct 23 00:29:30 2016] GET / => generated 4186 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 5/5] 192.168.121.1 () {44 vars in 850 bytes} [Sun Oct 23 00:29:50 2016] GET /intro/ => generated 2889 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 6/6] 192.168.121.1 () {44 vars in 864 bytes} [Sun Oct 23 00:29:51 2016] GET /documents/ => generated 2886 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 7/7] 192.168.121.1 () {44 vars in 897 bytes} [Sun Oct 23 00:29:52 2016] GET /problems/1/?orderby=title => generated 7437 bytes in 56 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 8/8] 192.168.121.1 () {44 vars in 920 bytes} [Sun Oct 23 00:29:54 2016] GET /community/notice/list/?page=1 => generated 5557 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 9/9] 192.168.121.1 () {44 vars in 867 bytes} [Sun Oct 23 00:29:55 2016] GET / => generated 4186 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 10/10] 192.168.121.1 () {46 vars in 898 bytes} [Sun Oct 23 00:30:37 2016] GET / => generated 4177 bytes in 17 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 11/11] 192.168.121.1 () {44 vars in 850 bytes} [Sun Oct 23 00:30:43 2016] GET /login/ => generated 3755 bytes in 15 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 12/12] 192.168.121.1 () {44 vars in 856 bytes} [Sun Oct 23 00:30:44 2016] GET /register/ => generated 5014 bytes in 9 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 13/13] 192.168.121.1 () {44 vars in 850 bytes} [Sun Oct 23 04:23:47 2016] GET /login/ => generated 3755 bytes in 74 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 14/14] 192.168.121.1 () {52 vars in 1039 bytes} [Sun Oct 23 04:23:53 2016] POST /login/ => generated 0 bytes in 175 msecs (HTTP/1.1 302) 6 headers in 347 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 15/15] 192.168.121.1 () {46 vars in 919 bytes} [Sun Oct 23 04:23:53 2016] GET / => generated 8901 bytes in 53 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 16/16] 192.168.121.1 () {44 vars in 896 bytes} [Sun Oct 23 04:23:59 2016] GET /logout/ => generated 94 bytes in 38 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 17/17] 192.168.121.1 () {44 vars in 845 bytes} [Sun Oct 23 04:24:00 2016] GET / => generated 4177 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 18/18] 192.168.121.1 () {44 vars in 850 bytes} [Sun Oct 23 04:24:01 2016] GET /login/ => generated 3755 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 19/19] 192.168.121.1 () {52 vars in 1039 bytes} [Sun Oct 23 04:24:08 2016] POST /login/ => generated 0 bytes in 46 msecs (HTTP/1.1 302) 6 headers in 347 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 20/20] 192.168.121.1 () {46 vars in 919 bytes} [Sun Oct 23 04:24:08 2016] GET / => generated 6683 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 21/21] 192.168.121.1 () {44 vars in 931 bytes} [Sun Oct 23 04:28:30 2016] GET /problems/1/?orderby=title => generated 7431 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 22/22] 192.168.121.1 () {44 vars in 964 bytes} [Sun Oct 23 04:28:33 2016] GET /community/notice/list/?page=1 => generated 5551 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 23/23] 192.168.121.1 () {44 vars in 960 bytes} [Sun Oct 23 04:28:35 2016] GET /problems/1/?orderby=title => generated 7431 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 24/24] 192.168.121.1 () {44 vars in 907 bytes} [Sun Oct 23 04:29:12 2016] GET / => generated 6683 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 25/25] 192.168.121.1 () {46 vars in 938 bytes} [Sun Oct 23 04:29:50 2016] GET / => generated 6679 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 26/26] 192.168.121.1 () {46 vars in 938 bytes} [Sun Oct 23 04:31:13 2016] GET / => generated 6679 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 27/27] 192.168.121.1 () {46 vars in 938 bytes} [Sun Oct 23 04:32:41 2016] GET / => generated 6514 bytes in 52 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 28/28] 192.168.121.1 () {46 vars in 938 bytes} [Sun Oct 23 04:32:56 2016] GET / => generated 6544 bytes in 50 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 29/29] 192.168.121.1 () {44 vars in 931 bytes} [Sun Oct 23 04:34:34 2016] GET /problems/1/?orderby=title => generated 7420 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 30/30] 192.168.121.1 () {44 vars in 921 bytes} [Sun Oct 23 04:35:47 2016] GET /mypage/ => generated 3800 bytes in 59 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 31/31] 192.168.121.1 () {44 vars in 913 bytes} [Sun Oct 23 04:35:50 2016] GET /mypage/rank/ => generated 4529 bytes in 43 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 32/32] 192.168.121.1 () {44 vars in 894 bytes} [Sun Oct 23 04:51:20 2016] GET / => generated 6557 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 33/33] 192.168.121.1 () {46 vars in 925 bytes} [Sun Oct 23 04:51:52 2016] GET / => generated 6463 bytes in 37 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 34/34] 192.168.121.1 () {46 vars in 925 bytes} [Sun Oct 23 04:52:22 2016] GET / => generated 6595 bytes in 294 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 35/35] 192.168.121.1 () {46 vars in 925 bytes} [Sun Oct 23 04:52:42 2016] GET / => generated 6598 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 36/36] 192.168.121.1 () {44 vars in 931 bytes} [Sun Oct 23 04:52:44 2016] GET /problems/1/?orderby=title => generated 7339 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 37/37] 192.168.121.1 () {46 vars in 962 bytes} [Sun Oct 23 04:53:42 2016] GET /problems/1/?orderby=title => generated 7346 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 38/38] 192.168.121.1 () {44 vars in 907 bytes} [Sun Oct 23 04:53:47 2016] GET / => generated 6598 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 39/39] 192.168.121.1 () {44 vars in 882 bytes} [Sun Oct 23 04:53:48 2016] GET / => generated 6598 bytes in 35 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 40/40] 192.168.121.1 () {44 vars in 894 bytes} [Sun Oct 23 04:53:48 2016] GET /intro/ => generated 2798 bytes in 16 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 41/41] 192.168.121.1 () {44 vars in 908 bytes} [Sun Oct 23 04:53:49 2016] GET /documents/ => generated 2795 bytes in 17 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 42/42] 192.168.121.1 () {44 vars in 941 bytes} [Sun Oct 23 04:53:49 2016] GET /problems/1/?orderby=title => generated 7346 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 43/43] 192.168.121.1 () {44 vars in 964 bytes} [Sun Oct 23 04:53:50 2016] GET /community/notice/list/?page=1 => generated 5466 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 44/44] 192.168.121.1 () {44 vars in 960 bytes} [Sun Oct 23 04:53:50 2016] GET /problems/1/?orderby=title => generated 7346 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 45/45] 192.168.121.1 () {44 vars in 956 bytes} [Sun Oct 23 04:53:52 2016] GET /problems/2/?orderby=title => generated 7336 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 46/46] 192.168.121.1 () {44 vars in 956 bytes} [Sun Oct 23 04:53:52 2016] GET /problems/3/?orderby=title => generated 7090 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 47/47] 192.168.121.1 () {44 vars in 956 bytes} [Sun Oct 23 04:53:53 2016] GET /problems/1/?orderby=title => generated 7346 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 48/48] 192.168.121.1 () {44 vars in 907 bytes} [Sun Oct 23 04:53:54 2016] GET / => generated 6598 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 49/49] 192.168.121.1 () {46 vars in 938 bytes} [Sun Oct 23 05:05:46 2016] GET / => generated 6679 bytes in 87 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 50/50] 192.168.121.1 () {46 vars in 938 bytes} [Sun Oct 23 05:07:27 2016] GET / => generated 6544 bytes in 36 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 51/51] 192.168.121.1 () {44 vars in 931 bytes} [Sun Oct 23 05:08:37 2016] GET /problems/1/?orderby=title => generated 7420 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 52/52] 192.168.121.1 () {44 vars in 921 bytes} [Sun Oct 23 05:09:04 2016] GET /mypage/ => generated 3800 bytes in 82 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 53/53] 192.168.121.1 () {44 vars in 913 bytes} [Sun Oct 23 05:09:06 2016] GET /mypage/rank/ => generated 4529 bytes in 54 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 54/54] 192.168.121.1 () {42 vars in 795 bytes} [Sun Oct 23 05:21:05 2016] GET / => generated 4092 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 1579|app: 0|req: 55/55] 192.168.121.1 () {42 vars in 754 bytes} [Sun Oct 23 05:21:05 2016] GET /favicon.ico => generated 3751 bytes in 9 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 56/56] 192.168.121.1 () {44 vars in 887 bytes} [Sun Oct 23 05:21:09 2016] GET /problems/1/?orderby=title => generated 7343 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 57/57] 192.168.121.1 () {44 vars in 863 bytes} [Sun Oct 23 05:21:11 2016] GET / => generated 4092 bytes in 18 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 58/58] 192.168.121.1 () {44 vars in 850 bytes} [Sun Oct 23 05:21:14 2016] GET /login/ => generated 3670 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 59/59] 192.168.121.1 () {52 vars in 1039 bytes} [Sun Oct 23 05:21:20 2016] POST /login/ => generated 0 bytes in 46 msecs (HTTP/1.1 302) 6 headers in 347 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 60/60] 192.168.121.1 () {46 vars in 919 bytes} [Sun Oct 23 05:21:20 2016] GET / => generated 11962 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 61/61] 192.168.121.1 () {44 vars in 896 bytes} [Sun Oct 23 05:21:25 2016] GET /logout/ => generated 94 bytes in 17 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 62/62] 192.168.121.1 () {44 vars in 845 bytes} [Sun Oct 23 05:21:26 2016] GET / => generated 4092 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 63/63] 192.168.121.1 () {42 vars in 795 bytes} [Mon Oct 24 14:36:12 2016] GET / => generated 4092 bytes in 18 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 1579|app: 0|req: 64/64] 192.168.121.1 () {42 vars in 754 bytes} [Mon Oct 24 14:36:12 2016] GET /favicon.ico => generated 3751 bytes in 13 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 65/65] 192.168.121.1 () {44 vars in 850 bytes} [Mon Oct 24 14:36:15 2016] GET /login/ => generated 3670 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 66/66] 192.168.121.1 () {52 vars in 1039 bytes} [Mon Oct 24 14:36:22 2016] POST /login/ => generated 0 bytes in 50 msecs (HTTP/1.1 302) 6 headers in 347 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 67/67] 192.168.121.1 () {46 vars in 919 bytes} [Mon Oct 24 14:36:22 2016] GET / => generated 8816 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 68/68] 192.168.121.1 () {42 vars in 795 bytes} [Mon Oct 24 14:41:09 2016] GET / => generated 4092 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 1579|app: 0|req: 69/69] 192.168.121.1 () {42 vars in 754 bytes} [Mon Oct 24 14:41:10 2016] GET /favicon.ico => generated 3751 bytes in 9 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 70/70] 192.168.121.1 () {44 vars in 887 bytes} [Mon Oct 24 14:41:16 2016] GET /problems/1/?orderby=title => generated 7343 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /insert
+[pid: 1579|app: 0|req: 71/71] 192.168.121.1 () {42 vars in 807 bytes} [Wed Oct 26 17:08:59 2016] GET /insert => generated 3736 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /insert/
+[pid: 1579|app: 0|req: 72/72] 192.168.121.1 () {42 vars in 809 bytes} [Wed Oct 26 17:09:06 2016] GET /insert/ => generated 3739 bytes in 7 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 73/73] 192.168.121.1 () {42 vars in 825 bytes} [Wed Oct 26 17:09:46 2016] GET /problems/write/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 74/74] 192.168.121.1 () {42 vars in 850 bytes} [Wed Oct 26 17:09:46 2016] GET /login/?next=/problems/write/ => generated 3670 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 75/75] 192.168.121.1 () {52 vars in 1061 bytes} [Wed Oct 26 17:10:15 2016] POST /login/ => generated 3670 bytes in 44 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 76/76] 192.168.121.1 () {52 vars in 1039 bytes} [Wed Oct 26 17:10:32 2016] POST /login/ => generated 3670 bytes in 38 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 77/77] 192.168.121.1 () {52 vars in 1039 bytes} [Wed Oct 26 17:11:03 2016] POST /login/ => generated 0 bytes in 40 msecs (HTTP/1.1 302) 6 headers in 347 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 78/78] 192.168.121.1 () {46 vars in 919 bytes} [Wed Oct 26 17:11:03 2016] GET / => generated 8816 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 79/79] 192.168.121.1 () {42 vars in 869 bytes} [Wed Oct 26 17:11:11 2016] GET /problems/write/ => generated 0 bytes in 16 msecs (HTTP/1.1 302) 4 headers in 118 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 80/80] 192.168.121.1 () {42 vars in 839 bytes} [Wed Oct 26 17:11:11 2016] GET / => generated 8816 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 81/81] 192.168.121.1 () {44 vars in 896 bytes} [Wed Oct 26 17:11:21 2016] GET /logout/ => generated 94 bytes in 19 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 82/82] 192.168.121.1 () {44 vars in 845 bytes} [Wed Oct 26 17:11:22 2016] GET / => generated 4092 bytes in 35 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 83/83] 192.168.121.1 () {44 vars in 856 bytes} [Wed Oct 26 17:11:23 2016] GET /register/ => generated 4929 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 84/84] 192.168.121.1 () {44 vars in 859 bytes} [Wed Oct 26 17:11:24 2016] GET /login/ => generated 3670 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 85/85] 192.168.121.1 () {52 vars in 1039 bytes} [Wed Oct 26 17:11:27 2016] POST /login/ => generated 0 bytes in 41 msecs (HTTP/1.1 302) 6 headers in 347 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 86/86] 192.168.121.1 () {46 vars in 919 bytes} [Wed Oct 26 17:11:27 2016] GET / => generated 11961 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 87/87] 192.168.121.1 () {42 vars in 869 bytes} [Wed Oct 26 17:11:34 2016] GET /problems/write/ => generated 8483 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 88/88] 192.168.121.1 () {52 vars in 1192 bytes} [Wed Oct 26 17:12:16 2016] POST /problems/write_done/ => generated 8483 bytes in 31 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 89/89] 192.168.121.1 () {52 vars in 1192 bytes} [Wed Oct 26 17:14:35 2016] POST /problems/write_done/ => generated 8483 bytes in 33 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+Internal Server Error: /problems/write_done/
+Traceback (most recent call last):
+  File "/home/jinwoo/Env/testsite/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/jinwoo/Env/testsite/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jinwoo/Env/testsite/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./problem/views.py", line 87, in problem_write_done
+    problem.save()
+  File "/home/jinwoo/Env/testsite/local/lib/python2.7/site-packages/django/db/models/base.py", line 796, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/jinwoo/Env/testsite/local/lib/python2.7/site-packages/django/db/models/base.py", line 824, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/home/jinwoo/Env/testsite/local/lib/python2.7/site-packages/django/db/models/base.py", line 908, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/jinwoo/Env/testsite/local/lib/python2.7/site-packages/django/db/models/base.py", line 947, in _do_insert
+    using=using, raw=raw)
+  File "/home/jinwoo/Env/testsite/local/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/jinwoo/Env/testsite/local/lib/python2.7/site-packages/django/db/models/query.py", line 1045, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/jinwoo/Env/testsite/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1053, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/jinwoo/Env/testsite/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1006, in as_sql
+    for obj in self.query.objs
+  File "/home/jinwoo/Env/testsite/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 945, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "/home/jinwoo/Env/testsite/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 755, in get_db_prep_save
+    prepared=False)
+  File "/home/jinwoo/Env/testsite/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 747, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/home/jinwoo/Env/testsite/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 1832, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'asd'
+[pid: 1579|app: 0|req: 90/90] 192.168.121.1 () {52 vars in 1205 bytes} [Wed Oct 26 17:15:23 2016] POST /problems/write_done/ => generated 126951 bytes in 171 msecs (HTTP/1.1 500) 3 headers in 106 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 91/91] 192.168.121.1 () {52 vars in 1205 bytes} [Wed Oct 26 17:15:44 2016] POST /problems/write_done/ => generated 106 bytes in 109 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 92/92] 192.168.121.1 () {44 vars in 924 bytes} [Wed Oct 26 17:15:48 2016] GET /problems/1/ => generated 7799 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 93/93] 192.168.121.1 () {44 vars in 936 bytes} [Wed Oct 26 17:15:50 2016] GET /problems/view/?pnum=27 => generated 5830 bytes in 28 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 94/94] 192.168.121.1 () {44 vars in 968 bytes} [Wed Oct 26 17:17:51 2016] GET /admin/problem/problem/27/change/ => generated 11735 bytes in 113 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 95/95] 192.168.121.1 () {42 vars in 834 bytes} [Wed Oct 26 17:17:51 2016] GET /admin/jsi18n/ => generated 8379 bytes in 157 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 96/96] 192.168.121.1 () {44 vars in 980 bytes} [Wed Oct 26 17:18:01 2016] GET /admin/problem/problem/27/history/ => generated 2276 bytes in 37 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 97/97] 192.168.121.1 () {44 vars in 968 bytes} [Wed Oct 26 17:18:04 2016] GET /admin/problem/problem/27/change/ => generated 11735 bytes in 51 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 98/98] 192.168.121.1 () {44 vars in 978 bytes} [Wed Oct 26 17:18:09 2016] GET /admin/problem/problem/27/delete/ => generated 3070 bytes in 34 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 99/99] 192.168.121.1 () {52 vars in 1159 bytes} [Wed Oct 26 17:18:11 2016] POST /admin/problem/problem/27/delete/ => generated 0 bytes in 27 msecs (HTTP/1.1 302) 8 headers in 503 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 100/100] 192.168.121.1 () {46 vars in 1172 bytes} [Wed Oct 26 17:18:11 2016] GET /admin/problem/problem/ => generated 14485 bytes in 64 msecs (HTTP/1.1 200) 8 headers in 487 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 101/101] 192.168.121.1 () {42 vars in 824 bytes} [Wed Oct 26 17:18:11 2016] GET /admin/jsi18n/ => generated 8379 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 102/102] 192.168.121.1 () {42 vars in 839 bytes} [Wed Oct 26 17:18:23 2016] GET / => generated 11961 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 103/103] 192.168.121.1 () {44 vars in 939 bytes} [Wed Oct 26 17:19:22 2016] GET /community/notice/list/?page=1 => generated 5700 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 104/104] 192.168.121.1 () {44 vars in 968 bytes} [Wed Oct 26 17:19:25 2016] GET /community/notice/view/?nnum=8 => generated 3592 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 105/105] 192.168.121.1 () {44 vars in 923 bytes} [Wed Oct 26 17:19:29 2016] GET /intro/ => generated 2798 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 106/106] 192.168.121.1 () {42 vars in 839 bytes} [Wed Oct 26 17:21:03 2016] GET / => generated 11961 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 107/107] 192.168.121.1 () {44 vars in 925 bytes} [Wed Oct 26 17:21:57 2016] GET /problems/view/?pnum=15 => generated 5784 bytes in 70 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+/home/jinwoo/Env/testsite/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField UserProfile.last_submit received a naive datetime (2016-10-26 17:22:14.018639) while time zone support is active.
+  RuntimeWarning)
+[pid: 1579|app: 0|req: 108/108] 192.168.121.1 () {52 vars in 1146 bytes} [Wed Oct 26 17:22:13 2016] POST /problems/answer_check/?pnum=15 => generated 116 bytes in 68 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 109/109] 192.168.121.1 () {44 vars in 955 bytes} [Wed Oct 26 17:22:16 2016] GET /problems/view/?pnum=15 => generated 5786 bytes in 111 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1579|app: 0|req: 110/110] 192.168.121.1 () {44 vars in 961 bytes} [Wed Oct 26 17:26:54 2016] GET /community/notice/list/?page=1 => generated 5700 bytes in 381 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+...brutally killing workers...
+Fri Nov  4 19:31:17 2016 - received message 0 from emperor
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /etc/uwsgi/vassals
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (127.0.0.1:8000)
+running /usr/local/bin/uwsgi
+*** has_emperor mode detected (fd: 6) ***
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.13.1 (64bit) on [Fri Nov  4 19:31:19 2016] ***
+compiled with version: 5.4.0 20160609 on 06 September 2016 16:19:24
+os: Linux-4.4.0-45-generic #66-Ubuntu SMP Wed Oct 19 14:12:37 UTC 2016
+nodename: jinwoo-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /etc/uwsgi/vassals
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/jinwoo/testsite
+your processes number limit is 15580
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:8000 fd 3
+Python version: 2.7.12 (default, Jul  1 2016, 15:12:24)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/jinwoo/Env/testsite
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x12f4b50
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x12f4b50 pid: 1250 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1250)
+spawned uWSGI worker 1 (pid: 31363, cores: 1)
+epoll_ctl(): File exists [core/event.c line 521]
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Nov  4 19:31:20 2016 - lost communication with the Emperor, goodbye...
+Fri Nov  4 19:31:20 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 31363)...
+worker 1 killed successfully (pid: 31363)
+Respawned uWSGI worker 1 (new pid: 31414)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Nov  4 19:31:21 2016 - lost communication with the Emperor, goodbye...
+Fri Nov  4 19:31:21 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 31414)...
+worker 1 killed successfully (pid: 31414)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 31424)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Nov  4 19:31:24 2016 - lost communication with the Emperor, goodbye...
+Fri Nov  4 19:31:24 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 31424)...
+worker 1 killed successfully (pid: 31424)
+Respawned uWSGI worker 1 (new pid: 31466)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Nov  4 19:31:25 2016 - lost communication with the Emperor, goodbye...
+Fri Nov  4 19:31:25 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 31466)...
+worker 1 killed successfully (pid: 31466)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 31607)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Nov  4 19:31:28 2016 - lost communication with the Emperor, goodbye...
+Fri Nov  4 19:31:28 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 31607)...
+worker 1 killed successfully (pid: 31607)
+Respawned uWSGI worker 1 (new pid: 31610)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Nov  4 19:31:29 2016 - lost communication with the Emperor, goodbye...
+Fri Nov  4 19:31:29 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 31610)...
+worker 1 killed successfully (pid: 31610)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 31611)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Nov  4 19:31:32 2016 - lost communication with the Emperor, goodbye...
+Fri Nov  4 19:31:32 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 31611)...
+worker 1 killed successfully (pid: 31611)
+Respawned uWSGI worker 1 (new pid: 31612)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Nov  4 19:31:33 2016 - lost communication with the Emperor, goodbye...
+Fri Nov  4 19:31:33 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 31612)...
+worker 1 killed successfully (pid: 31612)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 31613)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Nov  4 19:31:19 2016 - lost communication with the Emperor, goodbye...
+Fri Nov  4 19:31:19 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 31613)...
+worker 1 killed successfully (pid: 31613)
+Respawned uWSGI worker 1 (new pid: 31614)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Nov  4 19:31:20 2016 - lost communication with the Emperor, goodbye...
+Fri Nov  4 19:31:20 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 31614)...
+worker 1 killed successfully (pid: 31614)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 31651)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Nov  4 19:31:23 2016 - lost communication with the Emperor, goodbye...
+Fri Nov  4 19:31:23 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 31651)...
+worker 1 killed successfully (pid: 31651)
+Respawned uWSGI worker 1 (new pid: 31652)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Nov  4 19:31:24 2016 - lost communication with the Emperor, goodbye...
+Fri Nov  4 19:31:24 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 31652)...
+worker 1 killed successfully (pid: 31652)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 31653)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Nov  4 19:31:27 2016 - lost communication with the Emperor, goodbye...
+Fri Nov  4 19:31:27 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 31653)...
+worker 1 killed successfully (pid: 31653)
+Respawned uWSGI worker 1 (new pid: 31654)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Nov  4 19:31:28 2016 - lost communication with the Emperor, goodbye...
+Fri Nov  4 19:31:28 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 31654)...
+worker 1 killed successfully (pid: 31654)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 31655)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Nov  4 19:31:31 2016 - lost communication with the Emperor, goodbye...
+Fri Nov  4 19:31:31 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 31655)...
+worker 1 killed successfully (pid: 31655)
+Respawned uWSGI worker 1 (new pid: 31656)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Nov  4 19:31:32 2016 - lost communication with the Emperor, goodbye...
+Fri Nov  4 19:31:32 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 31656)...
+worker 1 killed successfully (pid: 31656)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 31657)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Nov  4 19:31:35 2016 - lost communication with the Emperor, goodbye...
+Fri Nov  4 19:31:35 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 31657)...
+worker 1 killed successfully (pid: 31657)
+Respawned uWSGI worker 1 (new pid: 31658)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Nov  4 19:31:36 2016 - lost communication with the Emperor, goodbye...
+Fri Nov  4 19:31:36 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 31658)...
+worker 1 killed successfully (pid: 31658)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 31659)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Nov  4 19:31:39 2016 - lost communication with the Emperor, goodbye...
+Fri Nov  4 19:31:39 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 31659)...
+worker 1 killed successfully (pid: 31659)
+Respawned uWSGI worker 1 (new pid: 31660)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Nov  4 19:31:40 2016 - lost communication with the Emperor, goodbye...
+Fri Nov  4 19:31:40 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 31660)...
+worker 1 killed successfully (pid: 31660)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 31684)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Nov  4 19:31:43 2016 - lost communication with the Emperor, goodbye...
+Fri Nov  4 19:31:43 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 31684)...
+worker 1 killed successfully (pid: 31684)
+Respawned uWSGI worker 1 (new pid: 31706)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3527]
+Fri Nov  4 19:31:44 2016 - lost communication with the Emperor, goodbye...
+Fri Nov  4 19:31:44 2016 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 31706)...
+worker 1 killed successfully (pid: 31706)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+*** Starting uWSGI 2.0.13.1 (64bit) on [Fri Nov  4 19:33:15 2016] ***
+compiled with version: 5.4.0 20160609 on 06 September 2016 16:19:24
+os: Linux-4.4.0-45-generic #66-Ubuntu SMP Wed Oct 19 14:12:37 UTC 2016
+nodename: jinwoo-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /etc/uwsgi/vassals
+writing pidfile to /home/jinwoo/testsite/uwsgi/project-master.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/jinwoo/testsite
+your processes number limit is 15580
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 2.7.12 (default, Jul  1 2016, 15:12:24)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/jinwoo/Env/testsite
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x26f1f50
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x26f1f50 pid: 1276 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1276)
+spawned uWSGI worker 1 (pid: 1483, cores: 1)
+[pid: 1483|app: 0|req: 1/1] 192.168.121.1 () {42 vars in 794 bytes} [Fri Nov  4 21:11:34 2016] GET / => generated 4092 bytes in 665 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+Not Found: /favicon.ico
+[pid: 1483|app: 0|req: 2/2] 192.168.121.1 () {42 vars in 753 bytes} [Fri Nov  4 21:11:35 2016] GET /favicon.ico => generated 3751 bytes in 13 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 3/3] 192.168.121.1 () {44 vars in 849 bytes} [Fri Nov  4 21:11:37 2016] GET /login/ => generated 3670 bytes in 22 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 4/4] 192.168.121.1 () {52 vars in 1038 bytes} [Fri Nov  4 21:11:42 2016] POST /login/ => generated 0 bytes in 132 msecs (HTTP/1.1 302) 6 headers in 347 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 5/5] 192.168.121.1 () {46 vars in 918 bytes} [Fri Nov  4 21:11:42 2016] GET / => generated 11964 bytes in 83 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 6/6] 192.168.121.1 () {44 vars in 930 bytes} [Fri Nov  4 21:11:47 2016] GET /problems/1/?orderby=title => generated 7568 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 7/7] 192.168.121.1 () {44 vars in 955 bytes} [Fri Nov  4 21:11:49 2016] GET /problems/6/?orderby=title => generated 9277 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 8/8] 192.168.121.1 () {44 vars in 955 bytes} [Fri Nov  4 21:11:52 2016] GET /problems/1/?orderby=title => generated 7568 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 9/9] 192.168.121.1 () {44 vars in 947 bytes} [Fri Nov  4 21:11:53 2016] GET /problems/view/?pnum=1 => generated 5808 bytes in 30 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 10/10] 192.168.121.1 () {44 vars in 951 bytes} [Fri Nov  4 21:12:38 2016] GET /problems/6/?orderby=title => generated 9277 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 11/11] 192.168.121.1 () {44 vars in 949 bytes} [Fri Nov  4 21:12:40 2016] GET /problems/view/?pnum=25 => generated 6035 bytes in 30 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 12/12] 192.168.121.1 () {44 vars in 949 bytes} [Fri Nov  4 21:12:43 2016] GET /problems/view/?pnum=18 => generated 6162 bytes in 30 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 13/13] 192.168.121.1 () {44 vars in 949 bytes} [Fri Nov  4 21:12:45 2016] GET /problems/view/?pnum=17 => generated 6626 bytes in 31 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 14/14] 192.168.121.1 () {44 vars in 949 bytes} [Fri Nov  4 21:12:47 2016] GET /problems/view/?pnum=19 => generated 6905 bytes in 25 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 15/15] 192.168.121.1 () {44 vars in 949 bytes} [Fri Nov  4 21:12:51 2016] GET /problems/view/?pnum=26 => generated 6725 bytes in 25 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 16/16] 192.168.121.1 () {44 vars in 949 bytes} [Fri Nov  4 21:12:53 2016] GET /problems/view/?pnum=22 => generated 6137 bytes in 25 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 17/17] 192.168.121.1 () {44 vars in 949 bytes} [Fri Nov  4 21:12:56 2016] GET /problems/view/?pnum=20 => generated 6620 bytes in 35 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 18/18] 192.168.121.1 () {42 vars in 848 bytes} [Fri Nov  4 21:13:06 2016] GET /admin => generated 0 bytes in 1 msecs (HTTP/1.1 301) 2 headers in 93 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 19/19] 192.168.121.1 () {42 vars in 850 bytes} [Fri Nov  4 21:13:06 2016] GET /admin/ => generated 7432 bytes in 66 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 20/20] 192.168.121.1 () {44 vars in 931 bytes} [Fri Nov  4 21:13:08 2016] GET /admin/problem/problem/ => generated 14338 bytes in 84 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 21/21] 192.168.121.1 () {42 vars in 823 bytes} [Fri Nov  4 21:13:08 2016] GET /admin/jsi18n/ => generated 8379 bytes in 43 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 22/22] 192.168.121.1 () {44 vars in 967 bytes} [Fri Nov  4 21:13:15 2016] GET /admin/problem/problem/26/change/ => generated 13188 bytes in 174 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 23/23] 192.168.121.1 () {42 vars in 833 bytes} [Fri Nov  4 21:13:15 2016] GET /admin/jsi18n/ => generated 8379 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 24/24] 192.168.121.1 () {44 vars in 931 bytes} [Fri Nov  4 21:14:07 2016] GET /admin/problem/problem/ => generated 14338 bytes in 353 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 25/25] 192.168.121.1 () {44 vars in 936 bytes} [Fri Nov  4 21:15:23 2016] GET /problems/write/ => generated 8485 bytes in 23 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 26/26] 192.168.121.1 () {44 vars in 945 bytes} [Fri Nov  4 21:15:58 2016] GET /problems/1/?orderby=title => generated 7568 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 27/27] 192.168.121.1 () {44 vars in 918 bytes} [Fri Nov  4 21:16:17 2016] GET /intro/ => generated 2799 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 28/28] 192.168.121.1 () {44 vars in 907 bytes} [Fri Nov  4 21:16:17 2016] GET /documents/ => generated 2796 bytes in 17 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 29/29] 192.168.121.1 () {44 vars in 940 bytes} [Fri Nov  4 21:16:18 2016] GET /problems/1/?orderby=title => generated 7568 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 30/30] 192.168.121.1 () {44 vars in 963 bytes} [Fri Nov  4 21:16:18 2016] GET /community/notice/list/?page=1 => generated 5701 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 31/31] 192.168.121.1 () {44 vars in 967 bytes} [Fri Nov  4 21:16:21 2016] GET /community/notice/list/?page=2 => generated 5620 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 32/32] 192.168.121.1 () {44 vars in 967 bytes} [Fri Nov  4 21:16:21 2016] GET /community/notice/list/?page=3 => generated 5368 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 33/33] 192.168.121.1 () {44 vars in 967 bytes} [Fri Nov  4 21:16:22 2016] GET /community/notice/list/?page=1 => generated 5701 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 34/34] 192.168.121.1 () {44 vars in 959 bytes} [Fri Nov  4 21:17:45 2016] GET /problems/1/?orderby=title => generated 7568 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 35/35] 192.168.121.1 () {44 vars in 957 bytes} [Fri Nov  4 21:17:48 2016] GET /problems/1/?orderby=rtitle => generated 7568 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 36/36] 192.168.121.1 () {44 vars in 956 bytes} [Fri Nov  4 21:17:48 2016] GET /problems/1/?orderby=title => generated 7568 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 37/37] 192.168.121.1 () {44 vars in 957 bytes} [Fri Nov  4 21:17:49 2016] GET /problems/1/?orderby=rtitle => generated 7568 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 38/38] 192.168.121.1 () {44 vars in 956 bytes} [Fri Nov  4 21:17:51 2016] GET /problems/1/?orderby=level => generated 7568 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 39/39] 192.168.121.1 () {44 vars in 957 bytes} [Fri Nov  4 21:17:52 2016] GET /problems/1/?orderby=rlevel => generated 7568 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 40/40] 192.168.121.1 () {44 vars in 956 bytes} [Fri Nov  4 21:17:52 2016] GET /problems/1/?orderby=level => generated 7568 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 41/41] 192.168.121.1 () {44 vars in 955 bytes} [Fri Nov  4 21:17:53 2016] GET /problems/1/?orderby=stats => generated 7568 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 42/42] 192.168.121.1 () {44 vars in 957 bytes} [Fri Nov  4 21:17:54 2016] GET /problems/1/?orderby=rstats => generated 7568 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 43/43] 192.168.121.1 () {44 vars in 956 bytes} [Fri Nov  4 21:17:55 2016] GET /problems/1/?orderby=stats => generated 7568 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 44/44] 192.168.121.1 () {44 vars in 955 bytes} [Fri Nov  4 21:17:59 2016] GET /problems/1/?orderby=title => generated 7568 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 45/45] 192.168.121.1 () {44 vars in 955 bytes} [Fri Nov  4 21:18:08 2016] GET /problems/6/?orderby=title => generated 9277 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 46/46] 192.168.121.1 () {44 vars in 955 bytes} [Fri Nov  4 21:18:10 2016] GET /problems/5/?orderby=title => generated 7560 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 47/47] 192.168.121.1 () {44 vars in 955 bytes} [Fri Nov  4 21:18:11 2016] GET /problems/1/?orderby=title => generated 7568 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 48/48] 192.168.121.1 () {44 vars in 906 bytes} [Fri Nov  4 21:18:11 2016] GET / => generated 11964 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 49/49] 192.168.121.1 () {44 vars in 893 bytes} [Fri Nov  4 21:18:12 2016] GET /intro/ => generated 2799 bytes in 16 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 50/50] 192.168.121.1 () {44 vars in 907 bytes} [Fri Nov  4 21:18:13 2016] GET /documents/ => generated 2796 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1483|app: 0|req: 51/51] 192.168.121.1 () {44 vars in 891 bytes} [Fri Nov  4 21:18:13 2016] GET / => generated 11964 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)

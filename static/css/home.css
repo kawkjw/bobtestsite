@@ -54,6 +54,10 @@ body {
 	margin-bottom: 20px;
 }
 
+#igrus {
+	height: 130px;
+}
+
 #id_loginsubmit {
 	margin-right: 15px;
 }
