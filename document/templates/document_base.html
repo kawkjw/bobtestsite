@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('nav ul li:eq(2)').toggleClass("active");
+		$('#backtolist').click(function() {
+			$(location).attr("href", "{% url 'document_list' %}");
+		});
+	});
+</script>
+<div class="col-md-12">
+	<table class="table table-bordered">
+		<tr>
+			<td class="col-md-2">Title</td>
+			<td colspan="3">{{ document.title }}</td>
+		</tr>
+		<tr>
+			<td>Created Date</td>
+			<td>{{ document.created_date }}</td>
+			<td class="col-md-1">Hits</td>
+			<td class="col-md-1">{{ document.hits }}</td>
+		</tr>
+		{% block document_files %}
+		{% endblock document_files %}
+		<tr>
+			<td>Content</td>
+			<td colspan="3" class="document-content">
+			{% block document_content %}
+			{% endblock document_content %}
+			</td>
+		</tr>
+	</table>
+	<input type="button" id="backtolist" class="btn btn-info pull-right" value="목록" />
+</div>
+{% endblock content %}

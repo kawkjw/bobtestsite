@@ -89,7 +89,10 @@ def problem_write_done(request):
 			return render(request, 'problem_write.html', context)
 	return render(request, 'problem_write_done.html', context)
 
+@login_required(login_url='/login/')
 def problem_download(request):
+	if not request.user.is_active:
+		return HttpResponseRedirect('/login_check/')
 	problem_num = request.GET['pnum']
 	problem = Problem.objects.get(num=problem_num)
 	BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

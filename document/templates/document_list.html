@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('nav ul li:eq(2)').toggleClass("active");
+	});
+</script>
+<div class="col-md-12">
+	{% for document in documents %}
+		<div class="col-md-3 document-center">
+			<a href="{% url 'document_view' %}?dnum={{ document.num }}"><img src="http://placehold.it/200x200"/></a>
+			<a href="{% url 'document_view' %}?dnum={{ document.num }}"><p class="document-title">{{ document.title }}</p></a>
+		</div>
+	{% endfor %}
+</div>
+{% endblock content %}

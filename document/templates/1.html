@@ -1,0 +1,27 @@
+{% extends 'document_base.html' %}
+
+{% block document_files %}
+{% load document_array %}
+{% if state %}
+<tr>
+	<td>Files</td>
+	<td colspan="3"><a href="{% url 'document_download' %}?filename={{ filename|array_num:0 }}">{{ filename|array_num:0 }}</a> / <a href="{% url 'document_download' %}?filename={{ filename|array_num:1 }}">{{ filename|array_num:1 }}</a></td>
+</tr>
+{% endif %}
+{% endblock document_files %}
+
+{% block document_content %}
+{% load staticfiles %}
+<p>디지털 포렌식(Digital Forensics)의 사전적 정의는 다음과 같다. 포렌식 과학의 일종으로, 디지털 장비를 매개로 한 범죄에 대한 자료(Data)를 수집하기 위해 디지털 자료들을 복구하고 조사하는 행위 및 절차를 말한다. 단순히 컴퓨터 포렌식(Computer Forensecs)의 개념에서 벗어나 디지털 저장 매체 등에서의 증거(Evidence) 수집 및 분석 기술도 포함하고 있다(“Digital forensics”, Wikipedia).</p>
+<p>위 정의 속에서 디지털 기기 속 컨텐츠에 대해 ‘자료(Data)’와 ‘증거(Evidence)’라는 말을 혼용하고 있다. 이는 실제 상황에 따라 사용되는 디지털 포렌식 기술 및 포렌식 절차에서의 요구사항이 달라지기 때문이다.</p>
+<p>2016년 5월 형사소송법이 개정되면서 ‘과학적인 디지털 포렌식 증거’(포렌식의 의미가 ‘과학’이기 때문에 사실 올바른 표현은 아니다.)가 법적 증거로 그 효력을 인정받게 되었는데, 이렇듯 실제 검찰, 경찰 등의 수사기관에서 사용되는 디지털 포렌식 기술들은 증거 수집을 그 목표로 하고 있다. 따라서 디지털 포렌식 절차에서도 증거 수집, 검증, 법적 제출의 측면에서 많은 차이를 보인다. 분석 자체보다는 해당 증거의 보존 및 제출 과정에서의 무결성 보장에 더 초점이 맞춰져 있다. 대검찰청과 경찰청의 디지털 증거 수집, 처리에 대한 규정을 아래의 첨부파일을 통해 확인할 수 있다.</p>
+<p>반면 민간에서 사용하는 디지털 포렌식은 증거로써의 효력에 둔감하다. 특히 민간에서는 침해 사고 대응이나 내부 회계 감사 등 사내 보안 유지를 목표로 하는 경우가 많으며, 사건의 원인과 과정을 분석하고 대응하는 것에 그 초점이 맞춰져 있다.</p>
+<br>
+<h4>컴퓨터 포렌식의 기본 5대 원칙</h4>
+<p>컴퓨터 포렌식의 기본 원칙은 무결성, 정당성, 재현, 신속성, 연계보관성의 5가지로 구성되며, 이 5대 원칙은 컴퓨터 포렌식의 모든 절차에서 반드시 준수되어야 한다. 5대 원칙에 따라, 디지털증거물은 압수할 당시 합법적인 절차를 거쳐 수집된 자료이어야 하며, 피해 당시와 동일한 결과가 나와야 한다. 또 소멸되기 쉬운 휘발성 데이터의 신속한 수집 및 수집의 각 단계에서 담당자 및 책임자가 명확해야 하며, 수집된 증거는 위․변조가 되지 않았음을 증명할 수 있어야 한다.</p>
+<img class="center-block document-img" src="{% static 'img/document/doc1/doc1-1.png' %}" />
+<h4>컴퓨터 포렌식의 절차</h4>
+<p>전자 증거물에 대하여 적용되는 일반적인 컴퓨터 포렌식은 [그림 4]와 같이 수사 준비, 증거물 획득, 증거물 분석, 증거물 보관, 보고서의 다섯 단계로 구성된다. 이러한 절차는 실무에 맞게 조절될 수 있으며, 증거의 수집은 명확하게 수립된 절차에 따라 반드시 진행되어야 한다.</p>
+<img class="center-block document-img" src="{% static 'img/document/doc1/doc1-2.png' %}" />
+
+{% endblock document_content %}

@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 	'problem',
 	'user_profile',
 	'community',
+	'document',
 ]
 
 MIDDLEWARE = [

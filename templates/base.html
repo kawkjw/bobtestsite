@@ -9,6 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="{% static 'css/notice.css' %}" />
 		<link rel="stylesheet" type="text/css" href="{% static 'css/problem.css' %}" />
 		<link rel="stylesheet" type="text/css" href="{% static 'css/community.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/document.css' %}" />
 		<link rel="stylesheet" type="text/css" href="{% static 'css/form.css' %}" />
 		<script type="text/javascript" src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
 		<script src="{% static 'js/bootstrap.min.js' %}"></script>
@@ -55,7 +56,7 @@
 						<ul class="nav navbar-nav">
 							<li><a href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a></li>
 							<li><a href="{% url 'intro' %}">Introduction</a></li>
-							<li><a href="{% url 'documents' %}">Documents</a></li>
+							<li><a href="{% url 'document_list' %}">Documents</a></li>
 							<li><a href="{% url 'artifact1' %}?orderby=title">Problems</a></li>
 							<li><a href="{% url 'noticelist' %}?page=1">Community</a></li>
 						</ul>

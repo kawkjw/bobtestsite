@@ -39,7 +39,8 @@ urlpatterns = [
 	url(r'^$', HomeView.as_view(), name='home'),
 
 	url(r'^intro/$', intro, name='intro'),
-	url(r'^documents/$', documents, name='documents'),
+	# url(r'^documents/$', documents, name='documents'),
+	url(r'^documents/', include('document.urls')),
 	# url(r'^problems/$', problems, name='problems'),
 	url(r'^problems/', include('problem.urls')),
 	# url(r'^community/$', community, name='community'),

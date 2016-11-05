@@ -8,7 +8,7 @@ def getstats(value, arg):
 	submits = arg
 
 	if submits == 0:
-		return "0%"
+		return "0.0%"
 	else:
 		stats = float(corrects) / submits
 		stats = round(stats * 100, 2)
