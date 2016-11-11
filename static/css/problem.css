@@ -1,9 +1,6 @@
 
 .submenu {
 	display: none;
-	/*border-left: 1px solid #b3daff;
-	border-right: 1px solid #b3daff;
-	border-bottom: 1px solid #b3daff;*/
 }
 
 #problem-menu > li > ul {
