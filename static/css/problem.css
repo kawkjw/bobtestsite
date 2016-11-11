@@ -1,13 +1,18 @@
 
 .submenu {
 	display: none;
-	border-left: 1px solid #b3daff;
+	/*border-left: 1px solid #b3daff;
 	border-right: 1px solid #b3daff;
-	border-bottom: 1px solid #b3daff;
+	border-bottom: 1px solid #b3daff;*/
 }
 
 #problem-menu > li > ul {
 	text-align: right;
+}
+
+#problem-menu > li.active {
+	border-radius: 4px;
+	border: 1px solid #b3daff;
 }
 
 .problem {
