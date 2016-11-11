@@ -1,54 +1,6 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<script type="text/javascript">
-	{% if user_state %}
-		alert('Existed Username');
-	{% elif different_password %}
-		alert('Different Password');
-	{% elif name_state %}
-		alert('Username is not composed to only number');
-	{% elif email_state %}
-		alert('Invalid email');
-	{% elif password_state %}
-		alert('Password must not be similar to username');
-	{% elif passwordlen_state %}
-		alert('Password length is more than 8');
-	{% elif passwordnum_state %}
-		alert('Password is not composed to only number');
-	{% endif %}
-	$(document).ready(function() {
-		$('#id_register').click(function() {
-			var form = $('#registerform');
-
-			if(!$('input[name=username]').val()) {
-				alert('Input username.');
-				$('input[name=username]').focus();
-				return;
-			}
-
-			if(!$('input[name=email]').val()) {
-				alert('Input email.');
-				$('input[name=email]').focus();
-				return;
-			}
-
-			if(!$('input[name=password1]').val()) {
-				alert('Input password.');
-				$('input[name=password1]').focus();
-				return;
-			}
-
-			if(!$('input[name=password2]').val()) {
-				alert('Input password.');
-				$('input[name=password2]').focus();
-				return;
-			}
-
-			form.submit();
-		});
-	});
-</script>
 <div class="center-block" style="width: 600px;">
 	<h1>Registration</h1>
 
@@ -83,11 +35,180 @@
 
 	<div class="form-group">
 		<div style="padding-right: 15px;">
-			<input type="button" id="id_register" class="btn btn-default pull-right" value="Register"/>
+			<input type="submit" id="id_register" class="btn btn-default pull-right" value="Register"/>
 		</div>
 	</div>
 
 	<script type="text/javascript">document.getElementById('id_username').focus();</script>
 	</form>
 </div>
+{% if user_state %}
+<div class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" id="hexit" class="close" data-dismiss="modal">×</button>
+				<h4 class="modal-title">Existed Username</h4>
+			</div>
+			<div class="modal-body" style="text-align: center;">
+				존재하는 아이디입니다.
+			</div>
+			<div class="modal-footer">
+				<button type="button" id="exit" class="btn btn-default" data-dismiss="modal">닫기</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$('div.modal').modal({
+		backdrop: 'static',
+		keyboard: false
+	});
+	$('#exit').focus();
+</script>
+{% elif different_password %}
+<div class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" id="hexit" class="close" data-dismiss="modal">×</button>
+				<h4 class="modal-title">Different Password</h4>
+			</div>
+			<div class="modal-body" style="text-align: center;">
+				비밀번호를 확인해주세요.
+			</div>
+			<div class="modal-footer">
+				<button type="button" id="exit" class="btn btn-default" data-dismiss="modal">닫기</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$('div.modal').modal({
+		backdrop: 'static',
+		keyboard: false
+	});
+	$('#exit').focus();
+</script>
+{% elif name_state %}
+<div class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" id="hexit" class="close" data-dismiss="modal">×</button>
+				<h4 class="modal-title">Invalid Username</h4>
+			</div>
+			<div class="modal-body" style="text-align: center;">
+				아이디는 숫자로만 이루어질 수는 없습니다.
+			</div>
+			<div class="modal-footer">
+				<button type="button" id="exit" class="btn btn-default" data-dismiss="modal">닫기</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$('div.modal').modal({
+		backdrop: 'static',
+		keyboard: false
+	});
+	$('#exit').focus();
+</script>
+{% elif email_state %}
+<div class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" id="hexit" class="close" data-dismiss="modal">×</button>
+				<h4 class="modal-title">Invalid Email</h4>
+			</div>
+			<div class="modal-body" style="text-align: center;">
+				올바른 이메일 형식으로 입력해주세요.
+			</div>
+			<div class="modal-footer">
+				<button type="button" id="exit" class="btn btn-default" data-dismiss="modal">닫기</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$('div.modal').modal({
+		backdrop: 'static',
+		keyboard: false
+	});
+	$('#exit').focus();
+</script>
+{% elif password_state %}
+<div class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" id="hexit" class="close" data-dismiss="modal">×</button>
+				<h4 class="modal-title">Invalid Password</h4>
+			</div>
+			<div class="modal-body" style="text-align: center;">
+				아이디와 비밀번호가 비슷합니다.
+			</div>
+			<div class="modal-footer">
+				<button type="button" id="exit" class="btn btn-default" data-dismiss="modal">닫기</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$('div.modal').modal({
+		backdrop: 'static',
+		keyboard: false
+	});
+	$('#exit').focus();
+</script>
+{% elif passwordlen_state %}
+<div class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" id="hexit" class="close" data-dismiss="modal">×</button>
+				<h4 class="modal-title">Invalid Password</h4>
+			</div>
+			<div class="modal-body" style="text-align: center;">
+				비밀번호는 8자리 이상이어야 합니다.
+			</div>
+			<div class="modal-footer">
+				<button type="button" id="exit" class="btn btn-default" data-dismiss="modal">닫기</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$('div.modal').modal({
+		backdrop: 'static',
+		keyboard: false
+	});
+	$('#exit').focus();
+</script>
+{% elif passwordnum_state %}
+<div class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" id="hexit" class="close" data-dismiss="modal">×</button>
+				<h4 class="modal-title">Invalid Password</h4>
+			</div>
+			<div class="modal-body" style="text-align: center;">
+				비밀번호는 숫자로만 이루어질 수는 없습니다.
+			</div>
+			<div class="modal-footer">
+				<button type="button" id="exit" class="btn btn-default" data-dismiss="modal">닫기</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$('div.modal').modal({
+		backdrop: 'static',
+		keyboard: false
+	});
+	$('#exit').focus();
+</script>
+{% endif %}
 {% endblock content %}

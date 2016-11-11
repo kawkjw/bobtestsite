@@ -12,12 +12,12 @@ from problem.views import problem_answercheck
 from problem.views import problem_download
 
 urlpatterns = [
-	url(r'^1/', artifact1, name='artifact1'),
-	url(r'^2/', artifact2, name='artifact2'),
-	url(r'^3/', artifact3, name='artifact3'),
-	url(r'^4/', artifact4, name='artifact4'),
-	url(r'^5/', artifact5, name='artifact5'),
-	url(r'^6/', artifact6, name='artifact6'),
+	url(r'^forensic/1/', artifact1, name='artifact1'),
+	url(r'^forensic/2/', artifact2, name='artifact2'),
+	url(r'^forensic/3/', artifact3, name='artifact3'),
+	url(r'^forensic/4/', artifact4, name='artifact4'),
+	url(r'^forensic/5/', artifact5, name='artifact5'),
+	url(r'^forensic/6/', artifact6, name='artifact6'),
 	url(r'^view/$', problem_view, name='problem_view'),
 	url(r'^write/$', problem_write, name='problem_write'),
 	url(r'^write_done/$', problem_write_done, name='problem_write_done'),

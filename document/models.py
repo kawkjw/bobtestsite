@@ -8,8 +8,7 @@ class Document(models.Model):
 	num = models.AutoField(primary_key=True)
 	author = models.ForeignKey('auth.User')
 	title = models.CharField(max_length=50, null=True)
-	created_date = models.DateField(blank=True)
-	hits = models.IntegerField(blank=True)
+	created_date = models.DateField(null=True)
 	filelist = models.CharField(max_length=500, null=True, blank=True)
 
 	def __unicode__(self):

@@ -19,17 +19,6 @@
 			$('.nav-pills li:eq(5)').toggleClass("active");
 		{% endif %}
 
-		$('#id_submit').click(function() {
-			var form = $('#input_answer');
-
-			if(!$('input[name=answer]').val()) {
-				alert('Input answer.');
-				$('input[name=answer]').focus();
-				return;
-			}
-
-			form.submit();
-		});
 		{% if request.user.is_staff %}
 			$('#modifybutton').click(function() {
 				$(location).attr("href", "/admin/problem/problem/{{ problem.num }}/change/");
@@ -112,10 +101,10 @@
 		<div class="form-group">
 			<label for="id_answer" class="col-md-2 control-label">Answer</label>
 			<div class="col-md-8">
-				<input type="text" id="id_answer" class="form-control" name="answer" {% if state %}placeholder="Already Solved"{% else %}placeholder="Answer"{% endif %} {% if state %}disabled{% endif %}>
+				<input type="text" id="id_answer" class="form-control" name="answer" {% if state %}placeholder="Already Solved"{% else %}placeholder="Answer"{% endif %} {% if state %}disabled{% endif %} required>
 			</div>
 			<div class="col-md-2">
-				<input type="button" id="id_submit" class="btn btn-default" value="Submit">
+				<input type="submit" id="id_submit" class="btn btn-default" value="Submit" {% if state %}disabled{% endif %}>
 			</div>
 		</div>
 	</form>

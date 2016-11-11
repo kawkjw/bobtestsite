@@ -1,0 +1,126 @@
+{% extends 'document_menu.html' %}
+
+{% block document_content %}
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.nav-pills li:eq(0)').toggleClass("active");
+	});
+</script>
+<div class="document-content col-md-10">
+	<h1>&nbsp;* 포렌식 프로세스</h1>
+	<div class="process col-md-3">
+		<div class="chevron">
+        		<div class="chevron-inner">
+        		    <div class="chevron-content">
+        		        <span><br>사전 조사</span>
+        		    </div>
+        		</div>
+    		</div>
+		<div class="chevron">
+        		<div class="chevron-inner">
+        		    <div class="chevron-content">
+        		        <span><br>증거 수집</span>
+        		    </div>
+        		</div>
+    		</div>
+		<div class="chevron">
+        		<div class="chevron-inner">
+        		    <div class="chevron-content">
+        		        <span><br>증거 분석</span>
+        		    </div>
+        		</div>
+    		</div>
+		<div class="chevron">
+        		<div class="chevron-inner">
+        		    <div class="chevron-content">
+        		        <span><br>보고서 작성</span>
+        		    </div>
+        		</div>
+    		</div>
+	</div>
+	<div class="table-div col-md-9">
+		<table class="table table-bordered roadmap-table">
+			<thead>
+				<tr>
+					<td class="col-md-4">Level 0</td>
+					<td class="col-md-4">Level 1</td>
+					<td class="col-md-4">Level 2</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<h4>□ 개론</h4>
+						<ul>
+							<li><a href="{% url 'document_view' %}?dnum=1">Digital forensic 5원칙</a></li>
+							<li>최량증거 법칙</li>
+							<li>전문증거 법칙</li>
+							<li>로카르도 교환법칙</li>
+						</ul>
+					</td>
+					<td>
+						<h4>□ 도구 사용법</h4>
+						<ul>
+							<li>통합적 분석 도구 사용법</li>
+							<li>아티팩트 별 도구 검색 및 사용</li>
+							<li>Scripting 언어 분석</li>
+						</ul>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<h4>□ 수집 절차</h4>
+						<ul>
+							<li>라이브 수집절차</li>
+							<li>이미징(사본 생성)</li>
+						</ul>
+					</td>
+					<td>
+						<h4>□ 증거 보존</h4>
+						<ul>
+							<li>무결성 보존/Hash</li>
+							<li>CoC(Chain of Custody)</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<h4>□ 탐색</h4>
+						<ul>
+							<li>Keyword 검색</li>
+							<li>패턴 검색(File Signature)</li>
+							<li>파일 카빙</li>
+						</ul>
+					</td>
+					<td>
+						<h4>□ 아티팩트 분석</h4>
+						<ul>
+							<li>메모리 분석</li>
+							<li>파일 분석</li>
+							<li>파일 시스템 로그</li>
+							<li>기타 Artifact</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="roadmap-case col-md-12">
+		<h1>* Case by Case</h1>
+		<div class="case-link">
+			<div class="oval"><span>Ransomware</span></div>
+			<div class="oval"><span>정보 유출</span></div>
+			<div class="oval"><span>네트워크 공격</span></div>
+			<div class="oval"><span>바이러스</span></div>
+		</div>
+	</div>
+</div>
+{% endblock document_content %}

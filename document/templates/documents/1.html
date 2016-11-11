@@ -3,14 +3,13 @@
 {% block document_files %}
 {% load document_array %}
 {% if state %}
-<tr>
-	<td>Files</td>
-	<td colspan="3"><a href="{% url 'document_download' %}?filename={{ filename|array_num:0 }}">{{ filename|array_num:0 }}</a> / <a href="{% url 'document_download' %}?filename={{ filename|array_num:1 }}">{{ filename|array_num:1 }}</a></td>
-</tr>
+<li><a href="{% url 'document_download' %}?filename={{ filename|array_num:0 }}">{{ filename|array_num:0 }}</a></li>
+<li class="divider"></li>
+<li><a href="{% url 'document_download' %}?filename={{ filename|array_num:1 }}">{{ filename|array_num:1 }}</a></li>
 {% endif %}
 {% endblock document_files %}
 
-{% block document_content %}
+{% block document_block %}
 {% load staticfiles %}
 <p>디지털 포렌식(Digital Forensics)의 사전적 정의는 다음과 같다. 포렌식 과학의 일종으로, 디지털 장비를 매개로 한 범죄에 대한 자료(Data)를 수집하기 위해 디지털 자료들을 복구하고 조사하는 행위 및 절차를 말한다. 단순히 컴퓨터 포렌식(Computer Forensecs)의 개념에서 벗어나 디지털 저장 매체 등에서의 증거(Evidence) 수집 및 분석 기술도 포함하고 있다(“Digital forensics”, Wikipedia).</p>
 <p>위 정의 속에서 디지털 기기 속 컨텐츠에 대해 ‘자료(Data)’와 ‘증거(Evidence)’라는 말을 혼용하고 있다. 이는 실제 상황에 따라 사용되는 디지털 포렌식 기술 및 포렌식 절차에서의 요구사항이 달라지기 때문이다.</p>
@@ -24,4 +23,4 @@
 <p>전자 증거물에 대하여 적용되는 일반적인 컴퓨터 포렌식은 [그림 4]와 같이 수사 준비, 증거물 획득, 증거물 분석, 증거물 보관, 보고서의 다섯 단계로 구성된다. 이러한 절차는 실무에 맞게 조절될 수 있으며, 증거의 수집은 명확하게 수립된 절차에 따라 반드시 진행되어야 한다.</p>
 <img class="center-block document-img" src="{% static 'img/document/doc1/doc1-2.png' %}" />
 
-{% endblock document_content %}
+{% endblock document_block %}

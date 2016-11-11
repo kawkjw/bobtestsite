@@ -1,4 +1,40 @@
-<script type="text/javascript">
-	alert('Register Success');
-	location.href="{% url 'user_login' %}";
-</script>
+<html>
+	<head>
+		{% load staticfiles %}
+		<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}" />
+		<script type="text/javascript" src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
+		<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	</head>
+	<body>
+		<div class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" id="hexit" class="close" data-dismiss="modal">×</button>
+						<h4 class="modal-title">Registeration Done</h4>
+					</div>
+					<div class="modal-body" style="text-align: center;">
+						Register Success
+					</div>
+					<div class="modal-footer">
+						<button type="button" id="exit" class="btn btn-default" data-dismiss="modal">닫기</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$('div.modal').modal({
+				backdrop: 'static',
+				keyboard: false
+			});
+			$('#exit').focus();
+
+			$('#hexit').click(function() {
+				location.href = "{% url 'user_login' %}";
+			});
+			$('#exit').click(function() {
+				location.href = "{% url 'user_login' %}";
+			});
+		</script>
+	</body>
+</html>

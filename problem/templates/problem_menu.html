@@ -9,17 +9,50 @@
 			$(location).attr("href", "{% url 'problem_write' %}");
 		});
 	{% endif %}
+		/*$('#problem-menu > li').hover(function () { $(this).find("ul:first").show(); }, function () { $(this).find("ul:first").hide(); });
+		$('#problem-menu li li').hover(function () {
+			$('ul:first', this).each(function () {
+				var p = $(this).parent();
+				$(this).css('top', p.position().top).css('left', p.position().left + p.width()).show();
+			});}, function () { $('ul:first', this).hide(); });*/
 	});
 </script>
 <div class="col-md-12">
 <div class="menu col-md-2">
-	<ul id="problem-menu" class="nav nav-pills nav-stacked">
+	<!--<ul id="problem-menu" class="nav nav-pills nav-stacked">
 		<li><a href="{% url 'artifact1' %}?orderby=title">Artifact 1</a></li>
 		<li><a href="{% url 'artifact2' %}?orderby=title">Artifact 2</a></li>
 		<li><a href="{% url 'artifact3' %}?orderby=title">Artifact 3</a></li>
 		<li><a href="{% url 'artifact4' %}?orderby=title">Artifact 4</a></li>
 		<li><a href="{% url 'artifact5' %}?orderby=title">Artifact 5</a></li>
 		<li><a href="{% url 'artifact6' %}?orderby=title">Artifact 6</a></li>
+	</ul>-->
+	<ul id="problem-menu" class="nav nav-pills nav-stacked">
+		<li><a href="{% url 'artifact1' %}?orderby=title">Forensic</a>
+			<ul class="nav nav-pills nav-stacked submenu">
+				<li><a href="{% url 'artifact1' %}?orderby=title">Artifact 1</a></li>
+				<li><a href="{% url 'artifact2' %}?orderby=title">Artifact 2</a></li>
+				<li><a href="{% url 'artifact3' %}?orderby=title">Artifact 3</a></li>
+				<li><a href="{% url 'artifact4' %}?orderby=title">Artifact 4</a></li>
+				<li><a href="{% url 'artifact5' %}?orderby=title">Artifact 5</a></li>
+				<li><a href="{% url 'artifact6' %}?orderby=title">Artifact 6</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Anti-Forensic</a>
+			<ul class="nav nav-pills nav-stacked submenu">
+				<li><a href="#">Anti-Forensic 1</a></li>
+				<li><a href="#">Anti-Forensic 2</a></li>
+				<li><a href="#">Anti-Forensic 3</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Case by Case</a>
+			<ul class="nav nav-pills nav-stacked submenu">
+				<li><a href="#">Ransomeware</a></li>
+				<li><a href="#">정보 유출</a></li>
+				<li><a href="#">네트워크 공격</a></li>
+				<li><a href="#">바이러스</a></li>
+			</ul>
+		</li>
 	</ul>
 </div>
 

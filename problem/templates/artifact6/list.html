@@ -9,7 +9,31 @@
 	}
 
 	$(document).ready(function() {
-		$('.nav-pills li:eq(5)').toggleClass("active");
+		$('.nav-pills > li:eq(0)').toggleClass("active");
+		$('.nav-pills > li:eq(0) > ul').css("display", "block");
+		$('.nav-pills > li:eq(0) > ul > li:eq(5)').toggleClass("active");
+		
+		$('#problem-menu > li:eq(1)').hover(function () {
+			$(this).addClass("active");
+			$(this).find("ul:first").show(); 
+		}, function () {
+			$(this).removeClass("active");
+			$(this).find("ul:first").hide(); 
+		});
+		$('#problem-menu > li:eq(1) > ul').mouseleave(function() {
+			$('#problem-menu > li:eq(1)').removeClass("active");
+		});
+
+		$('#problem-menu > li:eq(2)').hover(function () {
+			$(this).addClass("active");
+			$(this).find("ul:first").show();
+		}, function () {
+			$(this).removeClass("active");
+			$(this).find("ul:first").hide();
+		});
+		$('#problem-menu > li:eq(2) > ul').mouseleave(function() {
+			$('#problem-menu > li:eq(2)').removeClass("active");
+		});
 
 		var order = get('orderby');
 

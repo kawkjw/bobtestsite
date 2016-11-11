@@ -70,6 +70,6 @@ body {
 	text-align: center;
 }
 
-.problem-content, .community-content, .mypage-content {
+.problem-content, .community-content, .mypage-content, .document-content {
 	border-left: 1px solid #eee;
 }

@@ -1,17 +1,21 @@
-{% extends 'base.html' %}
+{% extends 'document_menu.html' %}
 
-{% block content %}
+{% block document_content %}
 <script type="text/javascript">
 	$(document).ready(function() {
-		$('nav ul li:eq(2)').toggleClass("active");
+		$('.nav-pills li:eq(1)').toggleClass("active");
 	});
 </script>
-<div class="col-md-12">
+<div class="document-content col-md-10">
 	{% for document in documents %}
-		<div class="col-md-3 document-center">
-			<a href="{% url 'document_view' %}?dnum={{ document.num }}"><img src="http://placehold.it/200x200"/></a>
-			<a href="{% url 'document_view' %}?dnum={{ document.num }}"><p class="document-title">{{ document.title }}</p></a>
+		<div class="col-md-3">
+			<div class="thumbnail">
+				<a href="{% url 'document_view' %}?dnum={{ document.num }}"><img class="document-list-img" src="http://placehold.it/200x200" /></a>
+				<div class="caption">
+					<a href="{% url 'document_view' %}?dnum={{ document.num }}"><p class="document-title">{{ document.title }}</p></a>
+				</div>
+			</div>
 		</div>
 	{% endfor %}
 </div>
-{% endblock content %}
+{% endblock document_content %}

@@ -1,5 +1,12 @@
 
-#problem-menu > li > a {
+.submenu {
+	display: none;
+	border-left: 1px solid #b3daff;
+	border-right: 1px solid #b3daff;
+	border-bottom: 1px solid #b3daff;
+}
+
+#problem-menu > li > ul {
 	text-align: right;
 }
 
@@ -35,6 +42,12 @@
 .nav-pills > li.active > a:hover, 
 .nav-pills > li.active > a:focus {
 	background-color: #99ceff;
+}
+
+.nav-pills > li.active > ul > li.active > a, 
+.nav-pills > li.active > ul > li.active > a:hover, 
+.nav-pills > li.active > ul > li.active > a:focus {
+	background-color: #b3daff;
 }
 
 .nav-pills li a{

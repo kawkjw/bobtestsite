@@ -11,6 +11,9 @@ from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect, StreamingHttpResponse
 from django.utils.encoding import smart_unicode
 
+def roadmap(request):
+	return render(request, 'roadmap/roadmap.html')
+
 def document_list(request):
 	documents = Document.objects.order_by('num')
 	context = Context({'documents': documents})
@@ -22,13 +25,12 @@ def document_view(request):
 		return HttpResponseRedirect('/login_check/')
 	document_num = request.GET['dnum']
 	document = Document.objects.get(num=document_num)
-	Document.objects.filter(num=document_num).update(hits = document.hits + 1)
 	state = True
 	files = document.filelist.split('/')
 	if files[0] == '':
 		state = False
 	context = Context({'document': document, 'state': state, 'filename': files, 'size': range(0, len(files))})
-	return render(request, str(document_num) + '.html', context)
+	return render(request, 'documents/' + str(document_num) + '.html', context)
 
 @login_required(login_url='/login/')
 def document_download(request):
