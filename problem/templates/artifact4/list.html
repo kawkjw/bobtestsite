@@ -20,9 +20,6 @@
 			$(this).removeClass("active");
 			$(this).find("ul:first").hide(); 
 		});
-		$('#problem-menu > li:eq(1) > ul').mouseleave(function() {
-			$('#problem-menu > li:eq(1)').removeClass("active");
-		});
 
 		$('#problem-menu > li:eq(2)').hover(function () {
 			$(this).addClass("active");
@@ -30,9 +27,6 @@
 		}, function () {
 			$(this).removeClass("active");
 			$(this).find("ul:first").hide();
-		});
-		$('#problem-menu > li:eq(2) > ul').mouseleave(function() {
-			$('#problem-menu > li:eq(2)').removeClass("active");
 		});
 
 		var order = get('orderby');
