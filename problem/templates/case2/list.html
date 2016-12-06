@@ -1,0 +1,73 @@
+{% extends 'problem_menu.html' %}
+
+{% block problem_content %}
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#problem-menu > li:eq(2)').toggleClass("active");
+		$('#problem-menu > li:eq(2) > ul').css("display", "block");
+		$('#problem-menu > li:eq(2) > ul > li:eq(1)').toggleClass("active");
+
+		$('#problem-menu > li:eq(0)').hover(function () {
+			$(this).addClass("active");
+			$(this).find("ul:first").show(); 
+		}, function () {
+			$(this).removeClass("active");
+			$(this).find("ul:first").hide(); 
+		});
+
+		$('#problem-menu > li:eq(1)').hover(function () {
+			$(this).addClass("active");
+			$(this).find("ul:first").show();
+		}, function () {
+			$(this).removeClass("active");
+			$(this).find("ul:first").hide();
+		});
+	});
+</script>
+<div class="problem-content col-md-10">
+	<div style="overflow: auto;">
+		<h2 class="question-title">정보유출</h2>
+		<h5 class="question-date">2016년 11월 24일</h5>
+	</div>
+	<hr>
+	<span>Download 1: </span>
+	<a href="https://drive.google.com/file/d/0BxNYyukorb8qbDdxSWFzWHNtTEE/view?usp=sharing" target="_blank">https://drive.google.com/file/d/0BxNYyukorb8qbDdxSWFzWHNtTEE/view?usp=sharing</a>
+	<br>
+	<span>Download 2: </span>
+	<a href="https://drive.google.com/file/d/0BxNYyukorb8qSlFSR1lYZk1GaTg/view?usp=sharing" target="_blank">https://drive.google.com/file/d/0BxNYyukorb8qSlFSR1lYZk1GaTg/view?usp=sharing</a>
+	<hr>
+	<p class="scenario-content">크레센도 그룹의 김 부장은 최근 정보 유출 혐의로 조사를 받고 있다.</p>
+	<p class="scenario-content">내부 보안팀은 김 부장의 사내 PC와 자택 PC의 HDD 이미지를 확보했다.</p>
+
+	<p class="scenario-content">당신은 크레센도 그룹의 보안 담당자로서, 이어지는 시나리오를 통해 어떻게 유출이 시작되었는지, 유출된 내용은 무엇인지, 유출된 자료는 어떤 목적을 위해 어디로 전달되었는지 밝혀내야 한다.</p>
+
+	<ul class="list-none">
+		<li>1번 덤프의 문제:</li>
+		<li>
+			<ul>
+				<li>1. 김 부장의 컴퓨터에 연결된 외부 저장매체의 시리얼 번호는?</li>
+			</ul>
+		</li>
+		<li>2번 덤프의 문제:</li>
+		<li>
+			<ul>
+				<li>2. 김 부장이 기밀 문서를 전달한 대상 메일 주소는?</li>
+				<li>3. 김 부장이 받기로 약속한 금액은? (숫자만)</li>
+			</ul>
+		</li>
+	</ul>
+	<p class="scenario-content">[1번 답]_[2번 답]_[3번 답]</p>
+
+	<form id="input_answer" class="form-horizontal" method="POST" action="{% url 'problem_answercheck' %}?pnum={{ problem.num }}">{% csrf_token %}
+		<div class="form-group">
+			<label for="id_answer" class="col-md-2 control-label">Answer</label>
+			<div class="col-md-8">
+				<input type="text" id="id_answer" class="form-control" name="answer" {% if state %}placeholder="Already Solved"{% else %}placeholder="Answer"{% endif %} {% if state %}disabled{% endif %} required>
+			</div>
+			<div class="col-md-2">
+				<input type="submit" id="id_submit" class="btn btn-default" value="Submit" {% if state %}disabled{% endif %}>
+			</div>
+		</div>
+	</form>
+</div>
+{% endblock problem_content %}

@@ -15,7 +15,7 @@ class Counter:
 
 @register.inclusion_tag('_recommend_problem.html', takes_context=True)
 def recommend_problem(context):
-	problems = Problem.objects.order_by('title')
+	problems = Problem.objects.all().order_by('?')[:15]
 	tprofiles = UserProfile.objects.all()
 	request = context['request']
 	tcounter = Counter()

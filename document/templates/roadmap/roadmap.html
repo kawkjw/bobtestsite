@@ -3,16 +3,24 @@
 {% block document_content %}
 <script type="text/javascript">
 	$(document).ready(function() {
-		$('.nav-pills li:eq(0)').toggleClass("active");
+		$('#document-menu > li:eq(0)').toggleClass("active");
+
+		$('#document-menu > li:eq(1)').hover(function () {
+			$(this).addClass("active");
+			$(this).find("ul:first").show(); 
+		}, function () {
+			$(this).removeClass("active");
+			$(this).find("ul:first").hide(); 
+		});
 	});
 </script>
 <div class="document-content col-md-10">
-	<h1>&nbsp;* 포렌식 프로세스</h1>
-	<div class="process col-md-3">
+	<h1>&nbsp;* 포렌식 프로세스 별 단계</h1>
+	<div class="process col-md-3 col-sm-3 col-xs-3">
 		<div class="chevron">
         		<div class="chevron-inner">
         		    <div class="chevron-content">
-        		        <span><br>사전 조사</span>
+        		        <span><br>사전 준비</span>
         		    </div>
         		</div>
     		</div>
@@ -38,7 +46,7 @@
         		</div>
     		</div>
 	</div>
-	<div class="table-div col-md-9">
+	<div class="table-div col-md-9 col-sm-9 col-xs-9">
 		<table class="table table-bordered roadmap-table">
 			<thead>
 				<tr>
@@ -50,16 +58,16 @@
 			<tbody>
 				<tr>
 					<td>
-						<h4>□ 개론</h4>
+						<h4>□ <a href="{% url 'document_intro' %}">개론</a></h4>
 						<ul>
-							<li><a href="{% url 'document_view' %}?dnum=1">Digital forensic 5원칙</a></li>
+							<li>Digital forensic 5원칙</li>
 							<li>최량증거 법칙</li>
 							<li>전문증거 법칙</li>
 							<li>로카르도 교환법칙</li>
 						</ul>
 					</td>
 					<td>
-						<h4>□ 도구 사용법</h4>
+						<h4>□ <a href="{% url 'document_tools' %}">도구 사용법</a></h4>
 						<ul>
 							<li>통합적 분석 도구 사용법</li>
 							<li>아티팩트 별 도구 검색 및 사용</li>
@@ -71,7 +79,7 @@
 				<tr>
 					<td></td>
 					<td>
-						<h4>□ 수집 절차</h4>
+						<h4>□ <a href="{% url 'document_collect' %}">수집 절차</a></h4>
 						<ul>
 							<li>라이브 수집절차</li>
 							<li>이미징(사본 생성)</li>
@@ -96,7 +104,7 @@
 						</ul>
 					</td>
 					<td>
-						<h4>□ 아티팩트 분석</h4>
+						<h4>□ <a href="{% url 'artifact1' %}">아티팩트 분석</a></h4>
 						<ul>
 							<li>메모리 분석</li>
 							<li>파일 분석</li>
@@ -114,12 +122,12 @@
 		</table>
 	</div>
 	<div class="roadmap-case col-md-12">
-		<h1>* Case by Case</h1>
+		<h1>* 시나리오</h1>
 		<div class="case-link">
-			<div class="oval"><span>Ransomware</span></div>
-			<div class="oval"><span>정보 유출</span></div>
-			<div class="oval"><span>네트워크 공격</span></div>
-			<div class="oval"><span>바이러스</span></div>
+			<a href="{% url 'case1' %}" class="casebycase"><div class="oval"><span>랜섬웨어</span></div></a>
+			<a href="{% url 'case2' %}" class="casebycase"><div class="oval"><span>정보 유출</span></div></a>
+			<a href="{% url 'case3' %}" class="casebycase"><div class="oval"><span>네트워크 공격</span></div></a>
+			<a href="{% url 'case4' %}" class="casebycase"><div class="oval"><span>바이러스</span></div></a>
 		</div>
 	</div>
 </div>

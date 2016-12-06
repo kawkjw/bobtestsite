@@ -1,5 +1,5 @@
 {% load problem_stats %}
-<div class="container problem center">
+<div class="container problem center col-md-12 col-sm-12 col-xs-12">
 		<div class="problem-title">
 			<span>Recommended Problems</span>
 		</div>
@@ -21,17 +21,37 @@
 							<td class="col-md-8"><a href="{% url 'problem_view' %}?pnum={{ problem.num }}">{{ problem.title }}</a></td>
 							<td class="problem_center">
 							{% if problem.artifact == 1 %}
-							artifact 1
+							Prefetch
 							{% elif problem.artifact == 2 %}
-							artifact 2
+							Event Log
 							{% elif problem.artifact == 3 %}
-							artifact 3
+							LNK
 							{% elif problem.artifact == 4 %}
-							artifact 4
+							Shimcache
 							{% elif problem.artifact == 5 %}
-							artifact 5
+							Memory Dump
 							{% elif problem.artifact == 6 %}
-							artifact 6
+							Network
+							{% elif problem.artifact == 7 %}
+							Thumbnail
+							{% elif problem.artifact == 8 %}
+							VSS
+							{% elif problem.artifact == 9 %}
+							Web browser
+							{% elif problem.artifact == 10 %}
+							WER
+							{% elif problem.artifact == 11 %}
+							MFT
+							{% elif problem.artifact == 12 %}
+							File system
+							{% elif problem.artifact == 13 %}
+							Registry
+							{% elif problem.artifact == 14 %}
+							Steganography
+							{% elif problem.artifact == 15 %}
+							Hidden File
+							{% elif problem.artifact == 16 %}
+							File Delete
 							{% endif %}
 							</td>
 							<td class="problem_center">{{ problem.corrects|getstats:problem.submits }} ({{ problem.corrects }}/{{ problem.submits }})</td>
@@ -39,7 +59,7 @@
 						{{ counter.increment|default_if_none:"" }}
 					{% endfor %}
 					</tbody>
-					</table>
+				</table>
 			{% endif %}
 			{% for profile in profiles %}
 				{% if test.user.id == profile.user_id and not test.user.is_staff%}
@@ -60,17 +80,37 @@
 								<td class="col-md-8"><a href="{% url 'problem_view' %}?pnum={{ problem.num }}">{{ problem.title }}</a></td>
 								<td class="problem_center">
 								{% if problem.artifact == 1 %}
-								artifact 1
+								Prefetch
 								{% elif problem.artifact == 2 %}
-								artifact 2
+								Event Log
 								{% elif problem.artifact == 3 %}
-								artifact 3
+								LNK
 								{% elif problem.artifact == 4 %}
-								artifact 4
+								Shimcache
 								{% elif problem.artifact == 5 %}
-								artifact 5
+								Memory Dump
 								{% elif problem.artifact == 6 %}
-								artifact 6
+								Network
+								{% elif problem.artifact == 7 %}
+								Thumbnail
+								{% elif problem.artifact == 8 %}
+								VSS
+								{% elif problem.artifact == 9 %}
+								Web browser
+								{% elif problem.artifact == 10 %}
+								WER
+								{% elif problem.artifact == 11 %}
+								MFT
+								{% elif problem.artifact == 12 %}
+								File system
+								{% elif problem.artifact == 13 %}
+								Registry
+								{% elif problem.artifact == 14 %}
+								Steganography
+								{% elif problem.artifact == 15 %}
+								Hidden File
+								{% elif problem.artifact == 16 %}
+								File Delete
 								{% endif %}
 								</td>
 								<td class="problem_center">{{ problem.corrects|getstats:problem.submits }} ({{ problem.corrects }}/{{ problem.submits }})</td>

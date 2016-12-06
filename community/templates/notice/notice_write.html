@@ -1,12 +1,13 @@
-{% extends 'community_menu.html' %}
+{% extends 'base.html' %}
 
-{% block community_content %}
+{% block content %}
 <script type="text/javascript">
 	{% if not request.user.is_staff %}
 		alert('You don\'t have writing permission!!');
 		$(location).attr("href", "{% url 'home' %}");
 	{% endif %}
 	$(document).ready(function() {
+		$('nav ul li:eq(4)').toggleClass("active");
 		$('#id_submit').click(function() {
 			var form = $('#write_notice');
 
@@ -31,7 +32,7 @@
 		});
 	});
 </script>
-<div class="community-content col-md-10">
+<div class="col-md-offset-1 col-md-10">
 	<form id="write_notice" class="form-horizontal" method="POST" action="{% url 'noticewritedone' %}">{% csrf_token %}
 		<div class="form-group">
 			<label for="id_title" class="col-md-2 control-label">Title</label>
@@ -59,4 +60,4 @@
 		</div>
 	</form>
 </div>
-{% endblock community_content %}
+{% endblock content %}

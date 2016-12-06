@@ -9,48 +9,41 @@
 			$(location).attr("href", "{% url 'problem_write' %}");
 		});
 	{% endif %}
-		/*$('#problem-menu > li').hover(function () { $(this).find("ul:first").show(); }, function () { $(this).find("ul:first").hide(); });
-		$('#problem-menu li li').hover(function () {
-			$('ul:first', this).each(function () {
-				var p = $(this).parent();
-				$(this).css('top', p.position().top).css('left', p.position().left + p.width()).show();
-			});}, function () { $('ul:first', this).hide(); });*/
 	});
 </script>
 <div class="col-md-12">
 <div class="menu col-md-2">
-	<!--<ul id="problem-menu" class="nav nav-pills nav-stacked">
-		<li><a href="{% url 'artifact1' %}?orderby=title">Artifact 1</a></li>
-		<li><a href="{% url 'artifact2' %}?orderby=title">Artifact 2</a></li>
-		<li><a href="{% url 'artifact3' %}?orderby=title">Artifact 3</a></li>
-		<li><a href="{% url 'artifact4' %}?orderby=title">Artifact 4</a></li>
-		<li><a href="{% url 'artifact5' %}?orderby=title">Artifact 5</a></li>
-		<li><a href="{% url 'artifact6' %}?orderby=title">Artifact 6</a></li>
-	</ul>-->
 	<ul id="problem-menu" class="nav nav-pills nav-stacked">
-		<li><a href="{% url 'artifact1' %}?orderby=title">Forensic</a>
+		<li><a href="{% url 'artifact1' %}?orderby=title">Artifact Analysis</a>
 			<ul class="nav nav-pills nav-stacked submenu">
-				<li><a href="{% url 'artifact1' %}?orderby=title">Artifact 1</a></li>
-				<li><a href="{% url 'artifact2' %}?orderby=title">Artifact 2</a></li>
-				<li><a href="{% url 'artifact3' %}?orderby=title">Artifact 3</a></li>
-				<li><a href="{% url 'artifact4' %}?orderby=title">Artifact 4</a></li>
-				<li><a href="{% url 'artifact5' %}?orderby=title">Artifact 5</a></li>
-				<li><a href="{% url 'artifact6' %}?orderby=title">Artifact 6</a></li>
+				<li><a href="{% url 'artifact1' %}?orderby=title">Prefetch</a></li>
+				<li><a href="{% url 'artifact2' %}?orderby=title">Event Log</a></li>
+				<li><a href="{% url 'artifact3' %}?orderby=title">LNK</a></li>
+				<li><a href="{% url 'artifact4' %}?orderby=title">Shimcache</a></li>
+				<li><a href="{% url 'artifact5' %}?orderby=title">Memory Dump</a></li>
+				<li><a href="{% url 'artifact6' %}?orderby=title">Network</a></li>
+				<li><a href="{% url 'artifact7' %}?orderby=title">Thumbnail</a></li>
+				<li><a href="{% url 'artifact8' %}?orderby=title">VSS</a></li>
+				<li><a href="{% url 'artifact9' %}?orderby=title">Web Browser History</a></li>
+				<li><a href="{% url 'artifact10' %}?orderby=title">WER & Crash Dump</a></li>
+				<li><a href="{% url 'artifact11' %}?orderby=title">MFT</a></li>
+				<li><a href="{% url 'artifact12' %}?orderby=title">File System</a></li>
+				<li><a href="{% url 'artifact13' %}?orderby=title">Registry</a></li>
 			</ul>
 		</li>
-		<li><a href="#">Anti-Forensic</a>
+		<li><a href="{% url 'anti1' %}">Anti-Forensic</a>
 			<ul class="nav nav-pills nav-stacked submenu">
-				<li><a href="#">Anti-Forensic 1</a></li>
-				<li><a href="#">Anti-Forensic 2</a></li>
-				<li><a href="#">Anti-Forensic 3</a></li>
+				<li><a href="{% url 'anti1' %}">Steganography</a></li>
+				<li><a href="{% url 'anti2' %}">Hidden File</a></li>
+				<li><a href="{% url 'anti3' %}">File Delete</a></li>
 			</ul>
 		</li>
-		<li><a href="#">Case by Case</a>
+		<li><a href="{% url 'case1' %}">Scenario</a>
 			<ul class="nav nav-pills nav-stacked submenu">
-				<li><a href="#">Ransomeware</a></li>
-				<li><a href="#">정보 유출</a></li>
-				<li><a href="#">네트워크 공격</a></li>
-				<li><a href="#">바이러스</a></li>
+				<li><a href="{% url 'case1' %}">랜섬웨어</a></li>
+				<li><a href="{% url 'case2' %}">정보 유출</a></li>
+				<li><a href="{% url 'case3' %}">네트워크 공격</a></li>
+				<li><a href="{% url 'case4' %}">바이러스</a></li>
 			</ul>
 		</li>
 	</ul>

@@ -14,6 +14,31 @@ from django.utils.encoding import smart_unicode
 def roadmap(request):
 	return render(request, 'roadmap/roadmap.html')
 
+def document_intro(request):
+	if not request.user.is_active:
+		return HttpResponseRedirect('/login_check/')
+	document = Document.objects.get(num=1)
+	state = True
+	files = document.filelist.split('/')
+	if files[0] == '':
+		state = False
+	context = Context({'document': document, 'state': state, 'filename': files, 'size': range(0, len(files))})
+	return render(request, 'document_intro.html', context)
+
+def document_tools(request):
+	if not request.user.is_active:
+		return HttpResponseRedirect('/login_check/')
+	document = Document.objects.get(num=2)
+	context = Context({'document': document})
+	return render(request, 'document_tools.html', context)
+
+def document_collect(request):
+	if not request.user.is_active:
+		return HttpResponseRedirect('/login_check/')
+	document = Document.objects.get(num=3)
+	context = Context({'document': document})
+	return render(request, 'document_collect.html', context)
+
 def document_list(request):
 	documents = Document.objects.order_by('num')
 	context = Context({'documents': documents})

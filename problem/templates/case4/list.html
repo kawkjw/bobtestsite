@@ -1,0 +1,135 @@
+{% extends 'problem_menu.html' %}
+
+{% block problem_content %}
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#problem-menu > li:eq(2)').toggleClass("active");
+		$('#problem-menu > li:eq(2) > ul').css("display", "block");
+		$('#problem-menu > li:eq(2) > ul > li:eq(3)').toggleClass("active");
+
+		$('#problem-menu > li:eq(0)').hover(function () {
+			$(this).addClass("active");
+			$(this).find("ul:first").show(); 
+		}, function () {
+			$(this).removeClass("active");
+			$(this).find("ul:first").hide(); 
+		});
+
+		$('#problem-menu > li:eq(1)').hover(function () {
+			$(this).addClass("active");
+			$(this).find("ul:first").show();
+		}, function () {
+			$(this).removeClass("active");
+			$(this).find("ul:first").hide();
+		});
+	});
+</script>
+<div class="case4-content col-md-10">
+	<div style="overflow: auto;">
+		<h2 class="question-title">바이러스</h2>
+		<h5 class="question-date">2016년 11월 24일</h5>
+	</div>
+	<hr>
+	<span>Download: </span>
+	<a href="https://drive.google.com/open?id=0BxNYyukorb8qNlhwZ1Z1bmlpYWs" target="_blank">https://drive.google.com/open?id=0BxNYyukorb8qNlhwZ1Z1bmlpYWs</a>
+	<hr>
+	<p class="scenario-content">평소에 은행거래를 할 일이 많아, 인터넷 뱅킹을 자주 이용하던 라팀장은 평소처럼 은행 업무를 보던 도중 일일 이체 한도를 초과하였다는 메시지를 확인하였고, 이를 이상하게 여겨, 은행 이체기록을 확인 해 본 결과 라팀장이 이체하지 않은 돈들이 매우 많이 빠져나가 있는 것을 확인 할 수 있었다. 이를 이상하게 여긴 라팀장은 자신의 PC가 해킹을 당했다고 생각하고 당신에게 수사를 의뢰하였다..</p>
+
+	<p class="scenario-content">당신은 신고를 받고 “DumpIt”도구를 이용하여 메모리 덤프를 생성하라고 안내 해 준 후 라팀장의 집에 방문하여 PC의 HDD덤프를 수집하였다.</p>
+
+  	<p class="scenario-content">당신은 사이버 수사대의 수사관으로써 해당 사건이 해킹임을 증명하여, 라팀장이 적법한 보상을 받을 수 있도록, 범인을 검거하기 위한 증거 확보를 하여야 한다. 해당 PC를 분석하시오.</p>
+	<ol>
+		<li>라 팀장이 주로 이용하는 주 거래 은행은?(Web History)(IE)</li>
+		<li>라 팀장의 컴퓨터에서 가장 최근 실행된 파일은 무엇인가? (Prefetch) (name-xxxx.pf)</li>
+		<li>라 팀장이 계좌이체를 하여 송금을 하여야 하는 계좌의 목록은 몇 개인가?(Recycle File)</li>
+		<li>라 팀장이 해킹을 당하게 되는 원인이 된 웹사이트는 어느곳인가?(Web History)(Chrome)</li>
+		<li>라 팀장의 계좌를 탈취하기 위해 이용한 범인이 이용한 IP Address는?(Binary Reversing, host file check)</li>
+		<li>라 팀장의 메일계정 id/pw는 어떻게 되는가?(인증형식 : id_password)</li>
+		<li>라 팀장의 PC를 해킹한 악성 봇넷이 저장된 경로는?</li>
+		<li>해커가 라팀장의 PC에 접근하기 위하여 사용한 PASS Key는 무었인가?(Binary Reversing)</li>
+		<li>라 팀장의 PC가 해킹을 당한 당시의 라 팀장의 PC 부팅 날짜와 시각은 언제인가?(재부팅은 무시한다.)(YYYY_MM_DD-hh_mm_ss 형식)</li>
+		<li>라 팀장의 PC에 설치되어 있던 악성 프로그램의 Process name과 Mutex 값을 입력하시오(Proccess name-Mutex Value)</li>
+		<li>해커가 라 팀장의 PC 쉘에서 사용한 명령어는 몇개인가?</li>
+		<li>해커가 라 팀장의 PC를 조종하기 위하여 이용한 IP Address, Port는?(IP_PORT)</li>
+	</ol><br>
+	<div class="col-md-12">
+		<form id="input_answer" class="form-horizontal" method="POST" action="{% url 'problem_answercheck' %}?pnum={{ problem.num }}">{% csrf_token %}
+			<div class="form-group">
+				<label for="id_answer1" class="col-md-2 control-label">No.1</label>
+			<div class="col-md-8">
+				<input type="text" id="id_answer1" class="form-control" name="answer1" {% if state %}placeholder="Already Solved"{% else %}placeholder="Answer"{% endif %} {% if state %}disabled{% endif %} required>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="id_answer2" class="col-md-2 control-label">No.2</label>
+			<div class="col-md-8">
+				<input type="text" id="id_answer2" class="form-control" name="answer2" {% if state %}placeholder="Already Solved"{% else %}placeholder="Answer"{% endif %} {% if state %}disabled{% endif %} required>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="id_answer3" class="col-md-2 control-label">No.3</label>
+			<div class="col-md-8">
+				<input type="text" id="id_answer3" class="form-control" name="answer3" {% if state %}placeholder="Already Solved"{% else %}placeholder="Answer"{% endif %} {% if state %}disabled{% endif %} required>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="id_answer4" class="col-md-2 control-label">No.4</label>
+			<div class="col-md-8">
+				<input type="text" id="id_answer4" class="form-control" name="answer4" {% if state %}placeholder="Already Solved"{% else %}placeholder="Answer"{% endif %} {% if state %}disabled{% endif %} required>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="id_answer5" class="col-md-2 control-label">No.5</label>
+			<div class="col-md-8">
+				<input type="text" id="id_answer5" class="form-control" name="answer5" {% if state %}placeholder="Already Solved"{% else %}placeholder="Answer"{% endif %} {% if state %}disabled{% endif %} required>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="id_answer6" class="col-md-2 control-label">No.6</label>
+			<div class="col-md-8">
+				<input type="text" id="id_answer6" class="form-control" name="answer6" {% if state %}placeholder="Already Solved"{% else %}placeholder="Answer"{% endif %} {% if state %}disabled{% endif %} required>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="id_answer7" class="col-md-2 control-label">No.7</label>
+			<div class="col-md-8">
+				<input type="text" id="id_answer7" class="form-control" name="answer7" {% if state %}placeholder="Already Solved"{% else %}placeholder="Answer"{% endif %} {% if state %}disabled{% endif %} required>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="id_answer8" class="col-md-2 control-label">No.8</label>
+			<div class="col-md-8">
+				<input type="text" id="id_answer8" class="form-control" name="answer8" {% if state %}placeholder="Already Solved"{% else %}placeholder="Answer"{% endif %} {% if state %}disabled{% endif %} required>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="id_answer9" class="col-md-2 control-label">No.9</label>
+			<div class="col-md-8">
+				<input type="text" id="id_answer9" class="form-control" name="answer9" {% if state %}placeholder="Already Solved"{% else %}placeholder="Answer"{% endif %} {% if state %}disabled{% endif %} required>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="id_answer10" class="col-md-2 control-label">No.10</label>
+			<div class="col-md-8">
+				<input type="text" id="id_answer10" class="form-control" name="answer10" {% if state %}placeholder="Already Solved"{% else %}placeholder="Answer"{% endif %} {% if state %}disabled{% endif %} required>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="id_answer11" class="col-md-2 control-label">No.11</label>
+			<div class="col-md-8">
+				<input type="text" id="id_answer11" class="form-control" name="answer11" {% if state %}placeholder="Already Solved"{% else %}placeholder="Answer"{% endif %} {% if state %}disabled{% endif %} required>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="id_answer12" class="col-md-2 control-label">No.12</label>
+			<div class="col-md-8">
+				<input type="text" id="id_answer12" class="form-control" name="answer12" {% if state %}placeholder="Already Solved"{% else %}placeholder="Answer"{% endif %} {% if state %}disabled{% endif %} required>
+			</div>
+			<div class="col-md-2">
+				<input type="submit" id="id_submit" class="btn btn-default" value="Submit" {% if state %}disabled{% endif %}>
+			</div>
+		</div>
+	</form>
+	</div>
+</div>
+{% endblock problem_content %}

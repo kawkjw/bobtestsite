@@ -7,6 +7,30 @@
 		$(location).attr("href", "{% url 'home' %}");
 	{% endif %}
 	$(document).ready(function() {
+		$('#problem-menu > li:eq(0)').hover(function () {
+			$(this).addClass("active");
+			$(this).find("ul:first").show(); 
+		}, function () {
+			$(this).removeClass("active");
+			$(this).find("ul:first").hide(); 
+		});
+
+		$('#problem-menu > li:eq(1)').hover(function () {
+			$(this).addClass("active");
+			$(this).find("ul:first").show(); 
+		}, function () {
+			$(this).removeClass("active");
+			$(this).find("ul:first").hide(); 
+		});
+
+		$('#problem-menu > li:eq(2)').hover(function () {
+			$(this).addClass("active");
+			$(this).find("ul:first").show();
+		}, function () {
+			$(this).removeClass("active");
+			$(this).find("ul:first").hide();
+		});
+
 		$('#addbutton').addClass("hidden");
 		$('#id_submit').click(function() {
 			var form = $('#write_problem');
@@ -69,12 +93,26 @@
 			<label for="artifact" class="col-md-2 control-label">Artifact</label>
 			<div class="col-md-10">
 				<select name="artifact" class="form-control">
-					<option value="1">Artifact 1</option>
-					<option value="2">Artifact 2</option>
-					<option value="3">Artifact 3</option>
-					<option value="4">Artifact 4</option>
-					<option value="5">Artifact 5</option>
-					<option value="6">Artifact 6</option>
+					<optgroup label="Artifact">
+						<option value="1">Prefetch</option>
+						<option value="2">Event Log</option>
+						<option value="3">LNK</option>
+						<option value="4">Shimcache</option>
+						<option value="5">Memory Dump</option>
+						<option value="6">Network</option>
+						<option value="7">Thumbnail</option>
+						<option value="8">VSS</option>
+						<option value="9">Web Browser History</option>
+						<option value="10">WER & Crash Dump</option>
+						<option value="11">MFT</option>
+						<option value="12">Fils System</option>
+						<option value="13">Registry</option>
+					</optgroup>
+					<optgroup label="Anti-Forensic">
+						<option value="14">Steganography</option>
+						<option value="15">Hidden File</option>
+						<option value="16">File Delete</option>
+					</optgroup>
 				</select>
 			</div>
 		</div>

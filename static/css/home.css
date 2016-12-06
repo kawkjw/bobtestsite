@@ -19,6 +19,10 @@ body {
 	font-weight: bold;
 }
 
+div.navbar-collapse {
+	padding-left: 0px;
+}
+
 .navbar {
 	background-color: #cce6ff;
 	border: 1px solid #cce6ff;

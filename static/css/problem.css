@@ -1,4 +1,12 @@
 
+.problem-content {
+	height: 850px;
+}
+
+.case4-content {
+	height: 1200px;
+}
+
 .submenu {
 	display: none;
 }
@@ -8,12 +16,8 @@
 }
 
 #problem-menu > li.active {
-	border-radius: 4px;
+	border-radius: 6px;
 	border: 1px solid #b3daff;
-}
-
-.problem {
-	width: 1070px;
 }
 
 .problem table {

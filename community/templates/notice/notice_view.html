@@ -1,22 +1,30 @@
-{% extends 'community_menu.html' %}
+{% extends 'base.html' %}
 
-{% block community_content %}
-<div class="community-content col-md-10">
-	<table class="table table-bordered">
-		<tr>
-			<td class="col-md-2">Title</td>
-			<td colspan="3">{{ notice.title }}</td>
-		</tr>
-		<tr>
-			<td>Created Date</td>
-			<td>{{ notice.created_date }}</td>
-			<td class="col-md-1">Hits</td>
-			<td class="col-md-1">{{ notice.hits }}</td>
-		</tr>
-		<tr>
-			<td>Content</td>
-			<td colspan="3">{{ notice.content|linebreaks }}</td>
-		</tr>
-	</table>
+{% block content %}
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('nav ul li:eq(4)').toggleClass("active");
+		$('#noticelist').click(function() {
+			$(location).attr("href", "{% url 'noticelist' %}?page=1");
+		});
+	});
+</script>
+<div class="col-md-offset-1 col-md-10">
+	<div style="overflow: auto;">
+		<h2 class="question-title">{{ notice.title }}</h2>
+		<h5 class="question-date">{{ notice.created_date }}</h5>
+	</div>
+	<hr>
+	<div style="overflow: auto; padding: 0 15px;">
+		<span><b>{{ notice.author }}</b></span>
+		<span class="pull-right">조회수 {{ notice.hits }}</span>
+	</div>
+	<hr>
+	<div class="question-content col-md-12">
+		<p>{{ notice.content|linebreaks }}</p>
+	</div>
+	<div style="overflow: auto;">
+		<input class="btn btn-default pull-right" type="button" id="noticelist" value="목록">
+	</div>
 </div>
-{% endblock community_content %}
+{% endblock content %}

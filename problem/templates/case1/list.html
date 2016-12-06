@@ -1,0 +1,30 @@
+{% extends 'problem_menu.html' %}
+
+{% block problem_content %}
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#problem-menu > li:eq(2)').toggleClass("active");
+		$('#problem-menu > li:eq(2) > ul').css("display", "block");
+		$('#problem-menu > li:eq(2) > ul > li:eq(0)').toggleClass("active");
+
+		$('#problem-menu > li:eq(0)').hover(function () {
+			$(this).addClass("active");
+			$(this).find("ul:first").show(); 
+		}, function () {
+			$(this).removeClass("active");
+			$(this).find("ul:first").hide(); 
+		});
+
+		$('#problem-menu > li:eq(1)').hover(function () {
+			$(this).addClass("active");
+			$(this).find("ul:first").show();
+		}, function () {
+			$(this).removeClass("active");
+			$(this).find("ul:first").hide();
+		});
+	});
+</script>
+<div class="problem-content col-md-10">
+	<h1>랜섬웨어</h1>
+</div>
+{% endblock problem_content %}

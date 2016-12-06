@@ -4,20 +4,37 @@
 {% load problem_stats %}
 <script type="text/javascript">
 	$(document).ready(function() {
-		$('.nav-pills li.active').toggleClass("active");
+		$('#problem-menu > li:eq(0)').toggleClass("active");
+		$('#problem-menu > li:eq(0) > ul').css("display", "block");
 		{% if problem.artifact == 1 %}
-			$('.nav-pills li:eq(0)').toggleClass("active");
+			$('#problem-menu > li:eq(0) > ul > li:eq(0)').toggleClass("active");
 		{% elif problem.artifact == 2 %}
-			$('.nav-pills li:eq(1)').toggleClass("active");
+			$('#problem-menu > li:eq(0) > ul > li:eq(1)').toggleClass("active");
 		{% elif problem.artifact == 3 %}
-			$('.nav-pills li:eq(2)').toggleClass("active");
+			$('#problem-menu > li:eq(0) > ul > li:eq(2)').toggleClass("active");
 		{% elif problem.artifact == 4 %}
-			$('.nav-pills li:eq(3)').toggleClass("active");
+			$('#problem-menu > li:eq(0) > ul > li:eq(3)').toggleClass("active");
 		{% elif problem.artifact == 5 %}
-			$('.nav-pills li:eq(4)').toggleClass("active");
+			$('#problem-menu > li:eq(0) > ul > li:eq(4)').toggleClass("active");
 		{% elif problem.artifact == 6 %}
-			$('.nav-pills li:eq(5)').toggleClass("active");
+			$('#problem-menu > li:eq(0) > ul > li:eq(5)').toggleClass("active");
 		{% endif %}
+
+		$('#problem-menu > li:eq(1)').hover(function () {
+			$(this).addClass("active");
+			$(this).find("ul:first").show(); 
+		}, function () {
+			$(this).removeClass("active");
+			$(this).find("ul:first").hide(); 
+		});
+
+		$('#problem-menu > li:eq(2)').hover(function () {
+			$(this).addClass("active");
+			$(this).find("ul:first").show();
+		}, function () {
+			$(this).removeClass("active");
+			$(this).find("ul:first").hide();
+		});
 
 		{% if request.user.is_staff %}
 			$('#modifybutton').click(function() {

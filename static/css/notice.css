@@ -1,4 +1,8 @@
 
+.notice-thead thead td {
+	text-align: center;
+}
+
 .notice-section {
 	overflow: auto;
 	margin-top: 20px;

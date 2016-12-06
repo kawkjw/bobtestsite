@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% if not state %}
+<div class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" id="hexit" class="close" data-dismiss="modal">×</button>
+				<h4 class="modal-title">Warning!</h4>
+			</div>
+			<div class="modal-body" style="text-align: center;">
+				You don't have reading permission!!
+			</div>
+			<div class="modal-footer">
+				<button type="button" id="exit" class="btn btn-default" data-dismiss="modal">닫기</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="col-md-offset-1 col-md-10">
+	<h2 style="text-align: center;">Error!!</h2>
+</div>
+<script type="text/javascript">
+	$('div.modal').modal({
+		backdrop: 'static',
+		keyboard: false
+	});
+	$('#exit').focus();
+
+	$('#hexit').click(function() {
+		location.href = "{% url 'question_list' %}";
+	});
+	$('#exit').click(function () {
+		location.href = "{% url 'question_list' %}";
+	});
+</script>
+{% else %}
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('nav ul li:eq(6)').toggleClass("active");
+		$('#id_list').click(function() {
+			$(location).attr("href", "{% url 'question_list' %}?page=1");
+		});
+	});
+</script>
+<div class="col-md-offset-1 col-md-10">
+	<div style="overflow: auto;">
+		<h2 class="question-title">{{ question.title }}</h2>
+		<span>by {{ question.author }}</span>
+		<h5 class="question-date">{{ question.created_date }}</h5>
+	</div>
+	<hr>
+	<div class="question-content col-md-12">
+		<p>{{ question.content|linebreaks }}</p>
+	</div>
+	{% for comment in comments %}
+		<div class="col-md-12">
+			<pre><b>{{ comment.author }}</b>	{{ comment.created_date }}<p class="comment-m">{{ comment.message }}</p></pre>
+		</div>
+	{% endfor %}
+	<div class="comment-content col-md-12">
+		<form id="comment" class="form-horizontal" method="POST" action="{% url 'comment_write_done' %}?qnum={{ question.num }}">{% csrf_token %}
+			<div class="form-group">
+				<div class="col-md-10">
+					<textarea id="id_content" class="form-control" name="message" rows="3" required></textarea>
+				</div>
+				<div class="col-md-2">
+					<input type="submit" id="id_submit" class="btn btn-default col-md-12 pull-right" value="Submit">
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="col-md-12">
+		<input type="button" id="id_list" class="btn btn-default pull-right" value="목록">
+	</div>
+</div>
+{% endif %}
+{% endblock content %}

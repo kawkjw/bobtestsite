@@ -1,0 +1,89 @@
+{% extends 'document_menu.html' %}
+
+{% block document_content %}
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#document-menu > li:eq(1)').toggleClass("active");
+		$('#document-menu > li:eq(1) > ul').css("display", "block");
+		$('#document-menu > li:eq(1) > ul > li:eq(1)').toggleClass("active");
+	});
+</script>
+<div class="document-content col-md-10">
+	<h2 class="document-title2">{{ document.title }}</h2>
+	<span class="pull-right document-date2">{{ document.created_date }}</span>
+	<hr>
+	<h4>통합 포렌식 도구 (Integrated Forensics Tools)</h4>
+	<p class="document-padding-left">X-Ways Forensics [&nbsp;<a href="http://x-ways.com" target="_blank">http://x-ways.com</a>&nbsp;]</p>
+	<hr>
+	<h4>이미징 소프트웨어 (Imaging Software)</h4>
+	<p class="document-padding-left">FTK Imager [&nbsp;<a href="http://accessdata.com" target="_blank">http://accessdata.com</a>&nbsp;]</p>
+	<p class="document-padding-left">Tableau TD3 Forensic Imager [&nbsp;<a href="https://www.guidancesoftware.com" target="_blank">https://www.guidancesoftware.com</a>&nbsp;]</p>
+	<hr>
+	<h4>쓰기방지장치 (Write Blocker)</h4>
+	<p class="document-padding-left">Safe Block Win7x64 [&nbsp;<a href="http://www.forensicsoft.com" target="_blank">http://www.forensicsoft.com</a>&nbsp;]</p>
+	<hr>
+	<h4>이미지 마운트 (Image Mounting)</h4>
+	<p class="document-padding-left">Arsenal Mounter [&nbsp;<a href="http://arsenalrecon.com" target="_blank">http://arsenalrecon.com</a>&nbsp;]</p>
+	<hr>	
+	<h4>레지스트리 분석 (Registry Analysis)</h4>
+	<p class="document-padding-left">REGA [&nbsp;<a href="http://forensic.korea.ac.kr/tools/rega.html" target="_blank">http://forensic.korea.ac.kr/tools/rega.html</a>&nbsp;]</p>
+	<hr>
+	<h4>바로가기 파일 분석 (LNK Analysis)</h4>
+	<p class="document-padding-left">Uftlnkparser [&nbsp;<a href="http://forensic-proof.com/resources" target="_blank">http://forensic-proof.com/resources</a>&nbsp;]</p>
+	<hr>
+	<h4>로그 분석 (Log Analysis)</h4>
+	<p class="document-padding-left">Log parser [&nbsp;<a href="http://www.microsoft.com/en-us/download/details.aspx?id=24659" target="_blank">http://www.microsoft.com/en-us/download/details.aspx?id=24659</a>&nbsp;]</p>
+	<hr>
+	<h4>웹 브라우저 사용 흔적 (Web Browser Artifacts)</h4>
+	<p class="document-padding-left">WEFA [&nbsp;<a href="http://forensic.korea.ac.kr/tools/wefa.html" target="_blank">http://forensic.korea.ac.kr/tools/wefa.html</a>&nbsp;]</p>
+	<hr>
+	<h4>데이터베이스 분석 (Database Analysis)</h4>
+	<p class="document-padding-left">SQLite Expert [&nbsp;<a href="http://www.sqliteexpert.com" target="_blank">http://www.sqliteexpert.com</a>&nbsp;]</p>
+	<hr>
+	<h4>점프리스트 분석 (Jumplist Analysis)</h4>
+	<p class="document-padding-left">Jumplister [&nbsp;<a href="http://www.woanware.co.uk/forensics/jumplister.html" target="_blank">http://www.woanware.co.uk/forensics/jumplister.html</a>&nbsp;]</p>
+	<hr>
+	<h4>데이터 복구 (Data Recovery)</h4>
+	<p class="document-padding-left">R-Studio [&nbsp;<a href="http://www.r-studio.com" target="_blank">http://www.r-studio.com</a>&nbsp;]</p>
+	<hr>
+	<h4>헥스 편집기 (Hex Editor)</h4>
+	<p class="document-padding-left">010Editor [&nbsp;<a href="http://www.sweetscape.com/010editor" target="_blank">http://www.sweetscape.com/010editor</a>&nbsp;]</p>
+	<p class="document-padding-left">HxD [&nbsp;<a href="http://www.mh-nexus.de" target="_blank">http://www.mh-nexus.de</a>&nbsp;]</p>
+	<hr>
+	<h4>네트워크 포렌식 (Network Forensics)</h4>
+	<p class="document-padding-left">WireShark [&nbsp;<a href="http://www.wireshark.org" target="_blank">http://www.wireshark.org</a>&nbsp;]</p>
+	<hr>
+	<h4>압축 파일 분석 (Zip File Analysis)</h4>
+	<p class="document-padding-left">7-Zip [&nbsp;<a href="http://www.7-zip.org" target="_blank">http://www.7-zip.org</a>&nbsp;]</p>
+	<hr>
+	<h4>스테가노그래피 탐지 (Steganography Detector)</h4>
+	<p class="document-padding-left">ooXML_Steganography [&nbsp;<a href="http://www.mediafire.com/?m9hk90yv93lhfld" target="_blank">http://www.mediafire.com/?m9hk90yv93lhfld</a>&nbsp;]</p>
+	<hr>
+	<h4>이메일 분석 (Email Analysis)
+	<p class="document-padding-left"></p>
+	<hr>
+	<h4>악성코드 분석 (Malware Analysis)</h4>
+	<p class="document-padding-left"></p>
+	<hr>
+	<h4>파일시스템 메타데이터 (Filesystem Metadata)</h4>
+	<p class="document-padding-left"></p>
+	<hr>
+	<h4>라이브 포렌식 (Live Forensics)</h4>
+	<p class="document-padding-left"></p>
+	<hr>
+	<h4>메모리 획득/덤프 (Memory Acquisition/Dump)</h4>
+	<p class="document-padding-left">windd [&nbsp;<a href="https://sourceforge.net/projects/windd" target="_blank">https://sourceforge.net/projects/windd</a>&nbsp;]</p>
+	<hr>
+	<h4>메모리 분석 (Memory Analysis)</h4>
+	<p class="document-padding-left">Volatility [&nbsp;<a href="https://www.volatilesystems.com/default/volatility" target="_blank">https://www.volatilesystems.com/default/volatility</a>&nbsp;]</p>
+	<hr>
+	<h4>타임라인 분석 (Timeline Analysis)</h4>
+	<p class="document-padding-left">Plaso [&nbsp;<a href="https://github.com/log2timeline/plaso/releases" target="_blank">https://github.com/log2timeline/plaso/releases</a>&nbsp;]</p>
+	<hr>
+	<h4>프리패치 분석 (Prefetch Analysis)</h4>
+	<p class="document-padding-left">WinPrefetchView [&nbsp;<a href="http://www.majorgeeks.com/files/details/winprefetchview.html" target="_blank">http://www.majorgeeks.com/files/details/winprefetchview.html</a>&nbsp;]</p>
+	<hr>
+	<h4>볼륨섀도복사본 분석 (VSC Analysis)</h4>
+	<p class="document-padding-left">ShadowExplorer [&nbsp;<a href="http://www.shadowexplorer.com/downloads.html" target="_blank">http://www.shadowexplorer.com/downloads.html</a>&nbsp;]</p>
+</div>
+{% endblock document_content %}

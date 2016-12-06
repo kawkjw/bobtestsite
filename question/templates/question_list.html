@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<script type="text/javascript">
+	function get(name){
+		if(name = (new RegExp('[?&]' + encodeURIComponent(name) + '=([^&]*)')).exec(location.search))
+			return decodeURIComponent(name[1]);
+	}
+
+	$(document).ready(function() {
+		$('nav ul li:eq(6)').toggleClass("active");
+
+		if(get('page') == 1) {
+			$('.previous-page').addClass("disabled");
+			if(get('page') == {{ last_page }})
+				$('.next-page').addClass("disabled");
+		}
+		else if(get('page') >= {{ last_page }})
+			$('.next-page').addClass("disabled");
+		else {
+			$('.previous-page').removeClass("disabled");
+			$('.next-page').removeClass("disabled");
+		}
+
+		$('.previous-page').click(function() {
+			if($('.previous-page').hasClass("disabled") == false)
+				$(location).attr("href", "{% url 'question_list' %}?page={{ current_page|add:'-1' }}");
+		});
+
+		$('.next-page').click(function() {
+			if($('.next-page').hasClass("disabled") == false)
+				$(location).attr("href", "{% url 'question_list' %}?page={{ current_page|add:'1' }}");
+		});
+		$('#question_write').click(function() {
+			$(location).attr("href", "{% url 'question_write' %}");
+		});
+	});
+</script>
+<div class="notice-thead col-md-offset-1 col-md-10">
+	<h2>Q&A</h2><br>
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<td>#</td>
+				<td>Title</td>
+				<td>Answer</td>
+				<td>Writer</td>
+				<td>Date</td>
+			</tr>
+		</thead>
+		<tbody>
+		{% for question in question_list %}
+			<tr>
+				<td class="community_num col-md-1">{{ question.num }}</td>
+				<td><a href="{% url 'question_view' %}?qnum={{ question.num }}">{{ question.title }}</a></td>
+				<td class="community_center col-sm-1">
+					{% if question.comment_num == 0 %}
+						X
+					{% else %}
+						O
+					{% endif %}
+				</td>
+				<td class="community_center col-md-1 col-sm-2">{{ question.author }}</td>
+				<td class="community_center col-md-2 col-sm-3">{{ question.created_date|date:"Y.m.d" }}</td>
+			</tr>
+		{% endfor %}
+		</tbody>
+	</table>
+	<div style="overflow: auto;">
+		<input class="btn btn-default pull-right" type="button" id="question_write" value="Write">
+	</div>
+	<div class="community_center">
+		<ul class="pagination">
+			<li class="previous-page">
+				<a href="#"><span>&laquo;</span></a>
+			</li>
+			{% for page in total_page %}
+				<li {% if current_page == page %}class="active" {% endif %}><a {% if current_page != page %}href="{% url 'question_list' %}?page={{ page }}" {% endif %}>{{ page }}</a></li>
+			{% endfor %}
+			<li class="next-page">
+				<a href="#"><span>&raquo;</span></a>
+			</li>
+		</ul>
+	</div>
+</div>
+{% endblock content %}

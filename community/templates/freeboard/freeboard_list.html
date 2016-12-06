@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<script type="text/javascript">
+	function get(name){
+		if(name = (new RegExp('[?&]' + encodeURIComponent(name) + '=([^&]*)')).exec(location.search))
+			return decodeURIComponent(name[1]);
+	}
+
+	$(document).ready(function() {
+		$('nav ul li:eq(5)').toggleClass("active");
+
+		if(get('page') == 1) {
+			$('.previous-page').addClass("disabled");
+			if(get('page') == {{ last_page }})
+				$('.next-page').addClass("disabled");
+		}
+		else if(get('page') >= {{ last_page }})
+			$('.next-page').addClass("disabled");
+		else {
+			$('.previous-page').removeClass("disabled");
+			$('.next-page').removeClass("disabled");
+		}
+
+		$('.previous-page').click(function() {
+			if($('.previous-page').hasClass("disabled") == false)
+				$(location).attr("href", "{% url 'freeboard_list' %}?page={{ current_page|add:'-1' }}");
+		});
+
+		$('.next-page').click(function() {
+			if($('.next-page').hasClass("disabled") == false)
+				$(location).attr("href", "{% url 'freeboard_list' %}?page={{ current_page|add:'1' }}");
+		});
+		$('#freeboard_write').click(function() {
+			$(location).attr("href", "{% url 'freeboard_write' %}");
+		});
+	});
+</script>
+<div class="notice-thead col-md-offset-1 col-md-10">
+	<h2>자유게시판</h2><br>
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<td>#</td>
+				<td>Title</td>
+				<td>Comments</td>
+				<td>Writer</td>
+				<td>Date</td>
+			</tr>
+		</thead>
+		<tbody>
+		{% for freeboard in freeboard_list %}
+			<tr>
+				<td class="community_num col-md-1">{{ freeboard.num }}</td>
+				<td><a href="{% url 'freeboard_view' %}?fnum={{ freeboard.num }}">{{ freeboard.title }}</a></td>
+				<td class="community_center col-md-1 col-sm-1">{{ freeboard.f_comment_num }}</td>
+				<td class="community_center col-md-1 col-sm-2">{{ freeboard.author }}</td>
+				<td class="community_center col-md-2 col-sm-3">{{ freeboard.created_date|date:"Y.m.d" }}</td>
+			</tr>
+		{% endfor %}
+		</tbody>
+	</table>
+	<div style="overflow: auto;">
+		<input class="btn btn-default pull-right" type="button" id="freeboard_write" value="Write">
+	</div>
+	<div class="community_center">
+		<ul class="pagination">
+			<li class="previous-page">
+				<a href="#"><span>&laquo;</span></a>
+			</li>
+			{% for page in total_page %}
+				<li {% if current_page == page %}class="active" {% endif %}><a {% if current_page != page %}href="{% url 'freeboard_list' %}?page={{ page }}" {% endif %}>{{ page }}</a></li>
+			{% endfor %}
+			<li class="next-page">
+				<a href="#"><span>&raquo;</span></a>
+			</li>
+		</ul>
+	</div>
+</div>
+{% endblock content %}

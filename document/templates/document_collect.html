@@ -1,0 +1,40 @@
+{% extends 'document_menu.html' %}
+
+{% block document_content %}
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#document-menu > li:eq(1)').toggleClass("active");
+		$('#document-menu > li:eq(1) > ul').css("display", "block");
+		$('#document-menu > li:eq(1) > ul > li:eq(2)').toggleClass("active");
+	});
+</script>
+<div class="document-content col-md-10">
+	<h2>{{ document.title }}</h2>
+	<hr>
+	<h4>&nbsp;1. HDD 이미징</h4>
+	<div class="embed-responsive embed-responsive-16by9">
+		<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3wbBVOZZtv4" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<hr>
+	<h4>&nbsp;2. HDD 이미징 - 해시 정보 확인</h4>
+	<div class="embed-responsive embed-responsive-16by9">
+		<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RczRh1Rauho" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<hr>
+	<h4>&nbsp;3. 쓰기 방지장치 사용한 이미징</h4>
+	<div class="embed-responsive embed-responsive-16by9">
+		<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tuG7FrescvQ" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<hr>
+	<h4>&nbsp;4. USB 이미징</h4>
+	<div class="embed-responsive embed-responsive-16by9">
+		<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PXSgIuwV3Do" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<hr>
+	<h4>&nbsp;5. 이미징 로그 확인</h4>
+	<div class="embed-responsive embed-responsive-16by9">
+		<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7hDNerNCHEs" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<hr>
+</div>
+{% endblock document_content %}

@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('nav ul li:eq(5)').toggleClass("active");
+		$('#id_list').click(function() {
+			$(location).attr("href", "{% url 'freeboard_list' %}?page=1");
+		});
+	});
+</script>
+<div class="col-md-offset-1 col-md-10">
+	<div style="overflow: auto;">
+		<h2 class="question-title">{{ freeboard.title }}</h2>
+		<span>by {{ freeboard.author }}</span>
+		<h5 class="question-date">{{ freeboard.created_date }}</h5>
+	</div>
+	<hr>
+	<div class="question-content col-md-12">
+		<p>{{ freeboard.content|linebreaks }}</p>
+	</div>
+	{% for comment in comments %}
+		<div class="col-md-12">
+			<pre><b>{{ comment.author }}</b>	{{ comment.created_date }}<p class="comment-m">{{ comment.message }}</p></pre>
+		</div>
+	{% endfor %}
+	<div class="comment-content col-md-12">
+		<form id="comment" class="form-horizontal" method="POST" action="{% url 'f_comment_write_done' %}?fnum={{ freeboard.num }}">{% csrf_token %}
+			<div class="form-group">
+				<div class="col-md-10">
+					<textarea id="id_content" class="form-control" name="message" rows="3" required></textarea>
+				</div>
+				<div class="col-md-2">
+					<input type="submit" id="id_submit" class="btn btn-default col-md-12 pull-right" value="Submit">
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="col-md-12">
+		<input type="button" id="id_list" class="btn btn-default pull-right" value="목록">
+	</div>
+</div>
+{% endblock content %}

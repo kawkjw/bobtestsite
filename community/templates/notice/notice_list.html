@@ -1,6 +1,6 @@
-{% extends 'community_menu.html' %}
+{% extends 'base.html' %}
 
-{% block community_content %}
+{% block content %}
 <script type="text/javascript">
 	function get(name){
 		if(name = (new RegExp('[?&]' + encodeURIComponent(name) + '=([^&]*)')).exec(location.search))
@@ -8,11 +8,13 @@
 	}
 
 	$(document).ready(function() {
-		$('.nav-pills li.active').toggleClass("active");
-		$('.nav-pills li:eq(0)').toggleClass("active");
+		$('nav ul li:eq(4)').toggleClass("active");
 
-		if(get('page') == 1)
+		if(get('page') == 1) {
 			$('.previous-page').addClass("disabled");
+			if(get('page') == {{ last_page }})
+				$('.next-page').addClass("disabled");
+		}
 		else if(get('page') >= {{ last_page }})
 			$('.next-page').addClass("disabled");
 		else {
@@ -36,7 +38,8 @@
 	{% endif %}
 	});
 </script>
-<div class="community-content col-md-10">
+<div class="notice-thead col-md-offset-1 col-md-10">
+	<h2>공지사항</h2><br>
 	<table class="table table-bordered">
 		<thead>
 			<tr>
@@ -52,7 +55,7 @@
 				<td class="community_num col-md-1">{{ notice.num }}</td>
 				<td class="col-md-8"><a href="{% url 'noticeview' %}?nnum={{ notice.num }}">{{ notice.title }}</a></td>
 				<td class="community_center">{{ notice.hits }}</td>
-				<td class="community_center">{{ notice.created_date }}</td>
+				<td class="community_center col-md-2">{{ notice.created_date|date:"Y.m.d" }}</td>
 			</tr>
 		{% endfor %}
 		</tbody>
@@ -76,4 +79,4 @@
 		</ul>
 	</div>
 </div>
-{% endblock community_content %}
+{% endblock content %}
